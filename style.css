@@ -1,0 +1,156 @@
+/* ============================================================
+   Fólio Invest — landing institucional (tema claro)
+   Identidade: paleta do app (Color.kt), Inter (corpo) + Quicksand (wordmark)
+   ============================================================ */
+
+/* --- Fontes oficiais do app (mesmos arquivos bundlados em res/font) --- */
+@font-face{
+  font-family:'Inter';
+  font-weight:100 900;
+  font-style:normal;
+  font-display:swap;
+  src:url('assets/fonts/inter_variable.ttf') format('truetype');
+}
+@font-face{
+  font-family:'Quicksand';
+  font-weight:300 700;
+  font-style:normal;
+  font-display:swap;
+  src:url('assets/fonts/quicksand_variable.ttf') format('truetype');
+}
+
+:root{
+  --bg:#FBF8FF; --card:#FFFFFF; --card-border:#E2E1EC; --inner:#F4F3FA;
+  --text:#1B1B21; --muted:#45464F; --primary:#2E4FA8; --primary-ctr:#DCE2FF; --on-primary-ctr:#001454;
+  --accent:#B7791F; --lucro:#1B873B; --line:#E2E1EC; --nav-bg:rgba(251,248,255,.82);
+  /* gradiente índigo da marca (hero / privacidade / footer-top) */
+  --hero1:#3B5BC4; --hero2:#1E3A8A;
+  /* paleta categórica (barra de alocação do app) — usada nos ícones de feature */
+  --cat-indigo:#2E4FA8; --cat-teal:#0E7C86; --cat-amber:#B7791F; --cat-purple:#7E57C2;
+  --cat-rose:#B5476B; --cat-green:#2E7D49; --cat-sky:#1C6FB5; --cat-slate:#4E5763; --cat-cyan:#0AA5B8;
+  --shadow:0 1px 2px rgba(16,24,64,.06),0 6px 24px rgba(16,24,64,.06);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  line-height:1.55;font-size:16px;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+.num{font-feature-settings:"tnum"}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+a{color:inherit}
+img{max-width:100%}
+:focus-visible{outline:3px solid var(--primary);outline-offset:2px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:0;background:#fff;color:var(--primary);padding:10px 16px;border-radius:8px;z-index:100}
+.skip:focus{left:12px;top:12px}
+
+/* ---------------- NAV ---------------- */
+nav{position:sticky;top:0;z-index:60;background:var(--nav-bg);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:13px 22px}
+.brand{display:flex;align-items:center;gap:10px;font-family:'Quicksand',sans-serif;font-weight:700;
+  font-size:19px;color:var(--text);text-decoration:none}
+.brand .mk{width:36px;height:36px;border-radius:10px;flex:0 0 auto;
+  background:linear-gradient(160deg,var(--hero1),var(--hero2));display:grid;place-items:center;
+  box-shadow:0 2px 8px rgba(30,58,138,.35)}
+.brand .mk svg{display:block;width:23px;height:23px}
+.navlinks{display:none;gap:6px}
+.navlinks a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500;padding:8px 12px;border-radius:8px}
+.navlinks a:hover{color:var(--text);background:color-mix(in srgb,var(--primary) 10%,transparent)}
+
+/* ---------------- HERO ---------------- */
+.hero{background:linear-gradient(165deg,var(--hero1),var(--hero2));color:#fff;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-160px;left:-120px;width:480px;height:480px;border-radius:50%;
+  background:radial-gradient(circle,rgba(180,197,255,.22),transparent 70%)}
+.hero .wrap{position:relative;padding:64px 22px 72px;display:grid;gap:36px;grid-template-columns:1fr}
+.hero h1{font-size:34px;line-height:1.12;letter-spacing:-.5px;font-weight:800;margin:0 0 16px}
+.hero .lead{font-size:17px;line-height:1.5;color:#DCE2FF;margin:0 0 26px;max-width:540px}
+.badge{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.28);color:#fff;padding:13px 20px;border-radius:12px;font-weight:600;
+  font-size:15px;cursor:not-allowed}
+.cta-note{font-size:13px;color:#C7D0F5;margin-top:14px;max-width:460px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.pill{font-size:12.5px;font-weight:600;color:#EAF0FF;background:rgba(255,255,255,.12);
+  border:1px solid rgba(180,197,255,.3);padding:6px 12px;border-radius:999px}
+.heroart{justify-self:center}
+
+/* ---------------- PHONE FRAME ---------------- */
+.phone{width:264px;aspect-ratio:540/1200;background:#0b0b10;border-radius:34px;padding:9px;position:relative;
+  box-shadow:0 24px 60px rgba(0,0,0,.45),inset 0 0 0 2px rgba(255,255,255,.06)}
+.phone::after{content:"";position:absolute;top:15px;left:50%;transform:translateX(-50%);
+  width:7px;height:7px;border-radius:50%;background:#26262e}
+.phone img{width:100%;height:100%;object-fit:cover;border-radius:26px;display:block}
+
+/* ---------------- SECTIONS ---------------- */
+section{padding:66px 0}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--primary);margin:0 0 10px}
+h2{font-size:28px;line-height:1.18;letter-spacing:-.3px;margin:0 0 12px;font-weight:800}
+.sub{font-size:16px;color:var(--muted);margin:0 0 40px;max-width:620px}
+
+/* ---------------- GALERIA ---------------- */
+.gallery{display:grid;gap:22px;grid-template-columns:1fr}
+.shot{text-align:center}
+.shot .phone{width:208px;margin:0 auto 14px}
+.shot .cap{font-size:14px;color:var(--muted);max-width:230px;margin:0 auto}
+.shot .cap b{color:var(--text);display:block;font-size:15px;margin-bottom:2px;font-weight:600}
+.star{display:inline-block;color:var(--accent);font-weight:700}
+
+/* ---------------- FEATURES ---------------- */
+.features{display:grid;gap:18px;grid-template-columns:1fr}
+.feature{background:var(--card);border:1px solid var(--card-border);border-radius:18px;padding:24px;box-shadow:var(--shadow)}
+.feature .ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;margin-bottom:16px;
+  background:color-mix(in srgb,var(--c) 15%,transparent);color:var(--c)}
+.feature .ic svg{width:24px;height:24px;display:block}
+.feature h3{margin:0 0 7px;font-size:17px;font-weight:700}
+.feature p{margin:0;color:var(--muted);font-size:14.5px}
+.lawtag{display:inline-block;margin-top:10px;font-size:12px;font-weight:600;color:var(--accent);
+  background:color-mix(in srgb,var(--accent) 14%,transparent);padding:3px 9px;border-radius:999px}
+
+/* ---------------- TRUST / PRIVACIDADE ---------------- */
+.trust{background:linear-gradient(165deg,var(--hero1),var(--hero2));color:#fff}
+.trust h2{color:#fff}.trust .sub{color:#DCE2FF}.trust .eyebrow{color:#B4C5FF}
+.trustgrid{display:grid;gap:18px;grid-template-columns:repeat(2,1fr)}
+.tcard{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:22px;text-align:center}
+.tcard .n{font-size:34px;font-weight:800;letter-spacing:-1px;margin-bottom:6px}
+.tcard .l{font-size:13.5px;color:#DCE2FF;line-height:1.4}
+
+/* ---------------- FAQ ---------------- */
+.faq details{background:var(--card);border:1px solid var(--card-border);border-radius:14px;padding:4px 20px;margin-bottom:12px;box-shadow:var(--shadow)}
+.faq summary{cursor:pointer;list-style:none;padding:16px 0;font-weight:600;font-size:16px;display:flex;justify-content:space-between;gap:14px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--primary);font-size:22px;font-weight:700;flex:0 0 auto}
+.faq details[open] summary::after{content:"–"}
+.faq p{margin:0 0 18px;color:var(--muted);font-size:14.5px}
+
+/* ---------------- FOOTER ---------------- */
+footer{background:#0E1330;color:#cfd6f0;padding:52px 0 28px}
+.ftgrid{display:grid;gap:30px;grid-template-columns:1fr;margin-bottom:30px}
+footer .brand{color:#fff}
+.fdesc{font-size:14px;color:#9aa6cf;max-width:360px;margin:14px 0 0}
+footer h5{font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:#8b97c2;margin:0 0 14px}
+footer a.fl{display:block;color:#cfd6f0;text-decoration:none;font-size:14px;padding:5px 0}
+footer a.fl:hover{color:#fff}
+.legal{border-top:1px solid rgba(255,255,255,.1);padding-top:20px;font-size:12.5px;color:#8b97c2;line-height:1.6}
+.legal p{margin:0 0 8px}
+
+/* ---------------- RESPONSIVO ---------------- */
+@media (min-width:560px){
+  .features{grid-template-columns:repeat(2,1fr)}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .trustgrid{grid-template-columns:repeat(4,1fr)}
+}
+@media (min-width:880px){
+  .navlinks{display:flex}
+  .hero .wrap{grid-template-columns:1.05fr .95fr;align-items:center;padding-top:76px;padding-bottom:88px}
+  .hero h1{font-size:44px}
+  .features{grid-template-columns:repeat(3,1fr)}
+  .gallery{grid-template-columns:repeat(5,1fr);gap:14px}
+  .shot .phone{width:100%;max-width:160px}
+  .shot .cap{font-size:12.5px}.shot .cap b{font-size:13px}
+  .ftgrid{grid-template-columns:2fr 1fr 1fr}
+  h2{font-size:30px}
+  section{padding:80px 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
