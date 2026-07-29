@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!--
+  ARQUIVO GERADO — NAO EDITE A MAO.
+  Fonte: app-investimentos/docs/ (conteudo-site/ e manual/).
+  Regerar: powershell -File docs\site-build\build-site.ps1
+  Editar aqui e perder na proxima geracao; pior, o site passa a divergir do
+  manual que integra o contrato (J-11 / CDC art. 30).
+-->
+
+<title>Gerenciar aportes — Manual do Fólio Invest</title>
+<meta name="description" content="registra o dinheiro que entra e sai da sua carteira — e é isso que permite ao app separar &quot;rendi&quot; de &quot;depositei mais&quot;.">
+<meta name="theme-color" content="#1E3A8A">
+<link rel="canonical" href="https://folioinvest.com.br/manual/aportes/">
+
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/img/icon-512.png">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fólio Invest">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://folioinvest.com.br/manual/aportes/">
+<meta property="og:title" content="Gerenciar aportes — Manual do Fólio Invest">
+<meta property="og:description" content="registra o dinheiro que entra e sai da sua carteira — e é isso que permite ao app separar &quot;rendi&quot; de &quot;depositei mais&quot;.">
+<meta property="og:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gerenciar aportes — Manual do Fólio Invest">
+<meta name="twitter:description" content="registra o dinheiro que entra e sai da sua carteira — e é isso que permite ao app separar &quot;rendi&quot; de &quot;depositei mais&quot;.">
+<meta name="twitter:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
+
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"TechArticle",
+"headline":"Gerenciar aportes",
+"description":"registra o dinheiro que entra e sai da sua carteira — e é isso que permite ao app separar &quot;rendi&quot; de &quot;depositei mais&quot;.",
+"inLanguage":"pt-BR",
+"dateModified":"2026-07-29",
+"mainEntityOfPage":{"@type":"WebPage","@id":"https://folioinvest.com.br/manual/aportes/"},
+"author":{"@type":"Organization","name":"Fólio Invest"},
+"publisher":{"@type":"Organization","name":"Fólio Invest","url":"https://folioinvest.com.br/"},
+"about":{"@type":"SoftwareApplication","name":"Fólio Invest",
+"applicationCategory":"FinanceApplication","operatingSystem":"Android",
+"softwareVersion":"0.62.1"},
+"isAccessibleForFree":true},
+{"@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Início","item":"https://folioinvest.com.br/"},
+    {"@type":"ListItem","position":2,"name":"Manual","item":"https://folioinvest.com.br/manual/"},
+    {"@type":"ListItem","position":3,"name":"8. Gerenciar aportes","item":"https://folioinvest.com.br/manual/aportes/"}
+]}
+]}
+</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Fólio Invest — início">
+      <span class="mk" aria-hidden="true"><svg viewBox="19 20 70 70" fill="none"><path d="M32,76 V37 a3,3 0 0 1 3,-3 H58 M32,55 H52" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5,68.5 V71.5 M65.5,58.5 V71.5 M77.5,46.5 V71.5" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg></span>
+      Fólio Invest
+    </a>
+    <div class="navlinks">
+      <a href="/#func">Funcionalidades</a>
+      <a href="/guias/">Guias de IR</a>
+      <a href="/manual/" aria-current="page">Manual</a>
+      <a href="/#priv">Privacidade</a>
+      <a href="/#faq">FAQ</a>
+    </div>
+  </div>
+</nav>
+<main id="conteudo">
+  <div class="wrap">
+<nav class="crumb" aria-label="Trilha"><ol><li><a href="/">Início</a></li><li><a href="/manual/">Manual</a></li><li aria-current="page">8. Gerenciar aportes</li></ol></nav>
+  </div>
+  <div class="wrap page">
+    <article>
+      <p class="eyebrow">Manual do usuário · Capítulo 8</p>
+      <h1>Gerenciar aportes</h1>
+      <p class="verhdr"><em>Este capítulo descreve o Fólio Invest na versão <strong>0.62.1</strong>. Se o seu app estiver em outra versão, um detalhe de tela ou de comportamento pode ser diferente.</em></p>
+      <div class="docmeta">
+        <span class="tag">No app: Patrimônio → Gerenciar aportes</span>
+      </div>
+<details class="toc"><summary>Neste capítulo</summary><ol><li><a href="#os-quatro-tipos-de-movimento">Os quatro tipos de movimento</a></li><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#como-registrar-um-aporte-em-reais">Como registrar um aporte em reais</a></li><li><a href="#como-registrar-uma-compra-de-dolar">Como registrar uma compra de dólar</a></li><li><a href="#vincular-um-movimento-a-uma-posicao">Vincular um movimento a uma posição</a></li><li><a href="#a-tela-e-seus-blocos">A tela e seus blocos</a></li><li><a href="#o-cartao-resgates-podem-ter-sido-realocacoes">O cartão "resgates podem ter sido realocações"</a></li><li><a href="#o-filtro-sem-vinculo">O filtro "Sem vínculo"</a></li><li><a href="#como-excluir-um-lancamento">Como excluir um lançamento</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></details>
+      <div class="body">
+<div class="callout serve">
+<p class="ct"><span aria-hidden="true">🎯</span> Para que serve</p>
+<p>registra o dinheiro que <strong>entra e sai</strong> da sua carteira — e é isso que permite ao app separar "rendi" de "depositei mais".</p>
+</div>
+<p>Como chegar: aba <strong>Patrimônio</strong> › <strong>Gerenciar aportes</strong>.</p>
+<div class="callout fiscal">
+<p class="ct"><span aria-hidden="true">🧾</span> Conteúdo fiscal verificado</p>
+<p><strong>Conteúdo fiscal verificado em 28/07/2026</strong> nas fontes oficiais — lei, instrução normativa e as Perguntas e Respostas do IRPF. Valores marcados com ⏳ mudam de ano em ano; revisão prevista até <strong>31/01/2027</strong>.</p>
+</div>
+<h2 id="os-quatro-tipos-de-movimento">Os quatro tipos de movimento<a class="anc" href="#os-quatro-tipos-de-movimento" aria-label="Link para esta seção">#</a></h2>
+<p>Entender esses quatro nomes resolve a maior parte das dúvidas desta tela.</p>
+<div class="tablewrap"><table><thead><tr><th>Movimento</th><th>O que é</th><th>Efeito no total aportado</th></tr></thead><tbody><tr><td><strong>Aporte</strong></td><td>dinheiro novo entrando na carteira</td><td>aumenta</td></tr><tr><td><strong>Resgate</strong></td><td>dinheiro saindo da carteira de verdade</td><td>diminui</td></tr><tr><td><strong>Realocação</strong></td><td>o dinheiro saiu de um ativo e entrou em outro, sem sair da carteira</td><td>não muda</td></tr><tr><td><strong>Conversão</strong></td><td>trocou reais por dólares (ou o contrário)</td><td>não muda</td></tr></tbody></table></div>
+<h3 id="qual-a-diferenca-entre-aporte-e-compra">Qual a diferença entre aporte e compra?<a class="anc" href="#qual-a-diferenca-entre-aporte-e-compra" aria-label="Link para esta seção">#</a></h3>
+<ul><li><strong>Aporte</strong> é você transferir dinheiro do banco para a corretora.</li><li><strong>Compra</strong> é você usar esse dinheiro para comprar um ativo.</li></ul>
+<p>São dois lançamentos diferentes, em telas diferentes. Se você comprar ações com dinheiro que já estava na corretora, isso é só compra.</p>
+<h3 id="resgatei-um-cdb-e-comprei-acoes-com-o-dinheiro-e-resgate">Resgatei um CDB e comprei ações com o dinheiro. É resgate?<a class="anc" href="#resgatei-um-cdb-e-comprei-acoes-com-o-dinheiro-e-resgate" aria-label="Link para esta seção">#</a></h3>
+<p>Não. É <strong>realocação</strong>: o dinheiro não saiu da carteira, só trocou de ativo. Se você marcar como resgate, o app vai achar que você tirou dinheiro — e o lucro exibido fica maior do que o real.</p>
+<h2 id="o-que-da-para-fazer-aqui">O que dá para fazer aqui<a class="anc" href="#o-que-da-para-fazer-aqui" aria-label="Link para esta seção">#</a></h2>
+<ol><li><strong>Ver o total líquido de aportes</strong> (o capital total investido).</li><li><strong>Alternar entre Em R$ e Em US$</strong>.</li><li><strong>Filtrar</strong> por "Sem vínculo", quando houver.</li><li><strong>Abrir os grupos</strong> e ver os lançamentos.</li><li><strong>Cadastrar</strong> um movimento novo.</li><li><strong>Importar</strong> movimentos de um arquivo.</li><li><strong>Editar</strong> (toque) ou <strong>excluir</strong> (arraste para a esquerda) um lançamento.</li></ol>
+<h2 id="como-registrar-um-aporte-em-reais">Como registrar um aporte em reais<a class="anc" href="#como-registrar-um-aporte-em-reais" aria-label="Link para esta seção">#</a></h2>
+<ol><li>Toque em <strong>Novo aporte/resgate</strong> (botão azul do rodapé).</li><li>Em <strong>Qual moeda você quer movimentar?</strong>, escolha <strong>Em Reais (R$)</strong>.</li><li>Escolha a direção: <strong>Aporte</strong>, <strong>Resgate</strong> ou <strong>Realocação</strong>.</li><li>Informe a <strong>data</strong>.</li><li>Opcional: <strong>vincule a uma posição</strong> (veja abaixo).</li><li>Informe o <strong>valor</strong>.</li><li>Observação, se quiser.</li><li>Toque em <strong>Salvar aporte</strong>.</li></ol>
+<p>O botão de salvar muda de nome conforme a direção escolhida: Salvar aporte, Salvar resgate, Salvar realocação, Salvar conversão.</p>
+<h2 id="como-registrar-uma-compra-de-dolar">Como registrar uma compra de dólar<a class="anc" href="#como-registrar-uma-compra-de-dolar" aria-label="Link para esta seção">#</a></h2>
+<ol><li>Toque em <strong>Novo aporte/resgate</strong>.</li><li>Escolha <strong>Em Dólar (US$)</strong> e a direção <strong>Aporte</strong>.</li><li>Informe a data.</li><li><strong>Recebi (US$)</strong> — quantos dólares você recebeu.</li><li><strong>Saiu da conta (R$)</strong> — quanto saiu em reais, valor cheio.</li><li><strong>IOF / taxas (R$)</strong>.</li><li>O app calcula sozinho e mostra duas caixas:<ul><li><strong>Entra como aporte</strong> — o valor líquido de IOF;</li><li><strong>Cotação do dólar médio</strong> — quanto o dólar te custou de verdade.</li></ul></li><li>Toque em <strong>Salvar aporte</strong>.</li></ol>
+<h3 id="por-que-o-iof-nao-conta-como-aporte">Por que o IOF não conta como aporte?<a class="anc" href="#por-que-o-iof-nao-conta-como-aporte" aria-label="Link para esta seção">#</a></h3>
+<p>Porque IOF é custo, não patrimônio. O app soma nos seus aportes só o valor líquido, e joga o IOF no custo do dólar. É por isso que a cotação do seu dólar médio fica maior que a cotação do dia.</p>
+<h3 id="onde-ficou-a-tela-compras-de-dolar">Onde ficou a tela "Compras de dólar"?<a class="anc" href="#onde-ficou-a-tela-compras-de-dolar" aria-label="Link para esta seção">#</a></h3>
+<p>Ela deixou de existir como tela separada. Comprar dólar é um aporte em dólar — faça pelo caminho acima. O bloco <strong>DÓLAR MÉDIO DA CARTEIRA</strong> fica no topo da aba <strong>Em US$</strong>.</p>
+<h2 id="vincular-um-movimento-a-uma-posicao">Vincular um movimento a uma posição<a class="anc" href="#vincular-um-movimento-a-uma-posicao" aria-label="Link para esta seção">#</a></h2>
+<p>No formulário aparece <strong>Vincular a uma posição (opcional)</strong> quando você já tem posições de patrimônio cadastradas na mesma moeda.</p>
+<p>Vincular serve para:</p>
+<ul><li>acompanhar quanto você aportou em cada posição;</li><li>fazer as fichas do IRPF que dependem de saber a que aplicação o dinheiro pertence (contribuição de PGBL, prêmio de VGBL, custo de aplicação no exterior, resgate de previdência).</li></ul>
+<p>Sem vínculo, o movimento fica no <strong>caixa geral</strong>: ele conta no seu patrimônio, mas não nessas fichas.</p>
+<p>Quando você abre o formulário pelo botão <strong>+ Adicionar aporte</strong> de dentro de uma posição, o vínculo vem travado (com um cadeado 🔒) e não pode ser trocado ali.</p>
+<h3 id="por-que-o-app-pergunta-o-que-saiu-da-posicao">Por que o app pergunta "o que saiu da posição"<a class="anc" href="#por-que-o-app-pergunta-o-que-saiu-da-posicao" aria-label="Link para esta seção">#</a></h3>
+<p>Quando você registra uma saída de uma posição no exterior, o app pede a <strong>natureza</strong>: devolução de principal ou juros/cupom. Não é firula — <strong>as duas coisas têm imposto diferente</strong>.</p>
+<ul><li><strong>Devolução de principal</strong> é parte do que você aplicou voltando. Ela <strong>baixa o custo</strong> da aplicação proporcionalmente, e a diferença entre o que voltou e o custo baixado é o rendimento, tributado a ⏳ <strong>15%</strong>.</li><li><strong>Juros e cupom</strong> têm <strong>custo de aquisição zero</strong>: são rendimento <strong>integral</strong>. Não saem do principal, então <strong>não baixam custo nenhum</strong>.</li></ul>
+<p>⚠️ <strong>Cupom de bond, juros de CD e dividendo vão em <a href="/manual/dividendos/">Dividendos</a></strong>, como <em>Juros exterior</em> — não aqui. Lançar um cupom como devolução de principal baixaria o custo indevidamente e <strong>reduziria o imposto devido</strong>. É o erro que o aviso do formulário existe para impedir.</p>
+<h3 id="sair-do-investimento-e-fato-gerador-mesmo-sem-sacar">Sair do investimento é fato gerador, mesmo sem sacar<a class="anc" href="#sair-do-investimento-e-fato-gerador-mesmo-sem-sacar" aria-label="Link para esta seção">#</a></h3>
+<p>Nada na lei condiciona o imposto a você trazer o dinheiro para o Brasil. O que gera o imposto é o <strong>resgate, a amortização, a alienação, o vencimento ou a liquidação</strong> da aplicação. Resgatar um Treasury para comprar ações no mesmo dia, sem tirar um dólar da corretora, <strong>apura os 15% do mesmo jeito</strong>.</p>
+<p>É por isso que <strong>Realocação</strong> existe. Ela não muda nada no imposto — é um rótulo gerencial, que impede o app de achar que você tirou dinheiro da carteira.</p>
+<h3 id="sacar-de-conta-em-dolar-nao-remunerada-nao-gera-imposto">Sacar de conta em dólar não remunerada não gera imposto<a class="anc" href="#sacar-de-conta-em-dolar-nao-remunerada-nao-gera-imposto" aria-label="Link para esta seção">#</a></h3>
+<p>Aqui a regra é o contrário, e é boa notícia: a <strong>variação cambial de depósito não remunerado no exterior é isenta</strong> — inclusive no saque em espécie. Não há ganho a apurar. A saída só reduz o saldo da conta.</p>
+<p>Duas fronteiras que importam:</p>
+<ul><li><strong>"Não remunerada" é a condição.</strong> Conta-corrente que <strong>rende</strong> juros é aplicação financeira, e volta para a regra dos 15%.</li><li><strong>Se o dinheiro foi para outro ativo, lance a compra.</strong> Sem isso, o app mostra o patrimônio menor do que a realidade.</li></ul>
+<p>A parte isenta ainda assim <strong>aparece na declaração</strong>: o acréscimo de variação cambial entra nos Rendimentos Isentos, no código ⏳ <strong>99</strong>. Isento não é invisível.</p>
+<h2 id="a-tela-e-seus-blocos">A tela e seus blocos<a class="anc" href="#a-tela-e-seus-blocos" aria-label="Link para esta seção">#</a></h2>
+<p>No topo, o cartão azul <strong>Total Líquido de Aportes (Capital Total Investido)</strong> — aportes menos resgates, sem contar conversões e realocações.</p>
+<p>Logo abaixo, as abas <strong>Em R$</strong> e <strong>Em US$</strong>.</p>
+<p>Na aba <strong>Em US$</strong> há ainda:</p>
+<ul><li><strong>Aportado via dólar (custo líquido)</strong>;</li><li><strong>DÓLAR MÉDIO DA CARTEIRA</strong> — quantos dólares você adquiriu, o custo em reais com IOF, e a cotação média.</li></ul>
+<p>Os lançamentos ficam em grupos que você abre tocando: <strong>Aportes</strong>, <strong>Resgates</strong>, <strong>Conversões R$ ↔ US$</strong>, <strong>Realocações</strong>. Eles vêm fechados.</p>
+<h2 id="o-cartao-resgates-podem-ter-sido-realocacoes">O cartão "resgates podem ter sido realocações"<a class="anc" href="#o-cartao-resgates-podem-ter-sido-realocacoes" aria-label="Link para esta seção">#</a></h2>
+<p>Cartão âmbar que aparece quando o app encontra resgates que talvez fossem realocações.</p>
+<ol><li>Toque em <strong>Ver os N resgates</strong>.</li><li>Em cada um, escolha <strong>Resgate</strong> (fica como está) ou <strong>Realocação</strong>.</li><li>A escolha grava na hora e o item sai da lista.</li></ol>
+<p>Se não quiser decidir, toque em <strong>Não mostrar de novo</strong>. <strong>Nada é alterado sem a sua escolha.</strong></p>
+<h2 id="o-filtro-sem-vinculo">O filtro "Sem vínculo"<a class="anc" href="#o-filtro-sem-vinculo" aria-label="Link para esta seção">#</a></h2>
+<p>Aparece só quando existem movimentos sem posição vinculada. Toque no chip <strong>Sem vínculo · N</strong> para ver só eles; toque em <strong>Todos</strong> para voltar. Ao entrar nessa lente, os grupos abrem sozinhos.</p>
+<h2 id="como-excluir-um-lancamento">Como excluir um lançamento<a class="anc" href="#como-excluir-um-lancamento" aria-label="Link para esta seção">#</a></h2>
+<p>Arraste o cartão da direita para a esquerda. Aparece <strong>"Lançamento excluído"</strong> com <strong>Desfazer</strong>, por 5 segundos.</p>
+<h2 id="o-que-costuma-confundir">O que costuma confundir<a class="anc" href="#o-que-costuma-confundir" aria-label="Link para esta seção">#</a></h2>
+<p><strong>Realocação não reduz o total aportado, mas reduz o "Aportado (líquido)" da posição de onde o dinheiro saiu.</strong> Os dois números são diferentes de propósito.</p>
+<p><strong>Depois de uma realocação, registre para onde o dinheiro foi.</strong> O próprio formulário avisa: se você comprou outro ativo, lance a compra; se ficou parado na corretora, atualize o saldo daquela conta. Sem isso, o app mostra um prejuízo que não existe.</p>
+<p><strong>Aporte não é reinvestimento de dividendo.</strong> O dinheiro já estava na carteira.</p>
+<h2 id="o-que-esta-tela-nao-faz">O que esta tela NÃO faz<a class="anc" href="#o-que-esta-tela-nao-faz" aria-label="Link para esta seção">#</a></h2>
+<ul><li>Não cria compras de ativos. Aporte é só o dinheiro.</li><li>Não busca extrato bancário.</li><li>Não converte moeda automaticamente — você informa os valores das duas pontas.</li></ul>
+      </div>
+      <p class="legalnote">Manual do usuário do Fólio Invest — descreve o comportamento do app na versão indicada no topo. Conteúdo informativo e educativo: não é consultoria tributária, contábil ou de investimentos, não é recomendação de compra, venda ou manutenção de qualquer ativo, e não substitui a orientação de um profissional para o seu caso concreto. Quando o capítulo traz regra tributária, ela foi verificada nas fontes oficiais na data indicada no próprio capítulo. A responsabilidade pela declaração é do contribuinte.</p>
+      <nav class="pager" aria-label="Navegação entre capítulos">
+<a href="/manual/operacoes/"><span class="k">← Capítulo anterior</span><span class="t">7. Operações</span></a>
+<a class="nx" href="/manual/posicoes-de-patrimonio/"><span class="k">Próximo capítulo →</span><span class="t">9. Posições de patrimônio</span></a>
+      </nav>
+    </article>
+<aside class="rail"><div class="stick"><p class="rt">Neste capítulo</p><ol><li><a href="#os-quatro-tipos-de-movimento">Os quatro tipos de movimento</a></li><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#como-registrar-um-aporte-em-reais">Como registrar um aporte em reais</a></li><li><a href="#como-registrar-uma-compra-de-dolar">Como registrar uma compra de dólar</a></li><li><a href="#vincular-um-movimento-a-uma-posicao">Vincular um movimento a uma posição</a></li><li><a href="#a-tela-e-seus-blocos">A tela e seus blocos</a></li><li><a href="#o-cartao-resgates-podem-ter-sido-realocacoes">O cartão "resgates podem ter sido realocações"</a></li><li><a href="#o-filtro-sem-vinculo">O filtro "Sem vínculo"</a></li><li><a href="#como-excluir-um-lancamento">Como excluir um lançamento</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></div></aside>
+  </div>
+</main>
+<footer id="contato">
+  <div class="wrap">
+    <div class="ftgrid">
+      <div>
+        <a class="brand" href="/" aria-label="Fólio Invest — início">
+          <span class="mk" aria-hidden="true"><svg viewBox="19 20 70 70" fill="none"><path d="M32,76 V37 a3,3 0 0 1 3,-3 H58 M32,55 H52" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5,68.5 V71.5 M65.5,58.5 V71.5 M77.5,46.5 V71.5" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg></span>
+          Fólio Invest
+        </a>
+        <p class="fdesc">App Android para organizar carteira, dividendos e Imposto de Renda do investidor pessoa física. Offline, sem cadastro, sem servidores.</p>
+      </div>
+      <div>
+        <h5>Conteúdo</h5>
+        <a class="fl" href="/guias/">Guias de imposto de renda</a>
+        <a class="fl" href="/manual/">Manual do usuário</a>
+        <a class="fl" href="/#func">Funcionalidades</a>
+      </div>
+      <div>
+        <h5>Contato</h5>
+        <a class="fl" href="/suporte/">Suporte</a>
+        <a class="fl" href="mailto:suporte@folioinvest.com.br">suporte@folioinvest.com.br</a>
+        <a class="fl" href="/privacidade/">Política de Privacidade</a>
+        <a class="fl" href="/assinatura/">Termo de Assinatura</a>
+      </div>
+    </div>
+    <div class="legal">
+      <p><strong>Aviso legal:</strong> o Fólio é uma ferramenta informativa e de organização. Não é recomendação de investimento, não é orientação tributária e não substitui consultoria profissional.</p>
+      <p>Cotações podem ter atrasos. O preenchimento correto dos dados e a conferência dos resultados são de responsabilidade exclusiva do usuário. Sempre confira com sua corretora, a B3 e a Receita Federal.</p>
+      <p style="opacity:.8">© 2026 Fólio Invest · LS Mundim Tecnologia LTDA · CNPJ 67.504.827/0001-03.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

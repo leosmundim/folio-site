@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!--
+  ARQUIVO GERADO — NAO EDITE A MAO.
+  Fonte: app-investimentos/docs/ (conteudo-site/ e manual/).
+  Regerar: powershell -File docs\site-build\build-site.ps1
+  Editar aqui e perder na proxima geracao; pior, o site passa a divergir do
+  manual que integra o contrato (J-11 / CDC art. 30).
+-->
+
+<title>Importações — Manual do Fólio Invest</title>
+<meta name="description" content="trazer dados em lote, em vez de digitar um por um.">
+<meta name="theme-color" content="#1E3A8A">
+<link rel="canonical" href="https://folioinvest.com.br/manual/importacoes/">
+
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/img/icon-512.png">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fólio Invest">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://folioinvest.com.br/manual/importacoes/">
+<meta property="og:title" content="Importações — Manual do Fólio Invest">
+<meta property="og:description" content="trazer dados em lote, em vez de digitar um por um.">
+<meta property="og:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Importações — Manual do Fólio Invest">
+<meta name="twitter:description" content="trazer dados em lote, em vez de digitar um por um.">
+<meta name="twitter:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
+
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"TechArticle",
+"headline":"Importações",
+"description":"trazer dados em lote, em vez de digitar um por um.",
+"inLanguage":"pt-BR",
+"dateModified":"2026-07-29",
+"mainEntityOfPage":{"@type":"WebPage","@id":"https://folioinvest.com.br/manual/importacoes/"},
+"author":{"@type":"Organization","name":"Fólio Invest"},
+"publisher":{"@type":"Organization","name":"Fólio Invest","url":"https://folioinvest.com.br/"},
+"about":{"@type":"SoftwareApplication","name":"Fólio Invest",
+"applicationCategory":"FinanceApplication","operatingSystem":"Android",
+"softwareVersion":"0.62.1"},
+"isAccessibleForFree":true},
+{"@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Início","item":"https://folioinvest.com.br/"},
+    {"@type":"ListItem","position":2,"name":"Manual","item":"https://folioinvest.com.br/manual/"},
+    {"@type":"ListItem","position":3,"name":"11. Importações","item":"https://folioinvest.com.br/manual/importacoes/"}
+]}
+]}
+</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Fólio Invest — início">
+      <span class="mk" aria-hidden="true"><svg viewBox="19 20 70 70" fill="none"><path d="M32,76 V37 a3,3 0 0 1 3,-3 H58 M32,55 H52" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5,68.5 V71.5 M65.5,58.5 V71.5 M77.5,46.5 V71.5" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg></span>
+      Fólio Invest
+    </a>
+    <div class="navlinks">
+      <a href="/#func">Funcionalidades</a>
+      <a href="/guias/">Guias de IR</a>
+      <a href="/manual/" aria-current="page">Manual</a>
+      <a href="/#priv">Privacidade</a>
+      <a href="/#faq">FAQ</a>
+    </div>
+  </div>
+</nav>
+<main id="conteudo">
+  <div class="wrap">
+<nav class="crumb" aria-label="Trilha"><ol><li><a href="/">Início</a></li><li><a href="/manual/">Manual</a></li><li aria-current="page">11. Importações</li></ol></nav>
+  </div>
+  <div class="wrap page">
+    <article>
+      <p class="eyebrow">Manual do usuário · Capítulo 11</p>
+      <h1>Importações</h1>
+      <p class="verhdr"><em>Este capítulo descreve o Fólio Invest na versão <strong>0.62.1</strong>. Se o seu app estiver em outra versão, um detalhe de tela ou de comportamento pode ser diferente.</em></p>
+      <div class="docmeta">
+        <span class="tag">No app: vários pontos</span>
+      </div>
+<details class="toc"><summary>Neste capítulo</summary><ol><li><a href="#1-operacoes-extrato-da-b3">1. Operações — extrato da B3</a></li><li><a href="#2-operacoes-csv-proprio">2. Operações — CSV próprio</a></li><li><a href="#3-proventos">3. Proventos</a></li><li><a href="#4-movimentos-aportes-resgates-realocacoes-conversoes">4. Movimentos (aportes, resgates, realocações, conversões)</a></li><li><a href="#5-saldos-de-posicoes-de-patrimonio">5. Saldos de posições de patrimônio</a></li><li><a href="#o-que-e-comum-a-todas">O que é comum a todas</a></li><li><a href="#o-que-estas-telas-nao-fazem">O que estas telas NÃO fazem</a></li></ol></details>
+      <div class="body">
+<div class="callout serve">
+<p class="ct"><span aria-hidden="true">🎯</span> Para que serve</p>
+<p>trazer dados em lote, em vez de digitar um por um.</p>
+</div>
+<p>O Fólio tem <strong>cinco</strong> telas de importação, cada uma para um assunto e em um lugar diferente. Esta é a tabela que resolve a maior parte das dúvidas:</p>
+<div class="tablewrap"><table><thead><tr><th>O que você quer importar</th><th>Onde fica</th></tr></thead><tbody><tr><td>Compras e vendas (extrato B3 <code>.xlsx</code> ou CSV)</td><td><strong>⋮</strong> › Importar CSV / B3</td></tr><tr><td>Proventos (relatório B3 <code>.xlsx</code> ou CSV)</td><td>Dividendos › <strong>Importar proventos via CSV</strong></td></tr><tr><td>Aportes, resgates, realocações e conversões</td><td>Aportes › <strong>Importar</strong></td></tr><tr><td>Saldos mensais de posições de patrimônio</td><td>Posições de patrimônio › <strong>Importar</strong></td></tr><tr><td>Backup completo do app</td><td><strong>⋮</strong> › Backup › Importar (ver <a href="/manual/backup/">capítulo 12</a>)</td></tr></tbody></table></div>
+<p><strong>O padrão de todas elas é o mesmo:</strong> você escolhe o arquivo, o app <strong>analisa e mostra um resumo</strong>, e só depois você confirma. Nada entra sem a sua confirmação.</p>
+<h2 id="1-operacoes-extrato-da-b3">1. Operações — extrato da B3<a class="anc" href="#1-operacoes-extrato-da-b3" aria-label="Link para esta seção">#</a></h2>
+<p>Caminho: <strong>⋮</strong> › <strong>Importar CSV / B3</strong>.</p>
+<ol><li>No portal ou app da B3, baixe o relatório <strong>Negociação de Ativos</strong> (<code>.xlsx</code>).</li><li>No Fólio, toque em <strong>Selecionar extrato B3</strong>.</li><li>Escolha o arquivo.</li><li>Confira o resumo: compras novas, vendas, duplicadas e linhas ignoradas.</li><li>Toque em <strong>Importar N</strong>.</li><li>Ao final, o app mostra quantas compras e vendas entraram e oferece <strong>Ver carteira</strong>.</li></ol>
+<p>⚠️ <strong>A classe do ativo é inferida pelo ticker.</strong> O app avisa isso na tela de conferência. Confira as classes antes de confirmar — um ativo classificado errado muda a apuração de imposto.</p>
+<h2 id="2-operacoes-csv-proprio">2. Operações — CSV próprio<a class="anc" href="#2-operacoes-csv-proprio" aria-label="Link para esta seção">#</a></h2>
+<p>Mesma tela, cartão <strong>CSV de operações</strong>. Use para trazer histórico de outras fontes.</p>
+<p>Toque em <strong>Baixar modelo (.csv)</strong> — o app salva um arquivo com o cabeçalho pronto. Abra no Excel ou no Google Sheets e preencha.</p>
+<div class="tablewrap"><table><thead><tr><th>Coluna</th><th>Obrigatória</th><th>O que colocar</th></tr></thead><tbody><tr><td><code>tipo</code></td><td>sim</td><td>ACOES / FII / ETF / BDR / USA / OPCOES / CRIPTO</td></tr><tr><td><code>papel</code></td><td>sim</td><td>ex.: ITSA4</td></tr><tr><td><code>quantidade</code></td><td>sim</td><td>número</td></tr><tr><td><code>dataCompra</code></td><td>sim</td><td>dd/mm/aaaa</td></tr><tr><td><code>precoCompra</code></td><td>sim</td><td>preço unitário (vírgula ou ponto)</td></tr><tr><td><code>custos</code></td><td>não</td><td>taxas</td></tr><tr><td><code>setor</code></td><td>não</td><td>livre</td></tr><tr><td><code>usdCompra</code> / <code>usdVenda</code></td><td>não</td><td>câmbio; <strong>em branco = o app busca a PTAX do BCB pela data</strong></td></tr><tr><td><code>dataVenda</code> / <code>precoVenda</code> / <code>qtdeVenda</code></td><td>não</td><td>preencha para trazer a venda na mesma linha</td></tr><tr><td><code>dayTrade</code> / <code>isentaIr</code></td><td>não</td><td>SIM / NAO</td></tr><tr><td><code>moeda</code></td><td>não</td><td>BRL/USD — só para cripto em US$ (exige <code>usdCompra</code> na linha)</td></tr></tbody></table></div>
+<h2 id="3-proventos">3. Proventos<a class="anc" href="#3-proventos" aria-label="Link para esta seção">#</a></h2>
+<p>Caminho: aba <strong>Dividendos</strong> › <strong>Importar proventos via CSV</strong>.</p>
+<p>Dois caminhos na mesma tela:</p>
+<p><strong>Relatório de Proventos da B3 (<code>.xlsx</code>)</strong> — baixe na área do investidor da B3 e toque em <strong>Importar relatório B3 (.xlsx)</strong>. Na conferência, o app marca:</p>
+<ul><li>linhas <strong>já existentes</strong> (desmarcadas automaticamente);</li><li>linhas <strong>ambíguas</strong>, em que o tipo de provento precisa da sua revisão;</li><li>linhas ignoradas e linhas com erro.</li></ul>
+<p><strong>CSV de proventos</strong> — toque em <strong>Baixar modelo (.csv)</strong>.</p>
+<div class="tablewrap"><table><thead><tr><th>Coluna</th><th>Obrigatória</th><th>O que colocar</th></tr></thead><tbody><tr><td><code>papel</code></td><td>sim</td><td>ex.: ITSA4, AAPL</td></tr><tr><td><code>tipoAtivo</code></td><td>sim</td><td>ACOES, FII, ETF, BDR, USA, OPCOES</td></tr><tr><td><code>tipoProvento</code></td><td>sim</td><td>DIVIDENDO, JCP, RENDIMENTO_FII, RENDIMENTO_RF…</td></tr><tr><td><code>dataPagamento</code></td><td>sim</td><td>dd/mm/aaaa</td></tr><tr><td><code>valor</code></td><td>sim</td><td>valor recebido</td></tr><tr><td><code>observacao</code></td><td>não</td><td>livre</td></tr><tr><td><code>valorUsd</code> / <code>ptax</code></td><td>não</td><td>exterior: US$ + câmbio (em branco = PTAX do BCB)</td></tr><tr><td><code>impostoPagoExterior</code></td><td>não</td><td>IR pago no exterior</td></tr><tr><td><code>classeExterior</code></td><td>não</td><td>ACAO / ETF / BOND / FUNDO</td></tr></tbody></table></div>
+<p>⚠️ A tela avisa: <strong>em JCP, informe o valor líquido</strong> (já com o imposto retido).</p>
+<h2 id="4-movimentos-aportes-resgates-realocacoes-conversoes">4. Movimentos (aportes, resgates, realocações, conversões)<a class="anc" href="#4-movimentos-aportes-resgates-realocacoes-conversoes" aria-label="Link para esta seção">#</a></h2>
+<p>Caminho: <strong>Patrimônio</strong> › <strong>Gerenciar aportes</strong> › <strong>Importar</strong>.</p>
+<p><strong>Um arquivo só</strong> cobre aportes e resgates em R$, em US$ e conversões.</p>
+<div class="tablewrap"><table><thead><tr><th>Coluna</th><th>Obrigatória</th><th>O que colocar</th></tr></thead><tbody><tr><td><code>data</code></td><td>sim</td><td>dd/mm/aaaa</td></tr><tr><td><code>valor_brl</code></td><td>sim</td><td>reais (negativo = resgate)</td></tr><tr><td><code>valor_usd</code></td><td>não</td><td>dólar (vazio = só reais)</td></tr><tr><td><code>taxas</code></td><td>não</td><td>IOF / taxas</td></tr><tr><td><code>tipo</code></td><td>não</td><td>aporte / resgate / realocacao / conversao</td></tr><tr><td><code>observacao</code></td><td>não</td><td>livre</td></tr><tr><td><code>posicao</code></td><td>não</td><td>nome do ativo, para ligar o movimento a uma posição</td></tr></tbody></table></div>
+<p><strong>Se <code>tipo</code> ficar em branco:</strong> com <code>valor_usd</code> preenchido, o app assume conversão; sem <code>valor_usd</code>, o sinal de <code>valor_brl</code> decide (positivo = aporte, negativo = resgate).</p>
+<p><strong>Sobre a coluna <code>posicao</code>:</strong> escreva o nome do ativo como está em Posições de patrimônio (acento e maiúsculas não importam). Em branco, o movimento fica no caixa geral — entra no patrimônio, mas não nas fichas do IRPF que dependem de saber a que aplicação ele pertence.</p>
+<p><strong>Se o nome não existir</strong>, nada é perdido: o movimento entra no caixa geral, o app avisa qual nome não encontrou, e você vincula depois. Ao final, o atalho <strong>Ver os N movimentos →</strong> abre a lista já filtrada em "Sem vínculo".</p>
+<h2 id="5-saldos-de-posicoes-de-patrimonio">5. Saldos de posições de patrimônio<a class="anc" href="#5-saldos-de-posicoes-de-patrimonio" aria-label="Link para esta seção">#</a></h2>
+<p>Caminho: <strong>Patrimônio</strong> › <strong>Gerenciar posições de patrimônio</strong> › <strong>Importar</strong>.</p>
+<p>Cada linha é <strong>o saldo de fechamento de uma posição num mês</strong>.</p>
+<div class="tablewrap"><table><thead><tr><th>Coluna</th><th>Obrigatória</th><th>O que colocar</th></tr></thead><tbody><tr><td><code>classe</code></td><td>sim</td><td>FUNDO, CDB, TESOURO…</td></tr><tr><td><code>instituicao</code></td><td>sim</td><td>ex.: NuInvest</td></tr><tr><td><code>nomeAtivo</code></td><td>sim</td><td>ex.: Tesouro Selic 2029</td></tr><tr><td><code>competencia</code></td><td>sim</td><td>mm/aaaa (aceita dd/mm/aaaa do Excel)</td></tr><tr><td><code>saldo</code></td><td>sim</td><td>fechamento do mês</td></tr><tr><td><code>valorAplicado</code></td><td>não</td><td><strong>só na 1ª linha de um ativo novo</strong></td></tr><tr><td><code>dataAplicacao</code></td><td>não</td><td>dd/mm/aaaa · 1ª linha de ativo novo</td></tr><tr><td><code>moeda</code></td><td>não</td><td>BRL/USD · só para ativo em US$ (1ª linha)</td></tr><tr><td><code>ptaxAplicacao</code></td><td>não</td><td>câmbio fiscal da aplicação · US$ (1ª linha)</td></tr></tbody></table></div>
+<p>A importação <strong>cria posições que ainda não existem</strong>. Na conferência, o app mostra quantos saldos e quantas posições novas vai criar, e oferece o interruptor <strong>Registrar aportes para as N posições novas</strong> — que cria um aporte por posição nova, na data de aplicação de cada uma.</p>
+<h2 id="o-que-e-comum-a-todas">O que é comum a todas<a class="anc" href="#o-que-e-comum-a-todas" aria-label="Link para esta seção">#</a></h2>
+<h3 id="o-app-avisou-n-linhas-ignoradas-perdi-dados">O app avisou "N linhas ignoradas". Perdi dados?<a class="anc" href="#o-app-avisou-n-linhas-ignoradas-perdi-dados" aria-label="Link para esta seção">#</a></h3>
+<p>Não. Essas linhas simplesmente não entraram. Toque para abrir a caixa: ela mostra o número da linha, o motivo e o conteúdo original. Corrija no arquivo e importe de novo.</p>
+<h3 id="se-eu-importar-duas-vezes-vai-duplicar">Se eu importar duas vezes, vai duplicar?<a class="anc" href="#se-eu-importar-duas-vezes-vai-duplicar" aria-label="Link para esta seção">#</a></h3>
+<p>As telas de importação detectam registros já existentes e <strong>desmarcam ou pulam</strong> as duplicatas — o resumo de conferência mostra quantas foram. Mesmo assim, confira o número na tela antes de confirmar.</p>
+<h3 id="preciso-importar-as-posicoes-antes-dos-movimentos">Preciso importar as posições antes dos movimentos?<a class="anc" href="#preciso-importar-as-posicoes-antes-dos-movimentos" aria-label="Link para esta seção">#</a></h3>
+<p>Não. Se a coluna <code>posicao</code> citar um nome que ainda não existe, o movimento entra no caixa geral e você vincula depois.</p>
+<h2 id="o-que-estas-telas-nao-fazem">O que estas telas NÃO fazem<a class="anc" href="#o-que-estas-telas-nao-fazem" aria-label="Link para esta seção">#</a></h2>
+<ul><li>Não conectam com a corretora nem com a B3. Você baixa o arquivo e envia.</li><li>Não aceitam nota de corretagem em PDF.</li><li>Não corrigem o conteúdo do arquivo. Erro no arquivo vira linha ignorada.</li><li>Não apagam nada: importar <strong>acrescenta</strong>. Quem substitui tudo é o <a href="/manual/backup/">Backup</a>.</li></ul>
+      </div>
+      <p class="legalnote">Manual do usuário do Fólio Invest — descreve o comportamento do app na versão indicada no topo. Conteúdo informativo e educativo: não é consultoria tributária, contábil ou de investimentos, não é recomendação de compra, venda ou manutenção de qualquer ativo, e não substitui a orientação de um profissional para o seu caso concreto. Quando o capítulo traz regra tributária, ela foi verificada nas fontes oficiais na data indicada no próprio capítulo. A responsabilidade pela declaração é do contribuinte.</p>
+      <nav class="pager" aria-label="Navegação entre capítulos">
+<a href="/manual/eventos-corporativos/"><span class="k">← Capítulo anterior</span><span class="t">10. Eventos corporativos</span></a>
+<a class="nx" href="/manual/backup/"><span class="k">Próximo capítulo →</span><span class="t">12. Backup</span></a>
+      </nav>
+    </article>
+<aside class="rail"><div class="stick"><p class="rt">Neste capítulo</p><ol><li><a href="#1-operacoes-extrato-da-b3">1. Operações — extrato da B3</a></li><li><a href="#2-operacoes-csv-proprio">2. Operações — CSV próprio</a></li><li><a href="#3-proventos">3. Proventos</a></li><li><a href="#4-movimentos-aportes-resgates-realocacoes-conversoes">4. Movimentos (aportes, resgates, realocações, conversões)</a></li><li><a href="#5-saldos-de-posicoes-de-patrimonio">5. Saldos de posições de patrimônio</a></li><li><a href="#o-que-e-comum-a-todas">O que é comum a todas</a></li><li><a href="#o-que-estas-telas-nao-fazem">O que estas telas NÃO fazem</a></li></ol></div></aside>
+  </div>
+</main>
+<footer id="contato">
+  <div class="wrap">
+    <div class="ftgrid">
+      <div>
+        <a class="brand" href="/" aria-label="Fólio Invest — início">
+          <span class="mk" aria-hidden="true"><svg viewBox="19 20 70 70" fill="none"><path d="M32,76 V37 a3,3 0 0 1 3,-3 H58 M32,55 H52" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5,68.5 V71.5 M65.5,58.5 V71.5 M77.5,46.5 V71.5" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg></span>
+          Fólio Invest
+        </a>
+        <p class="fdesc">App Android para organizar carteira, dividendos e Imposto de Renda do investidor pessoa física. Offline, sem cadastro, sem servidores.</p>
+      </div>
+      <div>
+        <h5>Conteúdo</h5>
+        <a class="fl" href="/guias/">Guias de imposto de renda</a>
+        <a class="fl" href="/manual/">Manual do usuário</a>
+        <a class="fl" href="/#func">Funcionalidades</a>
+      </div>
+      <div>
+        <h5>Contato</h5>
+        <a class="fl" href="/suporte/">Suporte</a>
+        <a class="fl" href="mailto:suporte@folioinvest.com.br">suporte@folioinvest.com.br</a>
+        <a class="fl" href="/privacidade/">Política de Privacidade</a>
+        <a class="fl" href="/assinatura/">Termo de Assinatura</a>
+      </div>
+    </div>
+    <div class="legal">
+      <p><strong>Aviso legal:</strong> o Fólio é uma ferramenta informativa e de organização. Não é recomendação de investimento, não é orientação tributária e não substitui consultoria profissional.</p>
+      <p>Cotações podem ter atrasos. O preenchimento correto dos dados e a conferência dos resultados são de responsabilidade exclusiva do usuário. Sempre confira com sua corretora, a B3 e a Receita Federal.</p>
+      <p style="opacity:.8">© 2026 Fólio Invest · LS Mundim Tecnologia LTDA · CNPJ 67.504.827/0001-03.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

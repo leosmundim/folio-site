@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!--
+  ARQUIVO GERADO — NAO EDITE A MAO.
+  Fonte: app-investimentos/docs/ (conteudo-site/ e manual/).
+  Regerar: powershell -File docs\site-build\build-site.ps1
+  Editar aqui e perder na proxima geracao; pior, o site passa a divergir do
+  manual que integra o contrato (J-11 / CDC art. 30).
+-->
+
+<title>Backup — Manual do Fólio Invest</title>
+<meta name="description" content="salvar uma cópia de tudo o que você lançou, e trazer de volta se precisar.">
+<meta name="theme-color" content="#1E3A8A">
+<link rel="canonical" href="https://folioinvest.com.br/manual/backup/">
+
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/img/icon-512.png">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fólio Invest">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://folioinvest.com.br/manual/backup/">
+<meta property="og:title" content="Backup — Manual do Fólio Invest">
+<meta property="og:description" content="salvar uma cópia de tudo o que você lançou, e trazer de volta se precisar.">
+<meta property="og:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Backup — Manual do Fólio Invest">
+<meta name="twitter:description" content="salvar uma cópia de tudo o que você lançou, e trazer de volta se precisar.">
+<meta name="twitter:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
+
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"TechArticle",
+"headline":"Backup",
+"description":"salvar uma cópia de tudo o que você lançou, e trazer de volta se precisar.",
+"inLanguage":"pt-BR",
+"dateModified":"2026-07-29",
+"mainEntityOfPage":{"@type":"WebPage","@id":"https://folioinvest.com.br/manual/backup/"},
+"author":{"@type":"Organization","name":"Fólio Invest"},
+"publisher":{"@type":"Organization","name":"Fólio Invest","url":"https://folioinvest.com.br/"},
+"about":{"@type":"SoftwareApplication","name":"Fólio Invest",
+"applicationCategory":"FinanceApplication","operatingSystem":"Android",
+"softwareVersion":"0.62.1"},
+"isAccessibleForFree":true},
+{"@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Início","item":"https://folioinvest.com.br/"},
+    {"@type":"ListItem","position":2,"name":"Manual","item":"https://folioinvest.com.br/manual/"},
+    {"@type":"ListItem","position":3,"name":"12. Backup","item":"https://folioinvest.com.br/manual/backup/"}
+]}
+]}
+</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Fólio Invest — início">
+      <span class="mk" aria-hidden="true"><svg viewBox="19 20 70 70" fill="none"><path d="M32,76 V37 a3,3 0 0 1 3,-3 H58 M32,55 H52" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5,68.5 V71.5 M65.5,58.5 V71.5 M77.5,46.5 V71.5" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg></span>
+      Fólio Invest
+    </a>
+    <div class="navlinks">
+      <a href="/#func">Funcionalidades</a>
+      <a href="/guias/">Guias de IR</a>
+      <a href="/manual/" aria-current="page">Manual</a>
+      <a href="/#priv">Privacidade</a>
+      <a href="/#faq">FAQ</a>
+    </div>
+  </div>
+</nav>
+<main id="conteudo">
+  <div class="wrap">
+<nav class="crumb" aria-label="Trilha"><ol><li><a href="/">Início</a></li><li><a href="/manual/">Manual</a></li><li aria-current="page">12. Backup</li></ol></nav>
+  </div>
+  <div class="wrap page">
+    <article>
+      <p class="eyebrow">Manual do usuário · Capítulo 12</p>
+      <h1>Backup</h1>
+      <p class="verhdr"><em>Este capítulo descreve o Fólio Invest na versão <strong>0.62.1</strong>. Se o seu app estiver em outra versão, um detalhe de tela ou de comportamento pode ser diferente.</em></p>
+      <div class="docmeta">
+        <span class="tag">No app: Mais opções</span>
+      </div>
+<details class="toc"><summary>Neste capítulo</summary><ol><li><a href="#por-que-isso-importa-mais-aqui-do-que-em-outros-apps">Por que isso importa mais aqui do que em outros apps</a></li><li><a href="#a-tela-tem-duas-partes">A tela tem duas partes</a></li><li><a href="#perguntas-frequentes">Perguntas frequentes</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></details>
+      <div class="body">
+<div class="callout serve">
+<p class="ct"><span aria-hidden="true">🎯</span> Para que serve</p>
+<p>salvar uma cópia de tudo o que você lançou, e trazer de volta se precisar.</p>
+</div>
+<p>Como chegar: <strong>⋮</strong> › <strong>Backup</strong>.</p>
+<h2 id="por-que-isso-importa-mais-aqui-do-que-em-outros-apps">Por que isso importa mais aqui do que em outros apps<a class="anc" href="#por-que-isso-importa-mais-aqui-do-que-em-outros-apps" aria-label="Link para esta seção">#</a></h2>
+<p>O Fólio <strong>não tem servidor</strong>. Seus dados estão no seu celular e em mais lugar nenhum. Se você trocar de aparelho, perder o celular ou desinstalar o app sem backup, os lançamentos vão junto.</p>
+<p><strong>Faça um backup manual e guarde fora do celular.</strong></p>
+<h2 id="a-tela-tem-duas-partes">A tela tem duas partes<a class="anc" href="#a-tela-tem-duas-partes" aria-label="Link para esta seção">#</a></h2>
+<h3 id="1-backup-manual">1. Backup manual<a class="anc" href="#1-backup-manual" aria-label="Link para esta seção">#</a></h3>
+<p>Você exporta um arquivo e escolhe onde guardar (Drive, OneDrive, cartão…).</p>
+<p><strong>Como exportar:</strong></p>
+<ol><li>Decida se quer <strong>Proteger com senha</strong> (interruptor).</li><li>Se sim, digite uma senha de no mínimo 8 caracteres.</li><li>Toque em <strong>Exportar</strong>.</li><li>O Android abre o seletor de pastas; escolha o destino e confirme.</li></ol>
+<p>O nome do arquivo já vem com a data: <code>carteira-backup-AAAA-MM-DD.json</code> (sem senha) ou <code>carteira-backup-AAAA-MM-DD.foliobak</code> (com senha).</p>
+<p>⚠️ <strong>Não há recuperação de senha.</strong> A própria tela avisa: se você esquecer a senha, o arquivo não pode ser restaurado. Ninguém — nem o suporte — consegue abrir.</p>
+<p><strong>Como restaurar:</strong></p>
+<ol><li>Toque em <strong>Importar</strong>.</li><li>Escolha o arquivo.</li><li>Se ele for protegido, o app pede a senha.</li><li>Aparece a confirmação <strong>"Confirmar restauração"</strong>, dizendo o que o arquivo contém.</li><li>Toque em <strong>Substituir tudo</strong>.</li></ol>
+<p>🔴 <strong>Restaurar substitui tudo.</strong> Todas as suas operações atuais são apagadas e trocadas pelas do backup. Não é mesclagem. Não dá para desfazer.</p>
+<h3 id="2-backups-automaticos">2. Backups automáticos<a class="anc" href="#2-backups-automaticos" aria-label="Link para esta seção">#</a></h3>
+<p>O app guarda <strong>1 backup por dia, os 5 mais recentes, cifrados no aparelho</strong>. É uma rede de segurança contra erro e corrupção de dados.</p>
+<p>Cada item da lista tem um botão para restaurar. Vale o mesmo alerta: restaurar substitui tudo.</p>
+<p><strong>Eles ficam no celular.</strong> Não protegem contra perder ou trocar o aparelho — para isso, só o backup manual guardado fora.</p>
+<h2 id="perguntas-frequentes">Perguntas frequentes<a class="anc" href="#perguntas-frequentes" aria-label="Link para esta seção">#</a></h2>
+<h3 id="troquei-de-celular-como-levo-minha-carteira">Troquei de celular. Como levo minha carteira?<a class="anc" href="#troquei-de-celular-como-levo-minha-carteira" aria-label="Link para esta seção">#</a></h3>
+<ol><li>No celular antigo: <strong>⋮</strong> › Backup › <strong>Exportar</strong> e salve no Drive.</li><li>Instale o Fólio no celular novo e aceite o aviso legal.</li><li><strong>⋮</strong> › Backup › <strong>Importar</strong>, escolha o arquivo do Drive.</li><li>Confirme <strong>Substituir tudo</strong> (o app novo está vazio mesmo).</li></ol>
+<h3 id="o-que-vai-dentro-do-backup">O que vai dentro do backup?<a class="anc" href="#o-que-vai-dentro-do-backup" aria-label="Link para esta seção">#</a></h3>
+<p>Todos os seus lançamentos: compras, vendas, proventos, eventos corporativos, aportes em R$ e US$, posições de patrimônio com os saldos mensais e compras de dólar.</p>
+<h3 id="o-backup-e-seguro-para-guardar-no-drive">O backup é seguro para guardar no Drive?<a class="anc" href="#o-backup-e-seguro-para-guardar-no-drive" aria-label="Link para esta seção">#</a></h3>
+<p>O arquivo contém os seus dados de carteira. Se isso te preocupa, ligue <strong>Proteger com senha</strong> antes de exportar — aí o arquivo sai cifrado e só abre com a senha.</p>
+<h3 id="o-android-tambem-faz-backup-do-app-sozinho">O Android também faz backup do app sozinho?<a class="anc" href="#o-android-tambem-faz-backup-do-app-sozinho" aria-label="Link para esta seção">#</a></h3>
+<p>Sim, se o backup automático do Android estiver ligado no aparelho: o próprio sistema pode copiar os dados do app para o <strong>seu</strong> Google Drive, de forma criptografada. Isso é do Android, não do Fólio, e o desenvolvedor não tem acesso a esse backup. Está descrito no <em>Aviso legal</em>, item 5.</p>
+<h3 id="restaurei-o-backup-errado-e-agora">Restaurei o backup errado. E agora?<a class="anc" href="#restaurei-o-backup-errado-e-agora" aria-label="Link para esta seção">#</a></h3>
+<p>Se você tem um backup mais recente, restaure ele. Se não, veja se algum dos <strong>backups automáticos</strong> do aparelho serve. Fora isso, não há como voltar.</p>
+<h2 id="o-que-costuma-confundir">O que costuma confundir<a class="anc" href="#o-que-costuma-confundir" aria-label="Link para esta seção">#</a></h2>
+<p><strong>"Importar" aqui não é a mesma coisa que "Importar CSV / B3".</strong> Este importa um backup e <strong>substitui tudo</strong>. O outro acrescenta operações. São telas diferentes.</p>
+<p><strong>Exportar não apaga nada</strong> — é só uma cópia.</p>
+<h2 id="o-que-esta-tela-nao-faz">O que esta tela NÃO faz<a class="anc" href="#o-que-esta-tela-nao-faz" aria-label="Link para esta seção">#</a></h2>
+<ul><li>Não envia backup para nuvem nenhuma automaticamente. Você escolhe o destino a cada exportação.</li><li>Não mescla backups. É sempre substituição total.</li><li>Não recupera senha esquecida.</li><li>Não faz backup agendado para fora do aparelho.</li></ul>
+      </div>
+      <p class="legalnote">Manual do usuário do Fólio Invest — descreve o comportamento do app na versão indicada no topo. Conteúdo informativo e educativo: não é consultoria tributária, contábil ou de investimentos, não é recomendação de compra, venda ou manutenção de qualquer ativo, e não substitui a orientação de um profissional para o seu caso concreto. Quando o capítulo traz regra tributária, ela foi verificada nas fontes oficiais na data indicada no próprio capítulo. A responsabilidade pela declaração é do contribuinte.</p>
+      <nav class="pager" aria-label="Navegação entre capítulos">
+<a href="/manual/importacoes/"><span class="k">← Capítulo anterior</span><span class="t">11. Importações</span></a>
+<a class="nx" href="/manual/mais-opcoes/"><span class="k">Próximo capítulo →</span><span class="t">13. Mais opções e configurações</span></a>
+      </nav>
+    </article>
+<aside class="rail"><div class="stick"><p class="rt">Neste capítulo</p><ol><li><a href="#por-que-isso-importa-mais-aqui-do-que-em-outros-apps">Por que isso importa mais aqui do que em outros apps</a></li><li><a href="#a-tela-tem-duas-partes">A tela tem duas partes</a></li><li><a href="#perguntas-frequentes">Perguntas frequentes</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></div></aside>
+  </div>
+</main>
+<footer id="contato">
+  <div class="wrap">
+    <div class="ftgrid">
+      <div>
+        <a class="brand" href="/" aria-label="Fólio Invest — início">
+          <span class="mk" aria-hidden="true"><svg viewBox="19 20 70 70" fill="none"><path d="M32,76 V37 a3,3 0 0 1 3,-3 H58 M32,55 H52" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5,68.5 V71.5 M65.5,58.5 V71.5 M77.5,46.5 V71.5" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg></span>
+          Fólio Invest
+        </a>
+        <p class="fdesc">App Android para organizar carteira, dividendos e Imposto de Renda do investidor pessoa física. Offline, sem cadastro, sem servidores.</p>
+      </div>
+      <div>
+        <h5>Conteúdo</h5>
+        <a class="fl" href="/guias/">Guias de imposto de renda</a>
+        <a class="fl" href="/manual/">Manual do usuário</a>
+        <a class="fl" href="/#func">Funcionalidades</a>
+      </div>
+      <div>
+        <h5>Contato</h5>
+        <a class="fl" href="/suporte/">Suporte</a>
+        <a class="fl" href="mailto:suporte@folioinvest.com.br">suporte@folioinvest.com.br</a>
+        <a class="fl" href="/privacidade/">Política de Privacidade</a>
+        <a class="fl" href="/assinatura/">Termo de Assinatura</a>
+      </div>
+    </div>
+    <div class="legal">
+      <p><strong>Aviso legal:</strong> o Fólio é uma ferramenta informativa e de organização. Não é recomendação de investimento, não é orientação tributária e não substitui consultoria profissional.</p>
+      <p>Cotações podem ter atrasos. O preenchimento correto dos dados e a conferência dos resultados são de responsabilidade exclusiva do usuário. Sempre confira com sua corretora, a B3 e a Receita Federal.</p>
+      <p style="opacity:.8">© 2026 Fólio Invest · LS Mundim Tecnologia LTDA · CNPJ 67.504.827/0001-03.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

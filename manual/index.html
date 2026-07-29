@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!--
+  ARQUIVO GERADO — NAO EDITE A MAO.
+  Fonte: app-investimentos/docs/ (conteudo-site/ e manual/).
+  Regerar: powershell -File docs\site-build\build-site.ps1
+  Editar aqui e perder na proxima geracao; pior, o site passa a divergir do
+  manual que integra o contrato (J-11 / CDC art. 30).
+-->
+
+<title>Manual do usuário do Fólio Invest — como usar o app</title>
+<meta name="description" content="Os 14 capítulos do manual do Fólio Invest, tela por tela: carteira, patrimônio, dividendos, DARF mensal, relatório de IRPF, importações e backup.">
+<meta name="theme-color" content="#1E3A8A">
+<link rel="canonical" href="https://folioinvest.com.br/manual/">
+
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/img/icon-512.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fólio Invest">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://folioinvest.com.br/manual/">
+<meta property="og:title" content="Manual do usuário do Fólio Invest — como usar o app">
+<meta property="og:description" content="Os 14 capítulos do manual do Fólio Invest, tela por tela: carteira, patrimônio, dividendos, DARF mensal, relatório de IRPF, importações e backup.">
+<meta property="og:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Manual do usuário do Fólio Invest — como usar o app">
+<meta name="twitter:description" content="Os 14 capítulos do manual do Fólio Invest, tela por tela: carteira, patrimônio, dividendos, DARF mensal, relatório de IRPF, importações e backup.">
+<meta name="twitter:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
+
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"CollectionPage","name":"Manual do usuário do Fólio Invest","inLanguage":"pt-BR",
+"mainEntityOfPage":{"@type":"WebPage","@id":"https://folioinvest.com.br/manual/"},
+"publisher":{"@type":"Organization","name":"Fólio Invest","url":"https://folioinvest.com.br/"}},
+{"@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Início","item":"https://folioinvest.com.br/"},
+    {"@type":"ListItem","position":2,"name":"Manual","item":"https://folioinvest.com.br/manual/"}
+]}
+]}
+</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Fólio Invest — início">
+      <span class="mk" aria-hidden="true"><svg viewBox="19 20 70 70" fill="none"><path d="M32,76 V37 a3,3 0 0 1 3,-3 H58 M32,55 H52" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5,68.5 V71.5 M65.5,58.5 V71.5 M77.5,46.5 V71.5" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg></span>
+      Fólio Invest
+    </a>
+    <div class="navlinks">
+      <a href="/#func">Funcionalidades</a>
+      <a href="/guias/">Guias de IR</a>
+      <a href="/manual/" aria-current="page">Manual</a>
+      <a href="/#priv">Privacidade</a>
+      <a href="/#faq">FAQ</a>
+    </div>
+  </div>
+</nav>
+<main id="conteudo">
+  <header class="idxhero">
+    <div class="wrap">
+<nav class="crumb" aria-label="Trilha"><ol><li><a href="/">Início</a></li><li aria-current="page">Manual</li></ol></nav>
+      <p class="eyebrow">Manual do usuário</p>
+      <h1>Como usar o Fólio, tela por tela</h1>
+      <p>Manual escrito para quem está abrindo o app pela primeira vez, inclusive quem</p>
+      <p class="vs">Cobre a versão <strong>0.62.1</strong> do app.</p>
+    </div>
+  </header>
+  <div class="wrap">
+    <div class="chaps">
+      <a class="chap" href="/manual/primeiros-passos/"><span class="n">0</span><span class="tt">Primeiros passos</span><span class="wh">primeira abertura</span></a>
+      <a class="chap" href="/manual/inicio/"><span class="n">1</span><span class="tt">Início</span><span class="wh">1ª aba da barra de baixo</span></a>
+      <a class="chap" href="/manual/carteira/"><span class="n">2</span><span class="tt">Carteira</span><span class="wh">2ª aba</span></a>
+      <a class="chap" href="/manual/patrimonio/"><span class="n">3</span><span class="tt">Patrimônio</span><span class="wh">3ª aba</span></a>
+      <a class="chap" href="/manual/dividendos/"><span class="n">4</span><span class="tt">Dividendos <span class="sl" title="contém regra tributária">🧾</span></span><span class="wh">4ª aba</span></a>
+      <a class="chap" href="/manual/imposto-de-renda/"><span class="n">5</span><span class="tt">IR / DARF <span class="sl" title="contém regra tributária">🧾</span></span><span class="wh">5ª aba</span></a>
+      <a class="chap" href="/manual/relatorio-irpf/"><span class="n">6</span><span class="tt">Relatório anual de IRPF <span class="sl" title="contém regra tributária">🧾</span></span><span class="wh">dentro de IR</span></a>
+      <a class="chap" href="/manual/operacoes/"><span class="n">7</span><span class="tt">Operações <span class="sl" title="contém regra tributária">🧾</span></span><span class="wh">Mais opções</span></a>
+      <a class="chap" href="/manual/aportes/"><span class="n">8</span><span class="tt">Gerenciar aportes <span class="sl" title="contém regra tributária">🧾</span></span><span class="wh">Patrimônio → Gerenciar aportes</span></a>
+      <a class="chap" href="/manual/posicoes-de-patrimonio/"><span class="n">9</span><span class="tt">Posições de patrimônio <span class="sl" title="contém regra tributária">🧾</span></span><span class="wh">Patrimônio → Gerenciar posições</span></a>
+      <a class="chap" href="/manual/eventos-corporativos/"><span class="n">10</span><span class="tt">Eventos corporativos <span class="sl" title="contém regra tributária">🧾</span></span><span class="wh">Mais opções</span></a>
+      <a class="chap" href="/manual/importacoes/"><span class="n">11</span><span class="tt">Importações</span><span class="wh">vários pontos</span></a>
+      <a class="chap" href="/manual/backup/"><span class="n">12</span><span class="tt">Backup</span><span class="wh">Mais opções</span></a>
+      <a class="chap" href="/manual/mais-opcoes/"><span class="n">13</span><span class="tt">Mais opções e configurações <span class="sl" title="contém regra tributária">🧾</span></span><span class="wh">ícone ⋮</span></a>
+    </div>
+    <div class="callout fiscal" style="max-width:38rem;margin:0 0 20px">
+      <p class="ct"><span aria-hidden="true">🧾</span> Conteúdo fiscal</p>
+      <p>Os capítulos de Dividendos, IR, Relatório de IRPF, Operações, Aportes, Posições de patrimônio, Eventos corporativos e Mais opções trazem regra tributária, verificada nas fontes oficiais em 28/07/2026 e marcada com 🧾. Valores que mudam de ano em ano aparecem com ⏳; revisão prevista até 31/01/2027.</p>
+    </div>
+    <p style="max-width:38rem;color:var(--muted);margin:0 0 40px">Não achou o que
+      procurava? Escreva para o <a href="/suporte/">suporte</a> — respondemos em
+      até 5 dias.</p>
+<div class="appcta">
+<h3>O Fólio organiza esses números para você</h3>
+<p>App Android de carteira e imposto de renda: proventos mês a mês, DARF do mês e o relatório anual do IRPF. Offline, sem cadastro.</p>
+<span class="badge" role="button" aria-disabled="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M3.6 2.3 13 12 3.6 21.7c-.4-.2-.6-.6-.6-1.1V3.4c0-.5.2-.9.6-1.1Zm10.9 9 2.6-2.6 3.1 1.8c.8.5.8 1.5 0 2L17 14.3 14.5 11.3Zm-1.1 1.1 2.6 2.6-9.3 5.4 6.7-8Zm0-2.1L7 4.3 16.3 9.7l-2.9 0Z"/></svg> Em breve na Google Play</span>
+<p class="note">App em revisão para publicação. Quer ser avisado no lançamento? Escreva para <a href="mailto:contato@folioinvest.com.br">contato@folioinvest.com.br</a>.</p>
+</div>
+  </div>
+</main>
+<footer id="contato">
+  <div class="wrap">
+    <div class="ftgrid">
+      <div>
+        <a class="brand" href="/" aria-label="Fólio Invest — início">
+          <span class="mk" aria-hidden="true"><svg viewBox="19 20 70 70" fill="none"><path d="M32,76 V37 a3,3 0 0 1 3,-3 H58 M32,55 H52" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5,68.5 V71.5 M65.5,58.5 V71.5 M77.5,46.5 V71.5" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg></span>
+          Fólio Invest
+        </a>
+        <p class="fdesc">App Android para organizar carteira, dividendos e Imposto de Renda do investidor pessoa física. Offline, sem cadastro, sem servidores.</p>
+      </div>
+      <div>
+        <h5>Conteúdo</h5>
+        <a class="fl" href="/guias/">Guias de imposto de renda</a>
+        <a class="fl" href="/manual/">Manual do usuário</a>
+        <a class="fl" href="/#func">Funcionalidades</a>
+      </div>
+      <div>
+        <h5>Contato</h5>
+        <a class="fl" href="/suporte/">Suporte</a>
+        <a class="fl" href="mailto:suporte@folioinvest.com.br">suporte@folioinvest.com.br</a>
+        <a class="fl" href="/privacidade/">Política de Privacidade</a>
+        <a class="fl" href="/assinatura/">Termo de Assinatura</a>
+      </div>
+    </div>
+    <div class="legal">
+      <p><strong>Aviso legal:</strong> o Fólio é uma ferramenta informativa e de organização. Não é recomendação de investimento, não é orientação tributária e não substitui consultoria profissional.</p>
+      <p>Cotações podem ter atrasos. O preenchimento correto dos dados e a conferência dos resultados são de responsabilidade exclusiva do usuário. Sempre confira com sua corretora, a B3 e a Receita Federal.</p>
+      <p style="opacity:.8">© 2026 Fólio Invest · LS Mundim Tecnologia LTDA · CNPJ 67.504.827/0001-03.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

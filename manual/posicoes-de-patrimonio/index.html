@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!--
+  ARQUIVO GERADO — NAO EDITE A MAO.
+  Fonte: app-investimentos/docs/ (conteudo-site/ e manual/).
+  Regerar: powershell -File docs\site-build\build-site.ps1
+  Editar aqui e perder na proxima geracao; pior, o site passa a divergir do
+  manual que integra o contrato (J-11 / CDC art. 30).
+-->
+
+<title>Posições de patrimônio — Manual do Fólio Invest</title>
+<meta name="description" content="guarda os investimentos que não têm preço de tela — fundos, CDB, Tesouro, LCI, LCA, CRA, CRI, previdência e saldo em conta — e acompanha o saldo deles mês a…">
+<meta name="theme-color" content="#1E3A8A">
+<link rel="canonical" href="https://folioinvest.com.br/manual/posicoes-de-patrimonio/">
+
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/img/icon-512.png">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fólio Invest">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://folioinvest.com.br/manual/posicoes-de-patrimonio/">
+<meta property="og:title" content="Posições de patrimônio — Manual do Fólio Invest">
+<meta property="og:description" content="guarda os investimentos que não têm preço de tela — fundos, CDB, Tesouro, LCI, LCA, CRA, CRI, previdência e saldo em conta — e acompanha o saldo deles mês a…">
+<meta property="og:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Posições de patrimônio — Manual do Fólio Invest">
+<meta name="twitter:description" content="guarda os investimentos que não têm preço de tela — fundos, CDB, Tesouro, LCI, LCA, CRA, CRI, previdência e saldo em conta — e acompanha o saldo deles mês a…">
+<meta name="twitter:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
+
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"TechArticle",
+"headline":"Posições de patrimônio",
+"description":"guarda os investimentos que não têm preço de tela — fundos, CDB, Tesouro, LCI, LCA, CRA, CRI, previdência e saldo em conta — e acompanha o saldo deles mês a…",
+"inLanguage":"pt-BR",
+"dateModified":"2026-07-29",
+"mainEntityOfPage":{"@type":"WebPage","@id":"https://folioinvest.com.br/manual/posicoes-de-patrimonio/"},
+"author":{"@type":"Organization","name":"Fólio Invest"},
+"publisher":{"@type":"Organization","name":"Fólio Invest","url":"https://folioinvest.com.br/"},
+"about":{"@type":"SoftwareApplication","name":"Fólio Invest",
+"applicationCategory":"FinanceApplication","operatingSystem":"Android",
+"softwareVersion":"0.62.1"},
+"isAccessibleForFree":true},
+{"@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Início","item":"https://folioinvest.com.br/"},
+    {"@type":"ListItem","position":2,"name":"Manual","item":"https://folioinvest.com.br/manual/"},
+    {"@type":"ListItem","position":3,"name":"9. Posições de patrimônio","item":"https://folioinvest.com.br/manual/posicoes-de-patrimonio/"}
+]}
+]}
+</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Fólio Invest — início">
+      <span class="mk" aria-hidden="true"><svg viewBox="19 20 70 70" fill="none"><path d="M32,76 V37 a3,3 0 0 1 3,-3 H58 M32,55 H52" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5,68.5 V71.5 M65.5,58.5 V71.5 M77.5,46.5 V71.5" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg></span>
+      Fólio Invest
+    </a>
+    <div class="navlinks">
+      <a href="/#func">Funcionalidades</a>
+      <a href="/guias/">Guias de IR</a>
+      <a href="/manual/" aria-current="page">Manual</a>
+      <a href="/#priv">Privacidade</a>
+      <a href="/#faq">FAQ</a>
+    </div>
+  </div>
+</nav>
+<main id="conteudo">
+  <div class="wrap">
+<nav class="crumb" aria-label="Trilha"><ol><li><a href="/">Início</a></li><li><a href="/manual/">Manual</a></li><li aria-current="page">9. Posições de patrimônio</li></ol></nav>
+  </div>
+  <div class="wrap page">
+    <article>
+      <p class="eyebrow">Manual do usuário · Capítulo 9</p>
+      <h1>Posições de patrimônio</h1>
+      <p class="verhdr"><em>Este capítulo descreve o Fólio Invest na versão <strong>0.62.1</strong>. Se o seu app estiver em outra versão, um detalhe de tela ou de comportamento pode ser diferente.</em></p>
+      <div class="docmeta">
+        <span class="tag">No app: Patrimônio → Gerenciar posições</span>
+      </div>
+<details class="toc"><summary>Neste capítulo</summary><ol><li><a href="#por-que-essa-tela-existe">Por que essa tela existe</a></li><li><a href="#as-classes-disponiveis">As classes disponíveis</a></li><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#como-cadastrar-uma-posicao-nova">Como cadastrar uma posição nova</a></li><li><a href="#como-lancar-o-saldo-do-mes">Como lançar o saldo do mês</a></li><li><a href="#como-encerrar-uma-posicao-resgate">Como encerrar uma posição (resgate)</a></li><li><a href="#a-tela-principal-bloco-a-bloco">A tela principal, bloco a bloco</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></details>
+      <div class="body">
+<div class="callout serve">
+<p class="ct"><span aria-hidden="true">🎯</span> Para que serve</p>
+<p>guarda os investimentos que não têm preço de tela — fundos, CDB, Tesouro, LCI, LCA, CRA, CRI, previdência e saldo em conta — e acompanha o saldo deles mês a mês.</p>
+</div>
+<p>Como chegar: aba <strong>Patrimônio</strong> › <strong>Gerenciar posições de patrimônio</strong>.</p>
+<div class="callout fiscal">
+<p class="ct"><span aria-hidden="true">🧾</span> Conteúdo fiscal verificado</p>
+<p><strong>Conteúdo fiscal verificado em 28/07/2026</strong> nas fontes oficiais — lei, instrução normativa e as Perguntas e Respostas do IRPF. Valores marcados com ⏳ mudam de ano em ano; revisão prevista até <strong>31/01/2027</strong>.</p>
+</div>
+<h2 id="por-que-essa-tela-existe">Por que essa tela existe<a class="anc" href="#por-que-essa-tela-existe" aria-label="Link para esta seção">#</a></h2>
+<p>Uma ação tem cotação pública: o app busca e pronto. Um CDB do seu banco não tem. Então aqui <strong>você informa o saldo</strong> periodicamente, e o app usa esse número no seu patrimônio e no relatório do IRPF.</p>
+<h2 id="as-classes-disponiveis">As classes disponíveis<a class="anc" href="#as-classes-disponiveis" aria-label="Link para esta seção">#</a></h2>
+<p>Fundo, CDB, Tesouro, CRA, CRI, LCI, LCA, Previdência, Caixa (conta), e — para posições em dólar — Treasury US, CD e Corporate Bond.</p>
+<h2 id="o-que-da-para-fazer-aqui">O que dá para fazer aqui<a class="anc" href="#o-que-da-para-fazer-aqui" aria-label="Link para esta seção">#</a></h2>
+<ol><li><strong>Ver o total do patrimônio manual</strong> no mês escolhido.</li><li><strong>Trocar o mês</strong> pelo botão de mês, no topo.</li><li><strong>Ver a alocação</strong> por classe.</li><li><strong>Abrir uma classe</strong> e ver as posições.</li><li><strong>Abrir uma posição</strong> e lançar saldos, aportes ou o encerramento.</li><li><strong>Cadastrar</strong> uma posição nova.</li><li><strong>Importar</strong> saldos de um arquivo.</li></ol>
+<h2 id="como-cadastrar-uma-posicao-nova">Como cadastrar uma posição nova<a class="anc" href="#como-cadastrar-uma-posicao-nova" aria-label="Link para esta seção">#</a></h2>
+<ol><li>Toque em <strong>Nova posição</strong> (botão azul, rodapé).</li><li>Escolha a <strong>classe</strong> nos chips.<ul><li>Se escolher <strong>Previdência</strong>, escolha também <strong>PGBL</strong> ou <strong>VGBL</strong>.</li></ul></li><li>Escolha a <strong>moeda</strong>: R$ ou US$.</li><li><strong>Instituição</strong> (ex.: o banco ou a corretora) e <strong>Nome do ativo</strong>.</li><li><strong>Valor aplicado</strong> e <strong>Data de aplicação</strong>.</li><li>Opcional: vencimento, indexador (CDI, IPCA+…), observação.</li><li>Toque em <strong>Salvar posição</strong>.</li></ol>
+<p><strong>Em posições em reais</strong> aparece o interruptor <strong>"Registrar também um aporte de R$ X"</strong>, ligado por padrão. Ele cria, junto, um aporte do mesmo valor — assim o seu total de aportes fica correto sem você lançar duas vezes. O aporte criado fica editável na lista de <a href="/manual/aportes/">Aportes</a>.</p>
+<p><strong>Em posições em dólar</strong> o app não cria o aporte sozinho: ele mostra um lembrete para você registrar o aporte em US$ na tela de Aportes.</p>
+<h3 id="previdencia-o-que-eu-coloco-em-valor-aplicado">Previdência: o que eu coloco em "Valor aplicado"?<a class="anc" href="#previdencia-o-que-eu-coloco-em-valor-aplicado" aria-label="Link para esta seção">#</a></h3>
+<p>Os <strong>prêmios já pagos</strong>, que estão no informe da seguradora — não o saldo atual. Os aportes que você vincular ao plano somam a esse valor.</p>
+<h3 id="pgbl-e-vgbl-vao-para-lugares-diferentes-na-declaracao">PGBL e VGBL vão para lugares diferentes na declaração<a class="anc" href="#pgbl-e-vgbl-vao-para-lugares-diferentes-na-declaracao" aria-label="Link para esta seção">#</a></h3>
+<p>Escolher entre os dois não é rótulo: <strong>define para onde o plano vai no IRPF</strong>, e são fichas distintas com lógicas opostas.</p>
+<div class="tablewrap"><table><thead><tr><th></th><th>PGBL (e Fapi)</th><th>VGBL</th></tr></thead><tbody><tr><td><strong>Ficha</strong></td><td>Pagamentos Efetuados, código ⏳ <strong>36</strong></td><td>Bens e Direitos, grupo ⏳ <strong>99</strong> / código ⏳ <strong>06</strong></td></tr><tr><td><strong>É Bem e Direito?</strong></td><td><strong>Não</strong></td><td>Sim</td></tr><tr><td><strong>O que se declara</strong></td><td>as <strong>contribuições pagas no ano</strong></td><td>os <strong>prêmios pagos</strong>, valor histórico acumulado</td></tr><tr><td><strong>Dedução na entrada</strong></td><td>sim, até ⏳ <strong>12% do rendimento tributável</strong>, só no <strong>modelo completo</strong></td><td>não</td></tr><tr><td><strong>O que tributa no resgate</strong></td><td>o <strong>valor total</strong></td><td><strong>só o rendimento</strong></td></tr></tbody></table></div>
+<p>A lógica que amarra a tabela: no PGBL você já deduziu na entrada, então o resgate inteiro tributa. No VGBL não houve dedução, então só o ganho tributa. É a mesma razão pela qual o PGBL não é Bem e Direito e o VGBL é.</p>
+<p>⚠️ <strong>No VGBL, o valor a declarar é o dos prêmios pagos — nunca o saldo de mercado.</strong> A regra é explícita: informe os saldos acumulados dos <strong>valores históricos dos prêmios</strong>, em 31/12, <strong>independentemente do valor atual, com correção</strong>.</p>
+<p>Declarar pelo saldo não é imprecisão inocente: o saldo sobe pela rentabilidade, a rentabilidade não é tributada ano a ano, e a malha cruza evolução patrimonial com rendimentos declarados. Patrimônio subindo sem renda que o explique é exatamente o que ela procura.</p>
+<p>É por isso que o campo <strong>Valor aplicado</strong> pede os prêmios já pagos, do informe da seguradora — e por isso vincular os aportes ao plano importa: eles somam a esse valor. Sem os aportes vinculados, o PGBL perde a dedução do ano <strong>em silêncio</strong>, e o VGBL fica declarado só pelo prêmio inicial.</p>
+<h3 id="o-cambio-fiscal-das-posicoes-em-dolar">O câmbio fiscal das posições em dólar<a class="anc" href="#o-cambio-fiscal-das-posicoes-em-dolar" aria-label="Link para esta seção">#</a></h3>
+<p>Uma posição em dólar tem <strong>duas cotações diferentes</strong>, e elas não se confundem:</p>
+<ul><li><strong>o dólar médio da sua carteira</strong>, que é gestão — quanto o dólar te custou de fato, com IOF e taxas;</li><li><strong>o câmbio fiscal da aplicação</strong>, que é só para o imposto: é ele que trava, em reais, o <strong>custo de aquisição</strong> que vai para Bens e Direitos e serve de base do ganho quando você resgatar.</li></ul>
+<p>Mudar o câmbio fiscal <strong>não</strong> mexe na rentabilidade que o app exibe. E mudar o dólar médio não mexe no imposto.</p>
+<p>⚠️ <strong>Uma divergência que preferimos declarar.</strong> Para o custo de aquisição, a Receita manda usar a cotação de <strong>venda</strong> do dólar na data do fato gerador. <strong>O Fólio usa a cotação de compra</strong> — é o que as corretoras internacionais usam nos informes, e alinhar com elas evita que o número do app pareça errado quando você compara os dois. A diferença é da ordem do <em>spread</em> entre as duas pontas, algo como ⏳ 0,02%, e o alinhamento com a letra da norma está em curso.</p>
+<p><strong>Se esse valor for material para você, use a cotação de venda da data</strong> — o campo é editável — <strong>e confirme com um contador.</strong></p>
+<h2 id="como-lancar-o-saldo-do-mes">Como lançar o saldo do mês<a class="anc" href="#como-lancar-o-saldo-do-mes" aria-label="Link para esta seção">#</a></h2>
+<ol><li>Toque na classe para abrir e depois na posição.</li><li>Você entra na tela <strong>Saldos da posição</strong>.</li><li>Toque em <strong>Adicionar saldo do mês</strong>.</li><li>Escolha mês e ano, informe o <strong>saldo</strong> de fechamento e salve.</li></ol>
+<p>A lista <strong>SALDOS MENSAIS · Δ = GANHO DO MÊS</strong> mostra cada competência e a variação em relação ao mês anterior.</p>
+<h3 id="o-delta-e-o-meu-rendimento">O Δ (delta) é o meu rendimento?<a class="anc" href="#o-delta-e-o-meu-rendimento" aria-label="Link para esta seção">#</a></h3>
+<p>Não exatamente. O app avisa na própria tela: <strong>"Δ bruto: pode misturar rendimento com aporte/resgate."</strong> Se você aportou naquele mês, parte do Δ é dinheiro novo, não rendimento.</p>
+<h3 id="em-fundos-qual-valor-eu-informo">Em fundos, qual valor eu informo?<a class="anc" href="#em-fundos-qual-valor-eu-informo" aria-label="Link para esta seção">#</a></h3>
+<p>O <strong>valor líquido que caiu na conta / o saldo líquido</strong>. A tela avisa que fundos têm come-cotas (a antecipação semestral de imposto que reduz a quantidade de cotas), então o saldo bruto não é o número certo.</p>
+<h3 id="por-que-o-app-pede-o-valor-liquido-nos-fundos">Por que o app pede o valor líquido nos fundos<a class="anc" href="#por-que-o-app-pede-o-valor-liquido-nos-fundos" aria-label="Link para esta seção">#</a></h3>
+<p>Fundos abertos de renda fixa e multimercado têm <strong>come-cotas</strong>: o Fisco cobra o imposto <strong>por antecipação</strong>, duas vezes por ano — nos últimos dias úteis de ⏳ <strong>maio</strong> e ⏳ <strong>novembro</strong> —, sem esperar você resgatar. É por isso que se chama assim: a cobrança <strong>come cotas</strong> do seu saldo. A quantidade de cotas diminui; o valor de cada cota, não.</p>
+<p>Consequências práticas:</p>
+<ul><li><strong>O saldo do extrato já vem líquido</strong> do que foi antecipado. É esse o número certo, e é o que o app pede.</li><li><strong>No resgate você não paga tudo de novo.</strong> A instituição cobra só a diferença entre a alíquota final, que depende do prazo, e o que já foi antecipado.</li><li><strong>O app não calcula o imposto de fundo</strong>, e por isso pede o <strong>líquido creditado na conta</strong> no encerramento: sem saber quanto de come-cotas já foi retido ao longo dos anos, calcular o IR do resgate produziria um número errado com cara de certo.</li></ul>
+<p><strong>Nem todo fundo tem come-cotas.</strong> <strong>FII, Fiagro e fundos de ações não têm</strong> — neles o imposto só aparece na venda ou no resgate.</p>
+<p><strong>O ETF de renda fixa tem</strong>, ao contrário do ETF de ações — a mecânica acima vale para ele. Ver <a href="/manual/operacoes/">Operações</a>.</p>
+<p>No Relatório anual, o rendimento de fundo entra na Tributação Exclusiva, código ⏳ <strong>06</strong>. Confira sempre com o informe da instituição: é ele que traz o que foi retido.</p>
+<h2 id="como-encerrar-uma-posicao-resgate">Como encerrar uma posição (resgate)<a class="anc" href="#como-encerrar-uma-posicao-resgate" aria-label="Link para esta seção">#</a></h2>
+<p>No rodapé da tela de detalhe da posição há a opção <strong>Encerrar posição (resgate)</strong>.</p>
+<ul><li>Encerrar tira a posição do patrimônio, mas <strong>mantém o histórico</strong> — importante para as declarações de anos anteriores.</li><li>Há a opção <strong>Usar o saldo mais recente</strong> para preencher o valor.</li><li>Deixe o valor em branco se não houve resgate financeiro.</li><li>O app pergunta <strong>PARA ONDE FOI O DINHEIRO</strong> — responda, senão o seu patrimônio aparece menor do que a realidade.</li></ul>
+<p><strong>Encerrar é diferente de excluir.</strong> Se você excluir, some tudo, inclusive o histórico de saldos. O próprio app avisa: prefira encerrar.</p>
+<h3 id="encerrar-uma-posicao-em-dolar-e-um-resgate-para-o-imposto">Encerrar uma posição em dólar é um resgate para o imposto<a class="anc" href="#encerrar-uma-posicao-em-dolar-e-um-resgate-para-o-imposto" aria-label="Link para esta seção">#</a></h3>
+<p>Aqui está a diferença que mais surpreende: <strong>em posição no exterior, encerrar já é fato gerador — mesmo que você não saque nada.</strong> A lei coloca o imposto no <strong>resgate, na amortização, na alienação, no vencimento ou na liquidação</strong> da aplicação. Nenhuma dessas palavras exige que o dinheiro venha para o Brasil, nem que saia da corretora.</p>
+<p>Então: o Treasury venceu e o dinheiro ficou parado na conta da corretora lá fora? <strong>Apurou.</strong> Você resgatou o CD para comprar ações no mesmo dia? <strong>Apurou.</strong> O que a lei tributa é a saída do investimento, não a chegada do dinheiro.</p>
+<p>É por isso que o formulário de encerramento em dólar <strong>exige a PTAX</strong>: sem a cotação não há como converter o resgate em reais, e sem isso não há apuração.</p>
+<h4 id="o-que-o-app-calcula-e-como">O que o app calcula, e como<a class="anc" href="#o-que-o-app-calcula-e-como" aria-label="Link para esta seção">#</a></h4>
+<p>Ele compara o valor resgatado, convertido em reais pela cotação da data do resgate, com o <strong>custo em reais</strong> daquela posição — a soma do que você aplicou, cada aporte convertido pelo câmbio da sua própria data. A diferença é o rendimento tributável a ⏳ <strong>15%</strong>, e ela <strong>já inclui a variação cambial sobre o principal</strong>: a lei diz isso com todas as letras. Diferença negativa é perda, e perda no exterior compensa — ver <a href="/manual/imposto-de-renda/">IR / DARF</a>.</p>
+<p>Num resgate <strong>parcial</strong>, o custo baixa <strong>na mesma proporção</strong> do que saiu. Para calcular essa proporção o app precisa saber quanto a posição valia imediatamente antes — e é aí que o <strong>saldo mensal</strong> deixa de ser opcional.</p>
+<p>⚠️ <strong>Sem saldo lançado, o app não calcula — e avisa.</strong> Ele não abate custo e não apura rendimento. A consequência é assumida e visível: o valor em Bens e Direitos fica <strong>maior</strong> do que o real. É o lado seguro. Chutar o denominador produziria baixa de custo maior que a devida e <strong>imposto a menor</strong>. Lance o saldo do mês anterior à saída e o app recalcula sozinho.</p>
+<h4 id="o-que-ele-nao-calcula-e-por-que">O que ele não calcula, e por quê<a class="anc" href="#o-que-ele-nao-calcula-e-por-que" aria-label="Link para esta seção">#</a></h4>
+<ul><li><strong>Posição de caixa (conta) em dólar não apura ganho</strong>, porque a variação cambial de depósito não remunerado é <strong>isenta</strong>. Encerrar uma conta dessas não gera imposto.</li><li><strong>Previdência não é apurada aqui.</strong> O imposto é retido pela seguradora, que aplica o prazo de acumulação de cada aporte. O app aponta a ficha e a base; o número vem do informe.</li></ul>
+<h4 id="encerrar-excluir">Encerrar ≠ excluir<a class="anc" href="#encerrar-excluir" aria-label="Link para esta seção">#</a></h4>
+<p>Encerrar tira a posição do patrimônio e <strong>mantém o histórico</strong> — que é o que sustenta as declarações de anos anteriores e o custo dos anos seguintes. Excluir apaga tudo. Para o Fisco, <strong>encerrar é o registro; excluir é perder a prova.</strong> Guarde os informes de qualquer forma: o ônus de comprovar aquisição e alienação é seu.</p>
+<h2 id="a-tela-principal-bloco-a-bloco">A tela principal, bloco a bloco<a class="anc" href="#a-tela-principal-bloco-a-bloco" aria-label="Link para esta seção">#</a></h2>
+<ul><li><strong>Botão de mês</strong> no topo: rege a tela inteira. Só aparece quando há saldo lançado.</li><li><strong>PATRIMÔNIO MANUAL · &lt;mês&gt;</strong> — o total, com a nota "É o que entra no seu Patrimônio" e a linha <strong>Aportado (líquido)</strong>.</li><li><strong>Barra de alocação</strong> por classe, quando há mais de uma.</li><li><strong>Blocos por região</strong> (Brasil e internacional), com a bandeira da moeda.</li><li>Dentro de cada bloco, as classes; dentro delas, as posições.</li></ul>
+<p>Cada posição mostra a instituição e o mês do último saldo. Quando não há saldo, aparece <strong>"Sem saldo lançado — toque para adicionar"</strong>. Posições encerradas levam a etiqueta <strong>ENCERRADA</strong>.</p>
+<h2 id="o-que-costuma-confundir">O que costuma confundir<a class="anc" href="#o-que-costuma-confundir" aria-label="Link para esta seção">#</a></h2>
+<p><strong>"Saldo" e "Aportado" são coisas diferentes.</strong> Saldo é quanto vale hoje. Aportado é quanto você colocou. A diferença é o rendimento.</p>
+<p><strong>O saldo não se atualiza sozinho.</strong> Se você não lançar, o app repete o último saldo conhecido — e a rentabilidade do Patrimônio aparece menor do que a real. É essa a causa do aviso "Saldo desatualizado" em <a href="/manual/patrimonio/">Patrimônio</a>.</p>
+<p><strong>Previdência sem PGBL/VGBL não entra na declaração.</strong> O <a href="/manual/relatorio-irpf/">Relatório de IRPF</a> avisa em âmbar quando isso acontece.</p>
+<h2 id="o-que-esta-tela-nao-faz">O que esta tela NÃO faz<a class="anc" href="#o-que-esta-tela-nao-faz" aria-label="Link para esta seção">#</a></h2>
+<ul><li>Não busca saldo em banco nem corretora.</li><li>Não calcula rendimento de renda fixa a partir do indexador — o campo "Indexador" é só uma anotação.</li><li>Não aceita ações, FIIs nem ETFs: isso é <a href="/manual/operacoes/">Operações</a>.</li></ul>
+      </div>
+      <p class="legalnote">Manual do usuário do Fólio Invest — descreve o comportamento do app na versão indicada no topo. Conteúdo informativo e educativo: não é consultoria tributária, contábil ou de investimentos, não é recomendação de compra, venda ou manutenção de qualquer ativo, e não substitui a orientação de um profissional para o seu caso concreto. Quando o capítulo traz regra tributária, ela foi verificada nas fontes oficiais na data indicada no próprio capítulo. A responsabilidade pela declaração é do contribuinte.</p>
+      <nav class="pager" aria-label="Navegação entre capítulos">
+<a href="/manual/aportes/"><span class="k">← Capítulo anterior</span><span class="t">8. Gerenciar aportes</span></a>
+<a class="nx" href="/manual/eventos-corporativos/"><span class="k">Próximo capítulo →</span><span class="t">10. Eventos corporativos</span></a>
+      </nav>
+    </article>
+<aside class="rail"><div class="stick"><p class="rt">Neste capítulo</p><ol><li><a href="#por-que-essa-tela-existe">Por que essa tela existe</a></li><li><a href="#as-classes-disponiveis">As classes disponíveis</a></li><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#como-cadastrar-uma-posicao-nova">Como cadastrar uma posição nova</a></li><li><a href="#como-lancar-o-saldo-do-mes">Como lançar o saldo do mês</a></li><li><a href="#como-encerrar-uma-posicao-resgate">Como encerrar uma posição (resgate)</a></li><li><a href="#a-tela-principal-bloco-a-bloco">A tela principal, bloco a bloco</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></div></aside>
+  </div>
+</main>
+<footer id="contato">
+  <div class="wrap">
+    <div class="ftgrid">
+      <div>
+        <a class="brand" href="/" aria-label="Fólio Invest — início">
+          <span class="mk" aria-hidden="true"><svg viewBox="19 20 70 70" fill="none"><path d="M32,76 V37 a3,3 0 0 1 3,-3 H58 M32,55 H52" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5,68.5 V71.5 M65.5,58.5 V71.5 M77.5,46.5 V71.5" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg></span>
+          Fólio Invest
+        </a>
+        <p class="fdesc">App Android para organizar carteira, dividendos e Imposto de Renda do investidor pessoa física. Offline, sem cadastro, sem servidores.</p>
+      </div>
+      <div>
+        <h5>Conteúdo</h5>
+        <a class="fl" href="/guias/">Guias de imposto de renda</a>
+        <a class="fl" href="/manual/">Manual do usuário</a>
+        <a class="fl" href="/#func">Funcionalidades</a>
+      </div>
+      <div>
+        <h5>Contato</h5>
+        <a class="fl" href="/suporte/">Suporte</a>
+        <a class="fl" href="mailto:suporte@folioinvest.com.br">suporte@folioinvest.com.br</a>
+        <a class="fl" href="/privacidade/">Política de Privacidade</a>
+        <a class="fl" href="/assinatura/">Termo de Assinatura</a>
+      </div>
+    </div>
+    <div class="legal">
+      <p><strong>Aviso legal:</strong> o Fólio é uma ferramenta informativa e de organização. Não é recomendação de investimento, não é orientação tributária e não substitui consultoria profissional.</p>
+      <p>Cotações podem ter atrasos. O preenchimento correto dos dados e a conferência dos resultados são de responsabilidade exclusiva do usuário. Sempre confira com sua corretora, a B3 e a Receita Federal.</p>
+      <p style="opacity:.8">© 2026 Fólio Invest · LS Mundim Tecnologia LTDA · CNPJ 67.504.827/0001-03.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

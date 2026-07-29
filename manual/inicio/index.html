@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!--
+  ARQUIVO GERADO — NAO EDITE A MAO.
+  Fonte: app-investimentos/docs/ (conteudo-site/ e manual/).
+  Regerar: powershell -File docs\site-build\build-site.ps1
+  Editar aqui e perder na proxima geracao; pior, o site passa a divergir do
+  manual que integra o contrato (J-11 / CDC art. 30).
+-->
+
+<title>Início — Manual do Fólio Invest</title>
+<meta name="description" content="é a tela de abertura — mostra quanto você tem no total, como está dividido e o que subiu ou caiu hoje.">
+<meta name="theme-color" content="#1E3A8A">
+<link rel="canonical" href="https://folioinvest.com.br/manual/inicio/">
+
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/img/icon-512.png">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fólio Invest">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://folioinvest.com.br/manual/inicio/">
+<meta property="og:title" content="Início — Manual do Fólio Invest">
+<meta property="og:description" content="é a tela de abertura — mostra quanto você tem no total, como está dividido e o que subiu ou caiu hoje.">
+<meta property="og:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Início — Manual do Fólio Invest">
+<meta name="twitter:description" content="é a tela de abertura — mostra quanto você tem no total, como está dividido e o que subiu ou caiu hoje.">
+<meta name="twitter:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
+
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"TechArticle",
+"headline":"Início",
+"description":"é a tela de abertura — mostra quanto você tem no total, como está dividido e o que subiu ou caiu hoje.",
+"inLanguage":"pt-BR",
+"dateModified":"2026-07-29",
+"mainEntityOfPage":{"@type":"WebPage","@id":"https://folioinvest.com.br/manual/inicio/"},
+"author":{"@type":"Organization","name":"Fólio Invest"},
+"publisher":{"@type":"Organization","name":"Fólio Invest","url":"https://folioinvest.com.br/"},
+"about":{"@type":"SoftwareApplication","name":"Fólio Invest",
+"applicationCategory":"FinanceApplication","operatingSystem":"Android",
+"softwareVersion":"0.62.1"},
+"isAccessibleForFree":true},
+{"@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Início","item":"https://folioinvest.com.br/"},
+    {"@type":"ListItem","position":2,"name":"Manual","item":"https://folioinvest.com.br/manual/"},
+    {"@type":"ListItem","position":3,"name":"1. Início","item":"https://folioinvest.com.br/manual/inicio/"}
+]}
+]}
+</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Fólio Invest — início">
+      <span class="mk" aria-hidden="true"><svg viewBox="19 20 70 70" fill="none"><path d="M32,76 V37 a3,3 0 0 1 3,-3 H58 M32,55 H52" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5,68.5 V71.5 M65.5,58.5 V71.5 M77.5,46.5 V71.5" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg></span>
+      Fólio Invest
+    </a>
+    <div class="navlinks">
+      <a href="/#func">Funcionalidades</a>
+      <a href="/guias/">Guias de IR</a>
+      <a href="/manual/" aria-current="page">Manual</a>
+      <a href="/#priv">Privacidade</a>
+      <a href="/#faq">FAQ</a>
+    </div>
+  </div>
+</nav>
+<main id="conteudo">
+  <div class="wrap">
+<nav class="crumb" aria-label="Trilha"><ol><li><a href="/">Início</a></li><li><a href="/manual/">Manual</a></li><li aria-current="page">1. Início</li></ol></nav>
+  </div>
+  <div class="wrap page">
+    <article>
+      <p class="eyebrow">Manual do usuário · Capítulo 1</p>
+      <h1>Início</h1>
+      <p class="verhdr"><em>Este capítulo descreve o Fólio Invest na versão <strong>0.62.1</strong>. Se o seu app estiver em outra versão, um detalhe de tela ou de comportamento pode ser diferente.</em></p>
+      <div class="docmeta">
+        <span class="tag">No app: 1ª aba da barra de baixo</span>
+      </div>
+<details class="toc"><summary>Neste capítulo</summary><ol><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#o-cartao-azul-patrimonio-total">O cartão azul (Patrimônio total)</a></li><li><a href="#os-quatro-atalhos">Os quatro atalhos</a></li><li><a href="#alocacao-do-patrimonio">Alocação do patrimônio</a></li><li><a href="#maiores-variacoes-do-dia">Maiores variações do dia</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></details>
+      <div class="body">
+<div class="callout serve">
+<p class="ct"><span aria-hidden="true">🎯</span> Para que serve</p>
+<p>é a tela de abertura — mostra quanto você tem no total, como está dividido e o que subiu ou caiu hoje.</p>
+</div>
+<p>Primeira aba da barra de baixo. É a única tela com o cabeçalho azul e o nome "Fólio Invest" escrito por extenso.</p>
+<h2 id="o-que-da-para-fazer-aqui">O que dá para fazer aqui<a class="anc" href="#o-que-da-para-fazer-aqui" aria-label="Link para esta seção">#</a></h2>
+<p>Em ordem de uso real:</p>
+<ol><li><strong>Ver o patrimônio total</strong> no cartão azul do topo.</li><li><strong>Lançar algo rápido</strong> pelos quatro atalhos: Compra, Venda, Provento, Aporte.</li><li><strong>Ver a alocação</strong> — quanto por cento está em cada tipo de investimento.</li><li><strong>Ver as maiores variações do dia</strong> — os ativos que mais subiram e caíram.</li><li><strong>Puxar a tela para baixo</strong> para atualizar as cotações.</li></ol>
+<h2 id="o-cartao-azul-patrimonio-total">O cartão azul (Patrimônio total)<a class="anc" href="#o-cartao-azul-patrimonio-total" aria-label="Link para esta seção">#</a></h2>
+<div class="tablewrap"><table><thead><tr><th>O que aparece</th><th>O que significa</th></tr></thead><tbody><tr><td><strong>Patrimônio total</strong></td><td>tudo somado em reais: ações, fundos, renda fixa, caixa, cripto</td></tr><tr><td>"atualizado às HH:MM"</td><td>quando as cotações foram buscadas pela última vez</td></tr><tr><td>"· desatualizado"</td><td>passou de 1 hora desde a última busca</td></tr><tr><td>▲/▼ valor <strong>hoje</strong></td><td>quanto o seu dinheiro rendeu ou perdeu desde o fechamento de ontem</td></tr><tr><td><strong>Investido</strong></td><td>quanto você colocou de dinheiro (o custo)</td></tr><tr><td><strong>Lucro</strong></td><td>patrimônio menos investido, e o percentual</td></tr></tbody></table></div>
+<h3 id="o-ganho-do-dia-nao-aparece-por-que">O ganho do dia não aparece. Por quê?<a class="anc" href="#o-ganho-do-dia-nao-aparece-por-que" aria-label="Link para esta seção">#</a></h3>
+<p>A linha "hoje" só aparece quando o app conseguiu o preço de fechamento do pregão anterior de pelo menos um ativo. Fora do horário de mercado, com o app offline, ou numa carteira só de renda fixa e fundos, ela não aparece — isso é esperado, não é erro.</p>
+<h3 id="diz-desatualizado-meus-numeros-estao-errados">Diz "desatualizado". Meus números estão errados?<a class="anc" href="#diz-desatualizado-meus-numeros-estao-errados" aria-label="Link para esta seção">#</a></h3>
+<p>Não. Significa apenas que faz mais de uma hora que o app não buscou cotação. Puxe a tela para baixo (o gesto de "arrastar para atualizar") e ele busca de novo. Sem internet, ele continua mostrando os últimos preços que guardou.</p>
+<h2 id="os-quatro-atalhos">Os quatro atalhos<a class="anc" href="#os-quatro-atalhos" aria-label="Link para esta seção">#</a></h2>
+<div class="tablewrap"><table><thead><tr><th>Atalho</th><th>Abre</th><th>Use quando</th></tr></thead><tbody><tr><td><strong>Compra</strong></td><td>formulário de nova compra</td><td>comprou um ativo</td></tr><tr><td><strong>Venda</strong></td><td>formulário de nova venda</td><td>vendeu um ativo</td></tr><tr><td><strong>Provento</strong></td><td>formulário de novo provento</td><td>caiu dividendo, JCP ou rendimento</td></tr><tr><td><strong>Aporte</strong></td><td>formulário de movimentação</td><td>entrou ou saiu dinheiro da carteira</td></tr></tbody></table></div>
+<p>São os mesmos formulários das telas de Operações, Dividendos e Aportes. Salvar por aqui é idêntico a salvar por lá.</p>
+<h2 id="alocacao-do-patrimonio">Alocação do patrimônio<a class="anc" href="#alocacao-do-patrimonio" aria-label="Link para esta seção">#</a></h2>
+<p>Uma barra colorida com a legenda embaixo: cada faixa é um grupo grande de investimento (ações e ETFs, FIIs, renda fixa, internacional, previdência, fundos, caixa, derivativos, cripto, outros), com o valor em reais e o percentual.</p>
+<p>Toque em <strong>Patrimônio ›</strong> no canto do cartão para ir à aba Patrimônio.</p>
+<h2 id="maiores-variacoes-do-dia">Maiores variações do dia<a class="anc" href="#maiores-variacoes-do-dia" aria-label="Link para esta seção">#</a></h2>
+<p>Lista curta com <strong>▲ Altas</strong> e <strong>▼ Baixas</strong>: o ticker, a classe, o preço atual, a variação percentual do dia e quanto isso representou em dinheiro.</p>
+<p>Toque em <strong>Carteira ›</strong> para ver a carteira completa.</p>
+<h3 id="um-ativo-meu-nao-aparece-nas-variacoes-por-que">Um ativo meu não aparece nas variações. Por quê?<a class="anc" href="#um-ativo-meu-nao-aparece-nas-variacoes-por-que" aria-label="Link para esta seção">#</a></h3>
+<p>Ou ele não subiu/caiu o bastante para entrar na lista curta, ou o app não conseguiu o fechamento anterior dele. Renda fixa, fundos e previdência nunca aparecem aqui — eles não têm cotação de bolsa.</p>
+<h2 id="o-que-costuma-confundir">O que costuma confundir<a class="anc" href="#o-que-costuma-confundir" aria-label="Link para esta seção">#</a></h2>
+<p><strong>"Investido" aqui não é a mesma coisa que "Total aportado" no Patrimônio.</strong> Aqui, <em>Investido</em> é o custo dos ativos que você tem. <em>Total aportado</em>, na tela de Aportes, é o dinheiro novo que você colocou na carteira ao longo do tempo. Os dois raramente batem, e está certo assim.</p>
+<p><strong>O patrimônio some se você tocar no olho.</strong> O ícone 👁 no topo troca os valores por pontinhos. Toque de novo para voltar. Nada foi apagado.</p>
+<h2 id="o-que-esta-tela-nao-faz">O que esta tela NÃO faz<a class="anc" href="#o-que-esta-tela-nao-faz" aria-label="Link para esta seção">#</a></h2>
+<ul><li>Não deixa editar nem excluir nada. Os atalhos só criam lançamentos novos.</li><li>Não mostra histórico. Para ver a evolução ao longo dos meses, vá em <a href="/manual/patrimonio/">Patrimônio</a>.</li><li>Não mostra imposto. DARF e relatório ficam na aba <a href="/manual/imposto-de-renda/">IR</a>.</li><li>Não tem lista de ativos completa. Ela está em <a href="/manual/carteira/">Carteira</a>.</li></ul>
+      </div>
+      <p class="legalnote">Manual do usuário do Fólio Invest — descreve o comportamento do app na versão indicada no topo. Conteúdo informativo e educativo: não é consultoria tributária, contábil ou de investimentos, não é recomendação de compra, venda ou manutenção de qualquer ativo, e não substitui a orientação de um profissional para o seu caso concreto. Quando o capítulo traz regra tributária, ela foi verificada nas fontes oficiais na data indicada no próprio capítulo. A responsabilidade pela declaração é do contribuinte.</p>
+      <nav class="pager" aria-label="Navegação entre capítulos">
+<a href="/manual/primeiros-passos/"><span class="k">← Capítulo anterior</span><span class="t">0. Primeiros passos</span></a>
+<a class="nx" href="/manual/carteira/"><span class="k">Próximo capítulo →</span><span class="t">2. Carteira</span></a>
+      </nav>
+    </article>
+<aside class="rail"><div class="stick"><p class="rt">Neste capítulo</p><ol><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#o-cartao-azul-patrimonio-total">O cartão azul (Patrimônio total)</a></li><li><a href="#os-quatro-atalhos">Os quatro atalhos</a></li><li><a href="#alocacao-do-patrimonio">Alocação do patrimônio</a></li><li><a href="#maiores-variacoes-do-dia">Maiores variações do dia</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></div></aside>
+  </div>
+</main>
+<footer id="contato">
+  <div class="wrap">
+    <div class="ftgrid">
+      <div>
+        <a class="brand" href="/" aria-label="Fólio Invest — início">
+          <span class="mk" aria-hidden="true"><svg viewBox="19 20 70 70" fill="none"><path d="M32,76 V37 a3,3 0 0 1 3,-3 H58 M32,55 H52" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5,68.5 V71.5 M65.5,58.5 V71.5 M77.5,46.5 V71.5" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg></span>
+          Fólio Invest
+        </a>
+        <p class="fdesc">App Android para organizar carteira, dividendos e Imposto de Renda do investidor pessoa física. Offline, sem cadastro, sem servidores.</p>
+      </div>
+      <div>
+        <h5>Conteúdo</h5>
+        <a class="fl" href="/guias/">Guias de imposto de renda</a>
+        <a class="fl" href="/manual/">Manual do usuário</a>
+        <a class="fl" href="/#func">Funcionalidades</a>
+      </div>
+      <div>
+        <h5>Contato</h5>
+        <a class="fl" href="/suporte/">Suporte</a>
+        <a class="fl" href="mailto:suporte@folioinvest.com.br">suporte@folioinvest.com.br</a>
+        <a class="fl" href="/privacidade/">Política de Privacidade</a>
+        <a class="fl" href="/assinatura/">Termo de Assinatura</a>
+      </div>
+    </div>
+    <div class="legal">
+      <p><strong>Aviso legal:</strong> o Fólio é uma ferramenta informativa e de organização. Não é recomendação de investimento, não é orientação tributária e não substitui consultoria profissional.</p>
+      <p>Cotações podem ter atrasos. O preenchimento correto dos dados e a conferência dos resultados são de responsabilidade exclusiva do usuário. Sempre confira com sua corretora, a B3 e a Receita Federal.</p>
+      <p style="opacity:.8">© 2026 Fólio Invest · LS Mundim Tecnologia LTDA · CNPJ 67.504.827/0001-03.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

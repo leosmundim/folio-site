@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!--
+  ARQUIVO GERADO — NAO EDITE A MAO.
+  Fonte: app-investimentos/docs/ (conteudo-site/ e manual/).
+  Regerar: powershell -File docs\site-build\build-site.ps1
+  Editar aqui e perder na proxima geracao; pior, o site passa a divergir do
+  manual que integra o contrato (J-11 / CDC art. 30).
+-->
+
+<title>Relatório anual de IRPF — Manual do Fólio Invest</title>
+<meta name="description" content="reúne, num lugar só, os números que você vai digitar no programa da declaração anual da Receita.">
+<meta name="theme-color" content="#1E3A8A">
+<link rel="canonical" href="https://folioinvest.com.br/manual/relatorio-irpf/">
+
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/img/icon-512.png">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fólio Invest">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://folioinvest.com.br/manual/relatorio-irpf/">
+<meta property="og:title" content="Relatório anual de IRPF — Manual do Fólio Invest">
+<meta property="og:description" content="reúne, num lugar só, os números que você vai digitar no programa da declaração anual da Receita.">
+<meta property="og:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Relatório anual de IRPF — Manual do Fólio Invest">
+<meta name="twitter:description" content="reúne, num lugar só, os números que você vai digitar no programa da declaração anual da Receita.">
+<meta name="twitter:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
+
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"TechArticle",
+"headline":"Relatório anual de IRPF",
+"description":"reúne, num lugar só, os números que você vai digitar no programa da declaração anual da Receita.",
+"inLanguage":"pt-BR",
+"dateModified":"2026-07-29",
+"mainEntityOfPage":{"@type":"WebPage","@id":"https://folioinvest.com.br/manual/relatorio-irpf/"},
+"author":{"@type":"Organization","name":"Fólio Invest"},
+"publisher":{"@type":"Organization","name":"Fólio Invest","url":"https://folioinvest.com.br/"},
+"about":{"@type":"SoftwareApplication","name":"Fólio Invest",
+"applicationCategory":"FinanceApplication","operatingSystem":"Android",
+"softwareVersion":"0.62.1"},
+"isAccessibleForFree":true},
+{"@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Início","item":"https://folioinvest.com.br/"},
+    {"@type":"ListItem","position":2,"name":"Manual","item":"https://folioinvest.com.br/manual/"},
+    {"@type":"ListItem","position":3,"name":"6. Relatório anual de IRPF","item":"https://folioinvest.com.br/manual/relatorio-irpf/"}
+]}
+]}
+</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Fólio Invest — início">
+      <span class="mk" aria-hidden="true"><svg viewBox="19 20 70 70" fill="none"><path d="M32,76 V37 a3,3 0 0 1 3,-3 H58 M32,55 H52" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5,68.5 V71.5 M65.5,58.5 V71.5 M77.5,46.5 V71.5" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg></span>
+      Fólio Invest
+    </a>
+    <div class="navlinks">
+      <a href="/#func">Funcionalidades</a>
+      <a href="/guias/">Guias de IR</a>
+      <a href="/manual/" aria-current="page">Manual</a>
+      <a href="/#priv">Privacidade</a>
+      <a href="/#faq">FAQ</a>
+    </div>
+  </div>
+</nav>
+<main id="conteudo">
+  <div class="wrap">
+<nav class="crumb" aria-label="Trilha"><ol><li><a href="/">Início</a></li><li><a href="/manual/">Manual</a></li><li aria-current="page">6. Relatório anual de IRPF</li></ol></nav>
+  </div>
+  <div class="wrap page">
+    <article>
+      <p class="eyebrow">Manual do usuário · Capítulo 6</p>
+      <h1>Relatório anual de IRPF</h1>
+      <p class="verhdr"><em>Este capítulo descreve o Fólio Invest na versão <strong>0.62.1</strong>. Se o seu app estiver em outra versão, um detalhe de tela ou de comportamento pode ser diferente.</em></p>
+      <div class="docmeta">
+        <span class="tag">No app: dentro de IR</span>
+      </div>
+<details class="toc"><summary>Neste capítulo</summary><ol><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#o-cartao-do-topo">O cartão do topo</a></li><li><a href="#exportar">Exportar</a></li><li><a href="#as-secoes">As seções</a></li><li><a href="#como-copiar-um-valor-para-o-programa-da-receita">Como copiar um valor para o programa da Receita</a></li><li><a href="#os-avisos-do-topo">Os avisos do topo</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></details>
+      <div class="body">
+<div class="callout serve">
+<p class="ct"><span aria-hidden="true">🎯</span> Para que serve</p>
+<p>reúne, num lugar só, os números que você vai digitar no programa da declaração anual da Receita.</p>
+</div>
+<p>Como chegar: aba <strong>IR</strong> › cartão <strong>Relatório anual de IRPF</strong>.</p>
+<div class="callout fiscal">
+<p class="ct"><span aria-hidden="true">🧾</span> Conteúdo fiscal verificado</p>
+<p><strong>Conteúdo fiscal verificado em 28/07/2026</strong> nas fontes oficiais — lei, instrução normativa e as Perguntas e Respostas do IRPF. Valores marcados com ⏳ mudam de ano em ano; revisão prevista até <strong>31/01/2027</strong>.</p>
+</div>
+<h2 id="o-que-da-para-fazer-aqui">O que dá para fazer aqui<a class="anc" href="#o-que-da-para-fazer-aqui" aria-label="Link para esta seção">#</a></h2>
+<ol><li><strong>Escolher o ano-base</strong> da declaração.</li><li><strong>Ver o resumo</strong> — bens em 31/12 e proventos do ano.</li><li><strong>Salvar em Excel ou PDF</strong>.</li><li><strong>Abrir cada seção</strong> e copiar valor por valor.</li></ol>
+<h2 id="o-cartao-do-topo">O cartão do topo<a class="anc" href="#o-cartao-do-topo" aria-label="Link para esta seção">#</a></h2>
+<ul><li><strong>ANO-BASE</strong> com o seletor de ano.</li><li><strong>Bens e Direitos em 31/12</strong> e a variação em relação ao ano anterior.</li><li><strong>Proventos no ano</strong>, com dividendos e JCP destacados.</li></ul>
+<h2 id="exportar">Exportar<a class="anc" href="#exportar" aria-label="Link para esta seção">#</a></h2>
+<p>Dois botões: <strong>Salvar Excel</strong> e <strong>Salvar PDF</strong>.</p>
+<ol><li>Toque no botão.</li><li>O Android abre o seletor de pastas.</li><li>Escolha onde salvar e confirme.</li><li>O app avisa "Relatório Excel salvo." ou "Relatório PDF salvo.".</li></ol>
+<p>O nome do arquivo já vem pronto: <code>relatorio-irpf-&lt;ano&gt;.xlsx</code> / <code>relatorio-irpf-&lt;ano&gt;.pdf</code>.</p>
+<h3 id="onde-o-arquivo-foi-parar">Onde o arquivo foi parar?<a class="anc" href="#onde-o-arquivo-foi-parar" aria-label="Link para esta seção">#</a></h3>
+<p>Onde você escolheu no seletor do próprio Android — normalmente <em>Downloads</em> ou uma pasta do Drive. O Fólio não escolhe a pasta por você.</p>
+<h2 id="as-secoes">As seções<a class="anc" href="#as-secoes" aria-label="Link para esta seção">#</a></h2>
+<p>Cada seção é uma faixa que você toca para abrir. À direita de cada uma há o total. As seções 7, 8 e 9 só aparecem quando há dado.</p>
+<div class="tablewrap"><table><thead><tr><th>#</th><th>Seção</th><th>Ficha no programa da Receita</th><th>Códigos</th></tr></thead><tbody><tr><td>1</td><td>Rendimentos Isentos e Não Tributáveis</td><td>Rendimentos Isentos e Não Tributáveis</td><td>⏳ 20 · 26 · 09 · 12 · 05 · 99</td></tr><tr><td>2</td><td>Tributação Exclusiva / Definitiva</td><td>Rendimentos Sujeitos à Tributação Exclusiva/Definitiva</td><td>⏳ 06 · 10</td></tr><tr><td>3</td><td>Operações Comuns / Day-Trade</td><td>Demonstrativo de Apuração de Ganhos — Renda Variável</td><td>sem código: preenche mês a mês</td></tr><tr><td>4</td><td>Operações com FIIs / Fiagro</td><td>Demonstrativo de Apuração de Ganhos — Renda Variável</td><td>sem código: mês a mês, em quadro próprio</td></tr><tr><td>5</td><td>Cripto — Ganho de Capital</td><td>Demonstrativo de Ganhos de Capital (programa GCAP)</td><td>⏳ DARF 4600</td></tr><tr><td>6</td><td>Bens e Direitos em 31/12</td><td>Bens e Direitos</td><td>grupo + código, por ativo</td></tr><tr><td>7</td><td>Pagamentos Efetuados</td><td>Pagamentos Efetuados</td><td>⏳ 36</td></tr><tr><td>8</td><td>Dívidas e Ônus Reais</td><td>Dívidas e Ônus Reais</td><td>sem código</td></tr><tr><td>9</td><td>Resgate de previdência</td><td>depende do regime — ver abaixo</td><td>sem código: identifica-se pelo <strong>nome</strong> do tipo</td></tr></tbody></table></div>
+<h4 id="secao-1-rendimentos-isentos-e-nao-tributaveis">Seção 1 — Rendimentos Isentos e Não Tributáveis<a class="anc" href="#secao-1-rendimentos-isentos-e-nao-tributaveis" aria-label="Link para esta seção">#</a></h4>
+<p>Um código por natureza. Todos entram na mesma ficha.</p>
+<div class="tablewrap"><table><thead><tr><th>Código</th><th>O que é</th></tr></thead><tbody><tr><td>⏳ <strong>20</strong></td><td>ganho líquido em vendas de ações de até R$ 20 mil no mês — o lucro que a isenção por volume salvou</td></tr><tr><td>⏳ <strong>26</strong></td><td>"Outros" — ganhos de operações com isenção de <strong>lei específica</strong>, e os <strong>rendimentos mensais de FII / Fiagro</strong></td></tr><tr><td>⏳ <strong>09</strong></td><td>lucros e dividendos recebidos de empresa <strong>brasileira</strong></td></tr><tr><td>⏳ <strong>12</strong></td><td>rendimentos de poupança, <strong>LCI, LCA, CRI e CRA</strong></td></tr><tr><td>⏳ <strong>05</strong></td><td>lucro na alienação de bens de pequeno valor — é onde entra o <strong>ganho isento de cripto</strong> dos meses até R$ 35 mil</td></tr><tr><td>⏳ <strong>99</strong></td><td>"Outros" — a <strong>variação cambial</strong> de conta em dólar <strong>não remunerada</strong> no exterior, que é isenta</td></tr></tbody></table></div>
+<p>Debênture incentivada, quando houver, também vai no ⏳ <strong>26</strong>, não no 12.</p>
+<p>⚠️ <strong>Dividendo de BDR não entra no 09.</strong> Ver o aviso no topo do relatório.</p>
+<h4 id="secao-2-tributacao-exclusiva-definitiva">Seção 2 — Tributação Exclusiva / Definitiva<a class="anc" href="#secao-2-tributacao-exclusiva-definitiva" aria-label="Link para esta seção">#</a></h4>
+<p>São rendimentos em que <strong>o imposto já foi retido na fonte e está encerrado</strong>. Você declara para informar; não há nada a pagar nem a recuperar. Dois códigos:</p>
+<ul><li>⏳ <strong>06 — Rendimentos de aplicações financeiras.</strong> Junta CDB, Tesouro, debênture comum, fundos de renda fixa, distribuições de <strong>ETF</strong>, aluguel de ações e ETF de renda fixa. No programa é um valor só; o app abre por ativo para você conferir com o informe.</li><li>⏳ <strong>10 — Juros sobre capital próprio (JCP).</strong> O IRRF já foi retido: ⏳ 15% até 2025, ⏳ 17,5% a partir de 2026.</li></ul>
+<h4 id="secoes-3-e-4-renda-variavel-mes-a-mes">Seções 3 e 4 — renda variável, mês a mês<a class="anc" href="#secoes-3-e-4-renda-variavel-mes-a-mes" aria-label="Link para esta seção">#</a></h4>
+<p>Vão no <strong>Demonstrativo de Apuração de Ganhos — Renda Variável</strong>, e não na ficha de rendimentos. Ganho líquido de bolsa é apurado e tributado <strong>mês a mês, em separado</strong>: ele <strong>não entra na base do ajuste anual</strong>, e o imposto que você pagou por DARF <strong>não pode ser deduzido</strong> do imposto da declaração.</p>
+<p>O que se digita é mês por mês: volume, resultado, prejuízo acumulado, imposto. A seção 3 cobre operações comuns e day-trade; a seção 4, as cotas de FII e Fiagro, que têm quadro próprio.</p>
+<p><strong>Informe o prejuízo acumulado, mês a mês, mesmo nos meses sem imposto.</strong> É essa informação que mantém o prejuízo compensável nos anos seguintes.</p>
+<h4 id="secao-5-cripto">Seção 5 — Cripto<a class="anc" href="#secao-5-cripto" aria-label="Link para esta seção">#</a></h4>
+<p>Ganho de capital de cripto <strong>negociada no Brasil</strong>, apurado no <strong>programa GCAP</strong> e recolhido pelo DARF ⏳ 4600. Cripto no exterior não está aqui: ela vive na seção 6, no regime anual dos ⏳ 15%.</p>
+<h4 id="secao-6-bens-e-direitos-em-3112">Seção 6 — Bens e Direitos em 31/12<a class="anc" href="#secao-6-bens-e-direitos-em-3112" aria-label="Link para esta seção">#</a></h4>
+<p><strong>Regra de ouro: o valor é o custo de aquisição, nunca o valor de mercado.</strong> Cada ativo é um item, com <strong>grupo + código</strong> — o app já mostra o par pronto e sugere a discriminação.</p>
+<p>Ativos <strong>no exterior</strong> vivem dentro desta seção, com o campo <strong>Localização (País)</strong> preenchido. No rodapé do bem há o quadro <strong>Aplicação Financeira</strong>, com "Rendimento ou Perda" e "Imposto pago no Exterior": <strong>é o programa da Receita que apura os ⏳ 15%</strong> a partir desses dois campos. O valor a informar em 31/12 é o <strong>custo</strong>, ajustado a cada aplicação, liquidação ou resgate do ano.</p>
+<p>A exceção é a <strong>conta em dólar não remunerada</strong>, que vai pelo <strong>saldo</strong> convertido, não pelo custo — e cuja variação cambial é isenta (código 99 da seção 1).</p>
+<h4 id="secao-7-pagamentos-efetuados">Seção 7 — Pagamentos Efetuados<a class="anc" href="#secao-7-pagamentos-efetuados" aria-label="Link para esta seção">#</a></h4>
+<p>Só <strong>PGBL</strong> (e Fapi). Código ⏳ <strong>36 — Previdência Complementar</strong>, pelas <strong>contribuições pagas no ano-calendário</strong>. Dedutível até ⏳ <strong>12% do rendimento tributável</strong>, e só no <strong>modelo completo</strong>. PGBL <strong>não é</strong> Bem e Direito.</p>
+<p>A ficha registra o que foi <strong>pago no ano</strong>: resgatar não desfaz a contribuição, então um resgate <strong>não reduz</strong> este valor.</p>
+<h4 id="secao-8-dividas-e-onus-reais">Seção 8 — Dívidas e Ônus Reais<a class="anc" href="#secao-8-dividas-e-onus-reais" aria-label="Link para esta seção">#</a></h4>
+<p>Posições <strong>vendidas a descoberto</strong> ainda em aberto em 31/12 — típico de opção lançada. Não são Bens e Direitos: você recebeu um prêmio e tem uma obrigação em aberto.</p>
+<h4 id="secao-9-resgate-de-previdencia">Seção 9 — Resgate de previdência<a class="anc" href="#secao-9-resgate-de-previdencia" aria-label="Link para esta seção">#</a></h4>
+<p>Só aparece quando houve saída no ano. É a seção mais delicada, porque <strong>duas variáveis distintas mandam em coisas distintas</strong>:</p>
+<ul><li><strong>O PRODUTO define a base.</strong> PGBL: o <strong>valor total</strong> resgatado. VGBL: <strong>só o rendimento</strong> — a parte que era prêmio pago não tributa.</li><li><strong>O REGIME define a ficha.</strong> Progressivo (não optante) → <em>Rendimentos Tributáveis Recebidos de Pessoa Jurídica</em>, e o imposto retido é <strong>antecipação</strong>. Regressivo (optante pela exclusiva) → <em>Rendimentos Sujeitos à Tributação Exclusiva/Definitiva</em>, e o imposto retido é <strong>definitivo</strong>.</li></ul>
+<p>O app sabe o produto, então afirma a base. <strong>Não</strong> sabe o regime — ele é escolhido na seguradora e é <strong>irretratável</strong> —, então apresenta as duas fichas com o nome exato de cada uma, para você copiar a sua. Se não souber qual é, o informe anual diz.</p>
+<p><strong>O Fólio não calcula esse imposto</strong>, e a razão é boa: a seguradora aplica o prazo de acumulação de <strong>cada aporte</strong>, dado que só ela tem. O valor a declarar é o do informe.</p>
+<h2 id="como-copiar-um-valor-para-o-programa-da-receita">Como copiar um valor para o programa da Receita<a class="anc" href="#como-copiar-um-valor-para-o-programa-da-receita" aria-label="Link para esta seção">#</a></h2>
+<ol><li>Abra a seção.</li><li>Toque no valor ou no ícone de copiar ao lado dele.</li><li>O valor vai para a área de transferência do celular.</li><li>Cole no programa da Receita.</li></ol>
+<p>Nos itens de Bens e Direitos, o app também mostra o campo <strong>Discriminação (edite no programa)</strong> — é um texto sugerido, que você pode ajustar antes de colar.</p>
+<h2 id="os-avisos-do-topo">Os avisos do topo<a class="anc" href="#os-avisos-do-topo" aria-label="Link para esta seção">#</a></h2>
+<p>Antes das seções podem aparecer caixas âmbar. Elas <strong>não</strong> são erro do app: são dados faltando que impedem um item de entrar corretamente na declaração.</p>
+<div class="tablewrap"><table><thead><tr><th>Aviso</th><th>O que fazer</th></tr></thead><tbody><tr><td><strong>Previdência sem tipo definido</strong></td><td>abra a posição em <a href="/manual/posicoes-de-patrimonio/">Posições de patrimônio</a> e escolha VGBL ou PGBL. Enquanto não escolher, ela <strong>não aparece na declaração</strong>.</td></tr><tr><td><strong>PGBL sem contribuição no ano</strong></td><td>vincule os aportes do ano ao plano, em <a href="/manual/aportes/">Gerenciar aportes</a> — ou confirme que realmente não contribuiu.</td></tr><tr><td><strong>Apuração provisória / incompleta: venda sem cotação USD</strong></td><td>abra a venda em <a href="/manual/operacoes/">Operações</a> e preencha a cotação do dólar.</td></tr><tr><td><strong>Dividendos de BDR: R$ X — não são isentos</strong></td><td>Não é erro nem dado faltando: é o relatório te avisando que tirou esse valor dos Rendimentos Isentos, porque dividendo de BDR vem de empresa estrangeira. Abaixo do aviso há a <strong>quebra mês a mês</strong>, pronta para digitar no Carnê-Leão Web da Receita — o carnê-leão é apurado por competência, então um total anual não serviria. O Fólio <strong>não calcula</strong> esse imposto: a alíquota depende de toda a sua renda do mês. O IR retido no exterior, se você informou, pode ser abatido. <strong>A Receita não publicou regra específica para BDR</strong> — em valores altos, confirme com um contador. Ver <a href="/manual/dividendos/">Dividendos</a>.</td></tr></tbody></table></div>
+<p>Uma consequência esperada: se você tem BDR, o total de <strong>Dividendos</strong> no cartão do topo fica <strong>menor</strong> do que a soma dos seus lançamentos. O valor não sumiu — o aviso mostra para onde ele foi.</p>
+<p>Nos arquivos exportados (<strong>PDF</strong> e <strong>Excel</strong>) o aviso traz um parágrafo a mais, com a interpretação alternativa do regime. Isso é deliberado: é a informação que o seu contador precisa, e que na tela do celular só assustaria quem não tem como decidir entre as duas leituras.</p>
+<h2 id="o-que-costuma-confundir">O que costuma confundir<a class="anc" href="#o-que-costuma-confundir" aria-label="Link para esta seção">#</a></h2>
+<p><strong>O relatório é do ano-base, não do ano da entrega.</strong> Para declarar em 2027, o ano selecionado é 2026.</p>
+<p><strong>Trocar o ano recalcula tudo.</strong> Os totais do topo e todas as seções mudam.</p>
+<p><strong>Bens e Direitos mostra a posição em 31/12</strong>, não a posição de hoje.</p>
+<p><strong>O relatório não preenche a declaração.</strong> Ele mostra; você digita.</p>
+<h2 id="o-que-esta-tela-nao-faz">O que esta tela NÃO faz<a class="anc" href="#o-que-esta-tela-nao-faz" aria-label="Link para esta seção">#</a></h2>
+<ul><li>Não transmite nada para a Receita.</li><li>Não gera o arquivo <code>.DEC</code> do programa da declaração.</li><li>Não substitui o informe de rendimentos da corretora — confira sempre os dois.</li><li>Não decide por você quando há dúvida fiscal. Em valores relevantes, converse com um contador.</li></ul>
+      </div>
+      <p class="legalnote">Manual do usuário do Fólio Invest — descreve o comportamento do app na versão indicada no topo. Conteúdo informativo e educativo: não é consultoria tributária, contábil ou de investimentos, não é recomendação de compra, venda ou manutenção de qualquer ativo, e não substitui a orientação de um profissional para o seu caso concreto. Quando o capítulo traz regra tributária, ela foi verificada nas fontes oficiais na data indicada no próprio capítulo. A responsabilidade pela declaração é do contribuinte.</p>
+      <nav class="pager" aria-label="Navegação entre capítulos">
+<a href="/manual/imposto-de-renda/"><span class="k">← Capítulo anterior</span><span class="t">5. IR / DARF</span></a>
+<a class="nx" href="/manual/operacoes/"><span class="k">Próximo capítulo →</span><span class="t">7. Operações</span></a>
+      </nav>
+    </article>
+<aside class="rail"><div class="stick"><p class="rt">Neste capítulo</p><ol><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#o-cartao-do-topo">O cartão do topo</a></li><li><a href="#exportar">Exportar</a></li><li><a href="#as-secoes">As seções</a></li><li><a href="#como-copiar-um-valor-para-o-programa-da-receita">Como copiar um valor para o programa da Receita</a></li><li><a href="#os-avisos-do-topo">Os avisos do topo</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></div></aside>
+  </div>
+</main>
+<footer id="contato">
+  <div class="wrap">
+    <div class="ftgrid">
+      <div>
+        <a class="brand" href="/" aria-label="Fólio Invest — início">
+          <span class="mk" aria-hidden="true"><svg viewBox="19 20 70 70" fill="none"><path d="M32,76 V37 a3,3 0 0 1 3,-3 H58 M32,55 H52" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5,68.5 V71.5 M65.5,58.5 V71.5 M77.5,46.5 V71.5" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg></span>
+          Fólio Invest
+        </a>
+        <p class="fdesc">App Android para organizar carteira, dividendos e Imposto de Renda do investidor pessoa física. Offline, sem cadastro, sem servidores.</p>
+      </div>
+      <div>
+        <h5>Conteúdo</h5>
+        <a class="fl" href="/guias/">Guias de imposto de renda</a>
+        <a class="fl" href="/manual/">Manual do usuário</a>
+        <a class="fl" href="/#func">Funcionalidades</a>
+      </div>
+      <div>
+        <h5>Contato</h5>
+        <a class="fl" href="/suporte/">Suporte</a>
+        <a class="fl" href="mailto:suporte@folioinvest.com.br">suporte@folioinvest.com.br</a>
+        <a class="fl" href="/privacidade/">Política de Privacidade</a>
+        <a class="fl" href="/assinatura/">Termo de Assinatura</a>
+      </div>
+    </div>
+    <div class="legal">
+      <p><strong>Aviso legal:</strong> o Fólio é uma ferramenta informativa e de organização. Não é recomendação de investimento, não é orientação tributária e não substitui consultoria profissional.</p>
+      <p>Cotações podem ter atrasos. O preenchimento correto dos dados e a conferência dos resultados são de responsabilidade exclusiva do usuário. Sempre confira com sua corretora, a B3 e a Receita Federal.</p>
+      <p style="opacity:.8">© 2026 Fólio Invest · LS Mundim Tecnologia LTDA · CNPJ 67.504.827/0001-03.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

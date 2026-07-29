@@ -154,3 +154,168 @@ footer a.fl:hover{color:#fff}
   section{padding:80px 0}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* ============================================================
+   PÁGINAS DE CONTEÚDO — guias fiscais (/guias/) e manual (/manual/)
+   O HTML dessas páginas é GERADO a partir de app-investimentos/docs/
+   (docs/site-build/build-site.ps1). Este CSS é fonte, escrito à mão.
+   Mesma paleta, mesmas fontes, mesma nav e mesmo rodapé da home.
+   ============================================================ */
+
+.navlinks a[aria-current]{color:var(--primary);font-weight:600;
+  background:color-mix(in srgb,var(--primary) 12%,transparent)}
+
+/* ---------------- TRILHA (breadcrumb) ---------------- */
+.crumb{font-size:13px;color:var(--muted);padding:18px 0 0}
+.crumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0}
+.crumb a{text-decoration:none;color:var(--muted)}
+.crumb a:hover{color:var(--primary);text-decoration:underline}
+.crumb li+li::before{content:"›";padding-right:6px;opacity:.55}
+.crumb [aria-current]{color:var(--text)}
+.idxhero .crumb,.idxhero .crumb a{color:#C7D0F5}
+.idxhero .crumb [aria-current]{color:#fff}
+
+/* ---------------- LAYOUT DE LEITURA ---------------- */
+.page{display:grid;gap:38px;grid-template-columns:1fr;padding:8px 0 70px}
+.page article{min-width:0}
+article h1{font-size:29px;line-height:1.2;letter-spacing:-.4px;font-weight:800;margin:0 0 14px}
+.verhdr{font-size:14.5px;color:var(--muted);margin:0 0 16px;max-width:70ch}
+.docmeta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 26px}
+.docmeta:not(:empty){padding-bottom:22px;border-bottom:1px solid var(--line)}
+.tag{font-size:12.5px;font-weight:600;padding:5px 11px;border-radius:999px;
+  background:var(--inner);border:1px solid var(--card-border);color:var(--muted)}
+.tag.rev{color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent);
+  border-color:color-mix(in srgb,var(--accent) 30%,transparent)}
+
+/* ---------------- CORPO DO TEXTO ---------------- */
+/* Medida de linha: 38rem dá ~72 caracteres em Inter 17px — medido, não estimado.
+   A unidade ch mente aqui (o "0" da Inter é bem mais largo que a média).
+   Só o TEXTO é limitado; tabela usa a coluna inteira e rola quando precisa. */
+.body{font-size:17px;line-height:1.68}
+.body>p,.body>ul,.body>ol,.body>h2,.body>h3,.body>h4,.body>h5,.body>h6,
+.body>hr,.body>.callout{max-width:38rem}
+.body>p{margin:0 0 20px}
+.body h2{font-size:23px;line-height:1.28;font-weight:800;letter-spacing:-.2px;
+  margin:44px 0 14px;padding-top:22px;border-top:1px solid var(--line);scroll-margin-top:78px}
+.body h3{font-size:18.5px;font-weight:700;margin:32px 0 10px;scroll-margin-top:78px}
+.body h4{font-size:16.5px;font-weight:700;color:var(--muted);margin:26px 0 8px;scroll-margin-top:78px}
+.body h5,.body h6{font-size:15.5px;font-weight:700;color:var(--muted);margin:22px 0 8px;scroll-margin-top:78px}
+.body .anc{opacity:0;text-decoration:none;color:var(--primary);font-weight:600;
+  padding-left:8px;font-size:.75em}
+.body h2:hover .anc,.body h3:hover .anc,.body h4:hover .anc,.body .anc:focus{opacity:1}
+.body ul,.body ol{margin:0 0 20px;padding-left:22px}
+.body li{margin:0 0 9px}
+.body li>ul,.body li>ol{margin:9px 0 4px}
+.body a{color:var(--primary);text-decoration:underline;text-underline-offset:2px;
+  text-decoration-thickness:1.5px;text-decoration-color:color-mix(in srgb,var(--primary) 42%,transparent)}
+.body a:hover{text-decoration-color:var(--primary)}
+.body code{font-family:ui-monospace,'Cascadia Mono',Consolas,monospace;font-size:.88em;
+  background:var(--inner);border:1px solid var(--card-border);border-radius:5px;padding:1px 5px}
+.body hr{border:0;border-top:1px solid var(--line);margin:38px 0}
+
+/* tabelas rolam sozinhas no celular, sem empurrar a página */
+.tablewrap{overflow-x:auto;margin:0 0 24px;border:1px solid var(--card-border);
+  border-radius:12px;background:var(--card);box-shadow:var(--shadow);max-width:100%}
+.body table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:420px}
+.body th,.body td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+.body th{background:var(--inner);font-weight:700;font-size:13px;letter-spacing:.2px}
+.body tr:last-child td{border-bottom:0}
+
+/* ---------------- CALLOUTS (citações tipadas) ---------------- */
+.callout{margin:0 0 24px;padding:16px 18px;border-radius:14px;border:1px solid var(--card-border);
+  background:var(--card);box-shadow:var(--shadow)}
+.callout>p{margin:0 0 10px;font-size:15.5px;line-height:1.6}
+.callout>p:last-child{margin:0}
+.callout .ct{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;
+  text-transform:uppercase;letter-spacing:.7px;margin-bottom:9px}
+.callout.aviso{border-color:color-mix(in srgb,var(--cat-amber) 42%,transparent);
+  background:color-mix(in srgb,var(--cat-amber) 9%,var(--card))}
+.callout.aviso .ct{color:var(--cat-amber)}
+.callout.fiscal{border-color:color-mix(in srgb,var(--cat-teal) 40%,transparent);
+  background:color-mix(in srgb,var(--cat-teal) 8%,var(--card))}
+.callout.fiscal .ct{color:var(--cat-teal)}
+.callout.fiscal>p{font-size:14.5px;color:var(--muted)}
+.callout.serve{border-color:color-mix(in srgb,var(--primary) 34%,transparent);
+  background:color-mix(in srgb,var(--primary) 8%,var(--card))}
+.callout.serve .ct{color:var(--primary)}
+.callout.nota{border-left:3px solid var(--card-border)}
+
+/* ---------------- SUMÁRIO ---------------- */
+.toc{margin:0 0 30px;border:1px solid var(--card-border);border-radius:14px;
+  background:var(--card);box-shadow:var(--shadow);overflow:hidden}
+.toc summary{cursor:pointer;list-style:none;padding:14px 18px;font-weight:700;font-size:14.5px;
+  display:flex;justify-content:space-between;align-items:center;gap:10px}
+.toc summary::-webkit-details-marker{display:none}
+.toc summary::after{content:"+";color:var(--primary);font-size:20px;font-weight:700}
+.toc[open] summary::after{content:"–"}
+.toc ol{margin:0;padding:0 18px 16px 34px;font-size:14.5px}
+.toc li{margin:0 0 8px}
+.toc a{color:var(--muted);text-decoration:none}
+.toc a:hover{color:var(--primary);text-decoration:underline}
+aside.rail{display:none}
+.rail .stick{position:sticky;top:80px}
+.rail .rt{font-size:12px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;
+  color:var(--muted);margin:0 0 12px}
+.rail ol{list-style:none;margin:0;padding:0;font-size:13.5px;border-left:2px solid var(--line)}
+.rail a{display:block;padding:6px 0 6px 14px;margin-left:-2px;color:var(--muted);
+  text-decoration:none;border-left:2px solid transparent;line-height:1.4}
+.rail a:hover{color:var(--primary);border-left-color:var(--primary)}
+
+/* ---------------- RODAPÉ LEGAL DO DOCUMENTO ---------------- */
+.legalnote{margin:34px 0 0;padding:18px;border-radius:12px;background:var(--inner);
+  border:1px solid var(--card-border);font-size:13.5px;line-height:1.6;color:var(--muted);
+  font-style:italic;max-width:70ch}
+
+/* ---------------- CTA DO APP ---------------- */
+.appcta{margin:34px 0 0;border-radius:18px;padding:26px;color:#fff;
+  background:linear-gradient(165deg,var(--hero1),var(--hero2));box-shadow:var(--shadow)}
+.appcta h3{margin:0 0 8px;font-size:19px;font-weight:800}
+.appcta p{margin:0 0 16px;font-size:15px;color:#DCE2FF;max-width:52ch}
+.appcta .badge{font-size:14.5px;padding:12px 18px}
+.appcta a.badge{cursor:pointer;text-decoration:none}
+.appcta .note{font-size:12.5px;color:#C7D0F5;margin:12px 0 0}
+.appcta .note a{color:#fff}
+
+/* ---------------- ANTERIOR / PRÓXIMO ---------------- */
+.pager{display:grid;gap:12px;grid-template-columns:1fr;margin:30px 0 0}
+.pager a{display:block;padding:16px 18px;border-radius:14px;background:var(--card);
+  border:1px solid var(--card-border);text-decoration:none;box-shadow:var(--shadow)}
+.pager a:hover{border-color:var(--primary)}
+.pager .k{font-size:12px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;
+  color:var(--muted);display:block;margin-bottom:4px}
+.pager .t{font-weight:700;font-size:15px;color:var(--text)}
+.pager .nx{text-align:right}
+
+/* ---------------- ÍNDICES /guias/ e /manual/ ---------------- */
+.idxhero{background:linear-gradient(165deg,var(--hero1),var(--hero2));color:#fff;padding:22px 0 56px}
+.idxhero h1{font-size:31px;line-height:1.16;font-weight:800;margin:16px 0 14px;
+  letter-spacing:-.4px;max-width:20ch}
+.idxhero p{font-size:17px;color:#DCE2FF;margin:0;max-width:60ch}
+.idxhero .eyebrow{color:#B4C5FF;margin:22px 0 0}
+.idxhero .vs{font-size:14.5px;color:#C7D0F5;margin-top:12px}
+.cards{display:grid;gap:16px;grid-template-columns:1fr;padding:44px 0 10px}
+.gcard{display:block;text-decoration:none;background:var(--card);border:1px solid var(--card-border);
+  border-radius:16px;padding:22px;box-shadow:var(--shadow)}
+.gcard:hover{border-color:var(--primary)}
+.gcard h2{margin:0 0 8px;font-size:18px;font-weight:700;line-height:1.3}
+.gcard p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.55}
+.gcard .gm{margin:12px 0 0;font-size:12px;opacity:.85}
+.chaps{display:grid;gap:10px;grid-template-columns:1fr;padding:36px 0 32px}
+.chap{display:flex;gap:14px;align-items:baseline;text-decoration:none;background:var(--card);
+  border:1px solid var(--card-border);border-radius:12px;padding:15px 18px;box-shadow:var(--shadow)}
+.chap:hover{border-color:var(--primary)}
+.chap .n{font-size:13px;font-weight:800;color:var(--primary);min-width:22px;font-feature-settings:"tnum"}
+.chap .tt{font-weight:600;font-size:15.5px}
+.chap .wh{font-size:13px;color:var(--muted);margin-left:auto;text-align:right}
+
+@media (min-width:700px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .pager{grid-template-columns:1fr 1fr}
+}
+@media (min-width:880px){
+  article h1{font-size:38px}
+  .idxhero h1{font-size:40px}
+  .page{grid-template-columns:minmax(0,1fr) 232px;gap:52px}
+  aside.rail{display:block}
+  .toc{display:none}
+}

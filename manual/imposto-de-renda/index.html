@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!--
+  ARQUIVO GERADO — NAO EDITE A MAO.
+  Fonte: app-investimentos/docs/ (conteudo-site/ e manual/).
+  Regerar: powershell -File docs\site-build\build-site.ps1
+  Editar aqui e perder na proxima geracao; pior, o site passa a divergir do
+  manual que integra o contrato (J-11 / CDC art. 30).
+-->
+
+<title>IR / DARF — Manual do Fólio Invest</title>
+<meta name="description" content="mostra, mês a mês, se as suas vendas geraram imposto a pagar — e quanto.">
+<meta name="theme-color" content="#1E3A8A">
+<link rel="canonical" href="https://folioinvest.com.br/manual/imposto-de-renda/">
+
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/img/icon-512.png">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fólio Invest">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://folioinvest.com.br/manual/imposto-de-renda/">
+<meta property="og:title" content="IR / DARF — Manual do Fólio Invest">
+<meta property="og:description" content="mostra, mês a mês, se as suas vendas geraram imposto a pagar — e quanto.">
+<meta property="og:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IR / DARF — Manual do Fólio Invest">
+<meta name="twitter:description" content="mostra, mês a mês, se as suas vendas geraram imposto a pagar — e quanto.">
+<meta name="twitter:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
+
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"TechArticle",
+"headline":"IR / DARF",
+"description":"mostra, mês a mês, se as suas vendas geraram imposto a pagar — e quanto.",
+"inLanguage":"pt-BR",
+"dateModified":"2026-07-29",
+"mainEntityOfPage":{"@type":"WebPage","@id":"https://folioinvest.com.br/manual/imposto-de-renda/"},
+"author":{"@type":"Organization","name":"Fólio Invest"},
+"publisher":{"@type":"Organization","name":"Fólio Invest","url":"https://folioinvest.com.br/"},
+"about":{"@type":"SoftwareApplication","name":"Fólio Invest",
+"applicationCategory":"FinanceApplication","operatingSystem":"Android",
+"softwareVersion":"0.62.1"},
+"isAccessibleForFree":true},
+{"@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Início","item":"https://folioinvest.com.br/"},
+    {"@type":"ListItem","position":2,"name":"Manual","item":"https://folioinvest.com.br/manual/"},
+    {"@type":"ListItem","position":3,"name":"5. IR / DARF","item":"https://folioinvest.com.br/manual/imposto-de-renda/"}
+]}
+]}
+</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Fólio Invest — início">
+      <span class="mk" aria-hidden="true"><svg viewBox="19 20 70 70" fill="none"><path d="M32,76 V37 a3,3 0 0 1 3,-3 H58 M32,55 H52" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5,68.5 V71.5 M65.5,58.5 V71.5 M77.5,46.5 V71.5" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg></span>
+      Fólio Invest
+    </a>
+    <div class="navlinks">
+      <a href="/#func">Funcionalidades</a>
+      <a href="/guias/">Guias de IR</a>
+      <a href="/manual/" aria-current="page">Manual</a>
+      <a href="/#priv">Privacidade</a>
+      <a href="/#faq">FAQ</a>
+    </div>
+  </div>
+</nav>
+<main id="conteudo">
+  <div class="wrap">
+<nav class="crumb" aria-label="Trilha"><ol><li><a href="/">Início</a></li><li><a href="/manual/">Manual</a></li><li aria-current="page">5. IR / DARF</li></ol></nav>
+  </div>
+  <div class="wrap page">
+    <article>
+      <p class="eyebrow">Manual do usuário · Capítulo 5</p>
+      <h1>IR / DARF</h1>
+      <p class="verhdr"><em>Este capítulo descreve o Fólio Invest na versão <strong>0.62.1</strong>. Se o seu app estiver em outra versão, um detalhe de tela ou de comportamento pode ser diferente.</em></p>
+      <div class="docmeta">
+        <span class="tag">No app: 5ª aba</span>
+      </div>
+<details class="toc"><summary>Neste capítulo</summary><ol><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#o-cartao-resumo-fiscal">O cartão RESUMO FISCAL</a></li><li><a href="#a-lista-de-meses">A lista de meses</a></li><li><a href="#o-cartao-relatorio-anual-de-irpf">O cartão "Relatório anual de IRPF"</a></li><li><a href="#cripto">Cripto</a></li><li><a href="#decripto">DeCripto</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></details>
+      <div class="body">
+<div class="callout serve">
+<p class="ct"><span aria-hidden="true">🎯</span> Para que serve</p>
+<p>mostra, mês a mês, se as suas vendas geraram imposto a pagar — e quanto.</p>
+</div>
+<p>Quinta aba da barra de baixo. Ela cuida do imposto <strong>mensal</strong>. O imposto anual, que você preenche na declaração, fica no <a href="/manual/relatorio-irpf/">Relatório anual de IRPF</a>, acessível daqui.</p>
+<div class="callout fiscal">
+<p class="ct"><span aria-hidden="true">🧾</span> Conteúdo fiscal verificado</p>
+<p><strong>Conteúdo fiscal verificado em 28/07/2026</strong> nas fontes oficiais — lei, instrução normativa e as Perguntas e Respostas do IRPF. Valores marcados com ⏳ mudam de ano em ano; revisão prevista até <strong>31/01/2027</strong>.</p>
+</div>
+<h2 id="o-que-da-para-fazer-aqui">O que dá para fazer aqui<a class="anc" href="#o-que-da-para-fazer-aqui" aria-label="Link para esta seção">#</a></h2>
+<ol><li><strong>Ver o próximo DARF a pagar</strong> e quando vence.</li><li><strong>Trocar o ano</strong> pelo botão de ano, no canto do cartão de resumo.</li><li><strong>Abrir o Relatório anual de IRPF</strong>.</li><li><strong>Abrir um mês</strong> e ver a apuração detalhada.</li><li><strong>Abrir um detalhe</strong> e ver venda por venda.</li><li><strong>Exportar o resumo da DeCripto</strong>, quando aplicável.</li></ol>
+<h3 id="o-que-e-darf">O que é DARF?<a class="anc" href="#o-que-e-darf" aria-label="Link para esta seção">#</a></h3>
+<p>É a guia que você usa para pagar imposto à Receita Federal. Cada tipo de imposto tem um código de três a quatro dígitos. O app mostra o código junto do valor.</p>
+<h2 id="o-cartao-resumo-fiscal">O cartão RESUMO FISCAL<a class="anc" href="#o-cartao-resumo-fiscal" aria-label="Link para esta seção">#</a></h2>
+<ul><li>No ano corrente: <strong>Próximo DARF a pagar</strong> — o valor do mês mais recente com imposto, com a etiqueta vermelha <strong>VENCE dd/MM</strong> e o texto "em N dias" ou "vencido há N dias".</li><li>Em anos passados: <strong>DARF do ano</strong> — a soma do ano inteiro.</li><li>Abaixo, quando existe, <strong>Prejuízo a compensar</strong>, separado por tipo de operação.</li></ul>
+<p>O botão de ano no canto superior direito do cartão <strong>manda na tela inteira</strong>: resumo, lista de meses e blocos de declaração.</p>
+<h3 id="o-que-e-prejuizo-a-compensar">O que é "prejuízo a compensar"?<a class="anc" href="#o-que-e-prejuizo-a-compensar" aria-label="Link para esta seção">#</a></h3>
+<p>É o prejuízo que ficou guardado para abater lucro futuro. Ele não desaparece — mas também não vai abater qualquer lucro.</p>
+<h4 id="prejuizo-so-compensa-dentro-da-mesma-modalidade">Prejuízo só compensa dentro da mesma modalidade<a class="anc" href="#prejuizo-so-compensa-dentro-da-mesma-modalidade" aria-label="Link para esta seção">#</a></h4>
+<div class="tablewrap"><table><thead><tr><th>Prejuízo em…</th><th>compensa lucro de…</th></tr></thead><tbody><tr><td>operações comuns (ações, ETF, BDR, opções, à vista/termo/futuro)</td><td>operações comuns</td></tr><tr><td><strong>day-trade</strong></td><td><strong>só day-trade</strong></td></tr><tr><td>cotas de <strong>FII / Fiagro</strong></td><td>só cotas de FII / Fiagro</td></tr><tr><td>aplicações financeiras <strong>no exterior</strong></td><td>só aplicações financeiras no exterior</td></tr></tbody></table></div>
+<p>As quatro caixas são estanques. Prejuízo de day-trade não abate lucro de swing, e vice-versa. Prejuízo na bolsa brasileira não abate ganho no exterior.</p>
+<h4 id="por-quanto-tempo">Por quanto tempo<a class="anc" href="#por-quanto-tempo" aria-label="Link para esta seção">#</a></h4>
+<p><strong>Na bolsa brasileira, sem prazo de validade.</strong> Prejuízo apurado em dezembro pode ser usado em qualquer mês de qualquer ano seguinte — não há restrição de mês nem de ano.</p>
+<p>Há uma condição, e ela é o que mais se perde na prática: <strong>o prejuízo precisa estar informado no Demonstrativo de Renda Variável da declaração</strong>, no mês em que ocorreu <strong>e</strong> nos períodos seguintes, até ser todo consumido. Prejuízo que nunca entrou na declaração não é prejuízo compensável — é só um número no seu controle.</p>
+<p><strong>Você não pode compensar para trás.</strong> Prejuízo de um mês não abate lucro de mês anterior: a base de cálculo é mensal e já fechou.</p>
+<p><strong>No exterior a regra é outra, e mais apertada.</strong> A perda compensa rendimento de aplicação financeira no exterior do <strong>mesmo</strong> ano; se sobrar, compensa lucros e dividendos de entidade controlada no exterior do mesmo ano; e só o que ainda restar carrega para anos seguintes — <strong>uma única vez</strong>.</p>
+<h4 id="um-caso-em-que-a-norma-nao-decidiu">Um caso em que a norma não decidiu<a class="anc" href="#um-caso-em-que-a-norma-nao-decidiu" aria-label="Link para esta seção">#</a></h4>
+<p>Se um mês fechou com <strong>prejuízo</strong> em ações e as vendas daquele mês ficaram ⏳ <strong>até R$ 20 mil</strong> (mês isento), esse prejuízo entra no acumulado a compensar?</p>
+<p><strong>Não há texto de lei que responda.</strong> A lei fala do ganho isento e cala sobre a perda. Há duas leituras defensáveis: que a perda continua sendo perda e segue a regra geral; ou que operações fora do universo tributável não geram crédito. Nenhuma das duas tem dispositivo expresso.</p>
+<p>O Fólio adota a primeira — <strong>o prejuízo continua contando</strong>. É uma escolha entre duas leituras possíveis, não uma regra confirmada, e é a leitura que produz <strong>menos</strong> imposto. Se a outra estiver correta, o valor apurado sai a menor. <strong>Se isso for material para você, converse com um contador antes de usar o número.</strong></p>
+<h3 id="o-vencimento-que-o-app-mostra-e-confiavel">O vencimento que o app mostra é confiável?<a class="anc" href="#o-vencimento-que-o-app-mostra-e-confiavel" aria-label="Link para esta seção">#</a></h3>
+<p>Ele calcula o último dia útil do mês seguinte, pulando sábado e domingo — mas <strong>não considera feriados</strong>. Por isso: <strong>confira se cai em feriado; nesse caso o prazo é o dia útil anterior.</strong> O próprio app traz esse aviso abaixo da data.</p>
+<p>O erro vai na direção ruim — a data exibida pode ser <strong>posterior</strong> à real, e quem confia nela paga em atraso, com multa e juros.</p>
+<p>O caso prático é o fim de ano: a apuração de <strong>novembro</strong> vence em <strong>31/12</strong>, e nenhum feriado nacional de data fixa cai em dia 30 ou 31. Nos demais meses o risco é remoto.</p>
+<h2 id="a-lista-de-meses">A lista de meses<a class="anc" href="#a-lista-de-meses" aria-label="Link para esta seção">#</a></h2>
+<p>Cada mês é um cartão. O texto embaixo do mês diz o estado:</p>
+<div class="tablewrap"><table><thead><tr><th>Estado</th><th>O que significa</th></tr></thead><tbody><tr><td><strong>DARF a pagar</strong></td><td>há imposto a recolher naquele mês</td></tr><tr><td><strong>Abaixo de R$ 10 — acumula p/ o mês seguinte</strong></td><td>o imposto apurado é pequeno demais para gerar guia agora</td></tr><tr><td><strong>Coberto pelo IRRF retido (estimado)</strong></td><td>a retenção estimada da corretora cobriu o imposto</td></tr><tr><td><strong>Isento · vendas ≤ R$ 20k</strong></td><td>houve isenção por volume de vendas</td></tr><tr><td><strong>Sem imposto a pagar</strong></td><td>nada a recolher</td></tr></tbody></table></div>
+<p>À direita: o valor e uma etiqueta dizendo a origem — <strong>Brasil</strong>, <strong>Exterior</strong>, <strong>Cripto</strong>, ou combinações.</p>
+<p><strong>Toque no cartão para abrir.</strong> Dentro, cada linha mostra o imposto por código (6015, 8523, 4600) e, tocando, você chega ao detalhe com as vendas do mês.</p>
+<h3 id="o-que-significa-cada-codigo-de-darf">O que significa cada código de DARF<a class="anc" href="#o-que-significa-cada-codigo-de-darf" aria-label="Link para esta seção">#</a></h3>
+<div class="tablewrap"><table><thead><tr><th>Código</th><th>Cobre</th></tr></thead><tbody><tr><td>⏳ <strong>6015</strong></td><td>ganho líquido em operações de bolsa — ações, ETF, BDR, opções, cotas de FII, swing e day-trade</td></tr><tr><td>⏳ <strong>4600</strong></td><td>ganho de capital, que é o regime da <strong>cripto negociada no Brasil</strong></td></tr><tr><td>⏳ <strong>8523</strong></td><td>ganho de capital em bens e aplicações <strong>no exterior</strong> — só para fatos geradores <strong>até 31/12/2023</strong></td></tr></tbody></table></div>
+<p><strong>Sobre o 8523:</strong> desde ⏳ <strong>01/01/2024</strong> não existe mais DARF mensal do exterior. Rendimentos e ganhos de aplicações financeiras no exterior passaram a ser apurados <strong>uma vez por ano, na declaração</strong>, a ⏳ <strong>15%</strong>. Se você vê 8523 no app, é porque o mês é de 2023 ou anterior, e o valor ali é <strong>informativo</strong>.</p>
+<p>E o Fólio <strong>não calcula</strong> o imposto do exterior desse período antigo. É recusa deliberada, não falha: aquele regime dependia de saber a <strong>origem dos recursos</strong> — se você comprou o ativo com reais remetidos ou com dólares que já estavam lá fora —, porque isso decidia se a variação cambial era tributada. O app não tem esse dado. Ele também tinha isenção de ⏳ R$ 35.000 por mês e <strong>não admitia compensar prejuízo</strong>. Um número plausível calculado sem esses três elementos seria pior que nenhum número. Para declarar anos antigos, procure um contador.</p>
+<h3 id="o-prazo-e-o-piso-de-r-10">O prazo, e o piso de R$ 10<a class="anc" href="#o-prazo-e-o-piso-de-r-10" aria-label="Link para esta seção">#</a></h3>
+<p>O DARF vence no <strong>último dia útil do mês seguinte</strong> àquele em que o ganho foi apurado.</p>
+<p>⏳ <strong>Não se paga DARF abaixo de R$ 10.</strong> Quando o imposto do mês fica abaixo disso, ele não é recolhido agora: soma-se ao imposto dos meses seguintes, do mesmo código, até o total alcançar R$ 10. É por isso que um mês pode aparecer como <em>"Abaixo de R$ 10 — acumula p/ o mês seguinte"</em> mesmo tendo dado lucro. Cada código acumula por conta própria: 6015 e 4600 não se somam.</p>
+<h3 id="a-isencao-por-volume-de-vendas">A isenção por volume de vendas<a class="anc" href="#a-isencao-por-volume-de-vendas" aria-label="Link para esta seção">#</a></h3>
+<p>São isentos os ganhos com <strong>ações</strong>, no mercado à vista, se o total das <strong>alienações desse ativo no mês</strong> não passar de ⏳ <strong>R$ 20.000</strong>. Três coisas que quase todo mundo erra:</p>
+<ul><li><strong>O limite é de vendas, não de lucro.</strong> Vender R$ 19.000 e lucrar R$ 15.000 é isento; vender R$ 21.000 e lucrar R$ 300 não é.</li><li><strong>Passou do limite, tributa o ganho inteiro.</strong> Não é faixa: não se tributa só o excedente.</li><li><strong>Só ações.</strong> A isenção <strong>não</strong> cobre day-trade, cotas de ETF de ações, resgate de fundo de ações, FII, opções nem futuros. Ouro como ativo financeiro tem limite próprio de ⏳ R$ 20.000, em separado.</li></ul>
+<h3 id="o-irrf-retido-dedo-duro">O IRRF retido ("dedo-duro")<a class="anc" href="#o-irrf-retido-dedo-duro" aria-label="Link para esta seção">#</a></h3>
+<p>A corretora retém uma fatia mínima do imposto na própria operação, e informa a Receita — daí o apelido. São ⏳ <strong>0,005% sobre o valor das vendas</strong> comuns e ⏳ <strong>1% sobre o resultado positivo de day-trade</strong>.</p>
+<p>Essa retenção <strong>não é imposto extra</strong>: é <strong>antecipação</strong>. Ela pode ser abatida do DARF do mês, e o que sobrar de um mês vale para os meses seguintes do mesmo ano.</p>
+<p>Duas armadilhas:</p>
+<ul><li><strong>A retenção de 0,005% é dispensada quando o valor a reter fica em ⏳ R$ 1,00 ou menos</strong> no mês. Como R$ 1,00 corresponde a R$ 20.000 de vendas, na prática só há retenção acima desse volume. É <strong>coincidência aritmética</strong> com o limite da isenção, não a mesma regra — não confunda as duas.</li><li><strong>Ter o ganho isento não dispensa a retenção.</strong> No mês isento pelos R$ 20 mil a corretora retém igual. Só uma isenção de <strong>lei específica</strong> dispensa a retenção.</li></ul>
+<h2 id="o-cartao-relatorio-anual-de-irpf">O cartão "Relatório anual de IRPF"<a class="anc" href="#o-cartao-relatorio-anual-de-irpf" aria-label="Link para esta seção">#</a></h2>
+<p>Fica logo abaixo do resumo. Leva ao relatório que você usa na declaração anual: bens e direitos, rendimentos isentos, tributação exclusiva. Ver capítulo <a href="/manual/relatorio-irpf/">6</a>.</p>
+<h2 id="cripto">Cripto<a class="anc" href="#cripto" aria-label="Link para esta seção">#</a></h2>
+<p>Se você tem cripto, aparece um cartão laranja explicando que a venda de cripto tem regime e DARF próprios, e que a apuração mensal aparece aqui junto das demais.</p>
+<p>Meses com cripto abrem um detalhe próprio, com as vendas do mês.</p>
+<h3 id="cripto-tem-regime-e-darf-proprios">Cripto tem regime e DARF próprios<a class="anc" href="#cripto-tem-regime-e-darf-proprios" aria-label="Link para esta seção">#</a></h3>
+<p>Venda de cripto <strong>não é renda variável</strong>. Ela é <strong>ganho de capital</strong>, com guia própria — ⏳ código <strong>4600</strong> —, paga até o último dia útil do mês seguinte à operação.</p>
+<h4 id="cripto-negociada-no-brasil">Cripto negociada no Brasil<a class="anc" href="#cripto-negociada-no-brasil" aria-label="Link para esta seção">#</a></h4>
+<ul><li><strong>Isenção, tudo ou nada:</strong> se o total alienado no mês ficar até ⏳ <strong>R$ 35.000</strong>, o ganho é isento. Se passar, <strong>todo</strong> o ganho do mês é tributado — não só o excedente.</li><li><strong>Alíquotas progressivas</strong> sobre o ganho do mês: ⏳ 15% até R$ 5 milhões · 17,5% de R$ 5 a 10 milhões · 20% de R$ 10 a 30 milhões · 22,5% acima de R$ 30 milhões.</li><li><strong>Não há compensação de prejuízo.</strong> Prejuízo num mês não abate ganho de outro, nem de outro ativo. É diferente da bolsa, onde o prejuízo carrega.</li></ul>
+<h4 id="cripto-em-exchange-no-exterior">Cripto em exchange no exterior<a class="anc" href="#cripto-em-exchange-no-exterior" aria-label="Link para esta seção">#</a></h4>
+<p>Regime completamente diferente: ⏳ <strong>15%</strong>, apurado <strong>uma vez por ano na declaração</strong>, junto com as outras aplicações financeiras no exterior. E aqui vale uma frase que não tem meio-termo: <strong>não existe isenção de pequeno valor no exterior.</strong> Nenhum limite salva o ganho.</p>
+<p>No app, cadastre esse caso como <strong>Cripto (exterior)</strong>. O ganho dele <strong>não</strong> aparece no cálculo mensal — vai para o Relatório anual.</p>
+<h4 id="a-pegadinha-que-quase-todo-site-erra">A pegadinha que quase todo site erra<a class="anc" href="#a-pegadinha-que-quase-todo-site-erra" aria-label="Link para esta seção">#</a></h4>
+<p>⚠️ <strong>O volume do exterior conta no teto de R$ 35 mil do mês.</strong> O limite observa o conjunto de criptoativos alienados <strong>no Brasil ou no exterior</strong>, de qualquer tipo — bitcoin, altcoin, stablecoin, NFT.</p>
+<p>Então: você vendeu R$ 20 mil de cripto na exchange brasileira e R$ 20 mil na estrangeira no mesmo mês. O teto estourou. O ganho da parte <strong>brasileira</strong> perde a isenção e passa a ser tributado integralmente — mesmo que, olhando só a exchange do Brasil, você estivesse dentro do limite. O ganho da parte estrangeira segue no regime anual dos 15%; só o <strong>volume</strong> dela atravessa.</p>
+<p>É por isso que o app soma as duas para decidir a isenção, e por isso avisa <strong>VERIFICAR CÂMBIO</strong> quando falta a cotação de uma operação no exterior: sem ela, ele não consegue afirmar se o mês passou do teto — e prefere avisar a chutar para o lado errado.</p>
+<p><strong>Atenção:</strong> autocustódia (carteira privada) de residente no Brasil conta como <strong>nacional</strong>, não como exterior. O que define é onde o ativo está custodiado ou negociado — e, na autocustódia, a residência de quem detém.</p>
+<p><strong>Uma armadilha de cadastro:</strong> ETF de cripto negociado na B3 (por exemplo <code>HASH11</code>, <code>COIN11</code>) <strong>não é criptoativo</strong> — é cota de fundo brasileiro. Cadastrar como cripto joga o valor no regime de ganho de capital, que é o errado.</p>
+<h2 id="decripto">DeCripto<a class="anc" href="#decripto" aria-label="Link para esta seção">#</a></h2>
+<p>Abaixo de um divisor escrito <strong>OBRIGAÇÕES DE DECLARAR</strong> pode aparecer um cartão de borda tracejada chamado <strong>DeCripto</strong>, com a etiqueta <strong>"DECLARAÇÃO · NÃO É IMPOSTO"</strong>.</p>
+<p>Ele lista meses em que você provavelmente precisa entregar uma declaração mensal — não pagar imposto. Os meses marcados ganham a etiqueta <strong>INFORMAR</strong>.</p>
+<p>O botão <strong>Exportar resumo do mês (CSV)</strong> salva um arquivo de conferência.</p>
+<p><strong>O app não transmite nem gera o arquivo oficial dessa declaração.</strong> Ele apenas sinaliza e exporta um apoio.</p>
+<h3 id="o-que-e-a-decripto-e-por-que-ela-nao-e-imposto">O que é a DeCripto — e por que ela não é imposto<a class="anc" href="#o-que-e-a-decripto-e-por-que-ela-nao-e-imposto" aria-label="Link para esta seção">#</a></h3>
+<p>A <strong>DeCripto</strong> (Declaração de Criptoativos) é uma obrigação de <strong>informar</strong>, mensal, separada da declaração anual de imposto de renda. Ela <strong>não gera imposto a pagar</strong>. É o Brasil se alinhando ao padrão internacional de troca automática de dados sobre criptoativos.</p>
+<h4 id="quem-declara">Quem declara<a class="anc" href="#quem-declara" aria-label="Link para esta seção">#</a></h4>
+<p><strong>Quase sempre, não é você.</strong> Se você opera por <strong>exchange brasileira</strong>, a própria exchange informa — todo mês, independentemente de valor. Você não precisa fazer nada.</p>
+<p>A pessoa física só declara quando opera <strong>sem intermediação de exchange brasileira</strong> — exchange no exterior, DeFi, autocustódia ou negócio direto entre pessoas — <strong>e</strong> o valor mensal das operações passa do limite.</p>
+<h4 id="o-limite-muda-de-valor-em-072026">O limite muda de valor em 07/2026<a class="anc" href="#o-limite-muda-de-valor-em-072026" aria-label="Link para esta seção">#</a></h4>
+<div class="tablewrap"><table><thead><tr><th>Competência</th><th>Limite mensal</th><th>Norma</th></tr></thead><tbody><tr><td>até ⏳ <strong>06/2026</strong></td><td>⏳ <strong>R$ 30.000</strong></td><td>IN RFB 1.888/2019</td></tr><tr><td>a partir de ⏳ <strong>07/2026</strong></td><td>⏳ <strong>R$ 35.000</strong></td><td>IN RFB 2.291/2025 (DeCripto)</td></tr></tbody></table></div>
+<p>É por isso que o app mostra a norma ao lado de cada mês. Aplicar R$ 35 mil a um mês de 2024 deixaria de avisar uma obrigação que existia.</p>
+<h4 id="o-gatilho-e-a-movimentacao-nao-o-saldo-e-nao-sao-so-as-vendas">O gatilho é a movimentação, não o saldo — e não são só as vendas<a class="anc" href="#o-gatilho-e-a-movimentacao-nao-o-saldo-e-nao-sao-so-as-vendas" aria-label="Link para esta seção">#</a></h4>
+<p>Conta o valor das <strong>operações</strong> do mês: compra, venda, permuta, doação, transferência para a exchange, retirada da exchange, aluguel, dação em pagamento, emissão. <strong>Um mês só de compras de R$ 40 mil já dispara a obrigação.</strong></p>
+<p>Este limite <strong>não tem nada a ver</strong> com os R$ 35 mil da isenção de ganho de capital. São regras diferentes: uma decide se você <strong>informa</strong>, a outra se você <strong>paga</strong>. Coincidirem no valor a partir de 07/2026 é coincidência.</p>
+<h4 id="prazo-e-onde-entregar">Prazo e onde entregar<a class="anc" href="#prazo-e-onde-entregar" aria-label="Link para esta seção">#</a></h4>
+<p>Até o <strong>último dia útil do mês seguinte</strong> àquele em que as operações ocorreram, pelo <strong>e-CAC</strong> da Receita Federal (é preciso certificado digital). Atraso, omissão ou erro sujeitam a multa.</p>
+<p><strong>O Fólio não transmite nem gera o arquivo oficial.</strong> Ele <strong>sinaliza</strong> os meses em que você provavelmente precisa informar — a partir do que está cadastrado como cripto no exterior — e exporta um CSV de apoio para conferência. A entrega é sua.</p>
+<p>⚠️ <strong>Um ponto cego que é seu, não do app:</strong> autocustódia ou negócio direto com cripto <strong>nacional</strong> também conta para o limite, e o app não sabe onde a sua cripto nacional está custodiada. Se for o seu caso, some manualmente.</p>
+<h3 id="apareceu-verificar-cambio-num-mes-o-que-fazer">Apareceu "VERIFICAR CÂMBIO" num mês. O que fazer?<a class="anc" href="#apareceu-verificar-cambio-num-mes-o-que-fazer" aria-label="Link para esta seção">#</a></h3>
+<p>Há uma operação sem cotação de câmbio informada naquele mês, então o app não consegue afirmar se o total passou do limite. Abra a operação em <a href="/manual/operacoes/">Operações</a> e preencha a cotação.</p>
+<h2 id="o-que-costuma-confundir">O que costuma confundir<a class="anc" href="#o-que-costuma-confundir" aria-label="Link para esta seção">#</a></h2>
+<p><strong>"Sem imposto a apurar" não quer dizer que você não declara nada.</strong> O imposto mensal só existe quando há venda. Quem só compra e guarda continua tendo o que declarar na ficha de bens — está no <a href="/manual/relatorio-irpf/">Relatório anual</a>.</p>
+<p><strong>O botão de ano muda a tela inteira</strong>, não só o cartão de cima.</p>
+<p><strong>Um mês pode ter DARF de mais de um código.</strong> Nesse caso são guias separadas, com códigos separados.</p>
+<h2 id="o-que-esta-tela-nao-faz">O que esta tela NÃO faz<a class="anc" href="#o-que-esta-tela-nao-faz" aria-label="Link para esta seção">#</a></h2>
+<ul><li><strong>Não emite nem paga DARF.</strong> Ela calcula o valor; a guia você gera no site da Receita.</li><li>Não transmite declaração nenhuma.</li><li>Não considera feriados no cálculo do vencimento.</li><li>Não cobre o imposto anual — isso é o <a href="/manual/relatorio-irpf/">Relatório</a>.</li><li>Não substitui o seu contador. Em valores relevantes, converse com um.</li></ul>
+      </div>
+      <p class="legalnote">Manual do usuário do Fólio Invest — descreve o comportamento do app na versão indicada no topo. Conteúdo informativo e educativo: não é consultoria tributária, contábil ou de investimentos, não é recomendação de compra, venda ou manutenção de qualquer ativo, e não substitui a orientação de um profissional para o seu caso concreto. Quando o capítulo traz regra tributária, ela foi verificada nas fontes oficiais na data indicada no próprio capítulo. A responsabilidade pela declaração é do contribuinte.</p>
+      <nav class="pager" aria-label="Navegação entre capítulos">
+<a href="/manual/dividendos/"><span class="k">← Capítulo anterior</span><span class="t">4. Dividendos</span></a>
+<a class="nx" href="/manual/relatorio-irpf/"><span class="k">Próximo capítulo →</span><span class="t">6. Relatório anual de IRPF</span></a>
+      </nav>
+    </article>
+<aside class="rail"><div class="stick"><p class="rt">Neste capítulo</p><ol><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#o-cartao-resumo-fiscal">O cartão RESUMO FISCAL</a></li><li><a href="#a-lista-de-meses">A lista de meses</a></li><li><a href="#o-cartao-relatorio-anual-de-irpf">O cartão "Relatório anual de IRPF"</a></li><li><a href="#cripto">Cripto</a></li><li><a href="#decripto">DeCripto</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></div></aside>
+  </div>
+</main>
+<footer id="contato">
+  <div class="wrap">
+    <div class="ftgrid">
+      <div>
+        <a class="brand" href="/" aria-label="Fólio Invest — início">
+          <span class="mk" aria-hidden="true"><svg viewBox="19 20 70 70" fill="none"><path d="M32,76 V37 a3,3 0 0 1 3,-3 H58 M32,55 H52" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5,68.5 V71.5 M65.5,58.5 V71.5 M77.5,46.5 V71.5" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg></span>
+          Fólio Invest
+        </a>
+        <p class="fdesc">App Android para organizar carteira, dividendos e Imposto de Renda do investidor pessoa física. Offline, sem cadastro, sem servidores.</p>
+      </div>
+      <div>
+        <h5>Conteúdo</h5>
+        <a class="fl" href="/guias/">Guias de imposto de renda</a>
+        <a class="fl" href="/manual/">Manual do usuário</a>
+        <a class="fl" href="/#func">Funcionalidades</a>
+      </div>
+      <div>
+        <h5>Contato</h5>
+        <a class="fl" href="/suporte/">Suporte</a>
+        <a class="fl" href="mailto:suporte@folioinvest.com.br">suporte@folioinvest.com.br</a>
+        <a class="fl" href="/privacidade/">Política de Privacidade</a>
+        <a class="fl" href="/assinatura/">Termo de Assinatura</a>
+      </div>
+    </div>
+    <div class="legal">
+      <p><strong>Aviso legal:</strong> o Fólio é uma ferramenta informativa e de organização. Não é recomendação de investimento, não é orientação tributária e não substitui consultoria profissional.</p>
+      <p>Cotações podem ter atrasos. O preenchimento correto dos dados e a conferência dos resultados são de responsabilidade exclusiva do usuário. Sempre confira com sua corretora, a B3 e a Receita Federal.</p>
+      <p style="opacity:.8">© 2026 Fólio Invest · LS Mundim Tecnologia LTDA · CNPJ 67.504.827/0001-03.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

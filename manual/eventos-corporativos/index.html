@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!--
+  ARQUIVO GERADO — NAO EDITE A MAO.
+  Fonte: app-investimentos/docs/ (conteudo-site/ e manual/).
+  Regerar: powershell -File docs\site-build\build-site.ps1
+  Editar aqui e perder na proxima geracao; pior, o site passa a divergir do
+  manual que integra o contrato (J-11 / CDC art. 30).
+-->
+
+<title>Eventos corporativos — Manual do Fólio Invest</title>
+<meta name="description" content="registra desdobramentos, grupamentos e bonificações — os eventos em que a quantidade das suas ações muda sem você ter comprado nada.">
+<meta name="theme-color" content="#1E3A8A">
+<link rel="canonical" href="https://folioinvest.com.br/manual/eventos-corporativos/">
+
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/img/icon-512.png">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fólio Invest">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://folioinvest.com.br/manual/eventos-corporativos/">
+<meta property="og:title" content="Eventos corporativos — Manual do Fólio Invest">
+<meta property="og:description" content="registra desdobramentos, grupamentos e bonificações — os eventos em que a quantidade das suas ações muda sem você ter comprado nada.">
+<meta property="og:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Eventos corporativos — Manual do Fólio Invest">
+<meta name="twitter:description" content="registra desdobramentos, grupamentos e bonificações — os eventos em que a quantidade das suas ações muda sem você ter comprado nada.">
+<meta name="twitter:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
+
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"TechArticle",
+"headline":"Eventos corporativos",
+"description":"registra desdobramentos, grupamentos e bonificações — os eventos em que a quantidade das suas ações muda sem você ter comprado nada.",
+"inLanguage":"pt-BR",
+"dateModified":"2026-07-29",
+"mainEntityOfPage":{"@type":"WebPage","@id":"https://folioinvest.com.br/manual/eventos-corporativos/"},
+"author":{"@type":"Organization","name":"Fólio Invest"},
+"publisher":{"@type":"Organization","name":"Fólio Invest","url":"https://folioinvest.com.br/"},
+"about":{"@type":"SoftwareApplication","name":"Fólio Invest",
+"applicationCategory":"FinanceApplication","operatingSystem":"Android",
+"softwareVersion":"0.62.1"},
+"isAccessibleForFree":true},
+{"@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Início","item":"https://folioinvest.com.br/"},
+    {"@type":"ListItem","position":2,"name":"Manual","item":"https://folioinvest.com.br/manual/"},
+    {"@type":"ListItem","position":3,"name":"10. Eventos corporativos","item":"https://folioinvest.com.br/manual/eventos-corporativos/"}
+]}
+]}
+</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Fólio Invest — início">
+      <span class="mk" aria-hidden="true"><svg viewBox="19 20 70 70" fill="none"><path d="M32,76 V37 a3,3 0 0 1 3,-3 H58 M32,55 H52" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5,68.5 V71.5 M65.5,58.5 V71.5 M77.5,46.5 V71.5" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg></span>
+      Fólio Invest
+    </a>
+    <div class="navlinks">
+      <a href="/#func">Funcionalidades</a>
+      <a href="/guias/">Guias de IR</a>
+      <a href="/manual/" aria-current="page">Manual</a>
+      <a href="/#priv">Privacidade</a>
+      <a href="/#faq">FAQ</a>
+    </div>
+  </div>
+</nav>
+<main id="conteudo">
+  <div class="wrap">
+<nav class="crumb" aria-label="Trilha"><ol><li><a href="/">Início</a></li><li><a href="/manual/">Manual</a></li><li aria-current="page">10. Eventos corporativos</li></ol></nav>
+  </div>
+  <div class="wrap page">
+    <article>
+      <p class="eyebrow">Manual do usuário · Capítulo 10</p>
+      <h1>Eventos corporativos</h1>
+      <p class="verhdr"><em>Este capítulo descreve o Fólio Invest na versão <strong>0.62.1</strong>. Se o seu app estiver em outra versão, um detalhe de tela ou de comportamento pode ser diferente.</em></p>
+      <div class="docmeta">
+        <span class="tag">No app: Mais opções</span>
+      </div>
+<details class="toc"><summary>Neste capítulo</summary><ol><li><a href="#o-que-sao-esses-eventos">O que são esses eventos</a></li><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#o-caca-eventos-caminho-recomendado">O Caça-eventos (caminho recomendado)</a></li><li><a href="#como-cadastrar-um-evento-manualmente">Como cadastrar um evento manualmente</a></li><li><a href="#a-lista-de-eventos-cadastrados">A lista de eventos cadastrados</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></details>
+      <div class="body">
+<div class="callout serve">
+<p class="ct"><span aria-hidden="true">🎯</span> Para que serve</p>
+<p>registra desdobramentos, grupamentos e bonificações — os eventos em que a quantidade das suas ações muda sem você ter comprado nada.</p>
+</div>
+<p>Como chegar: <strong>⋮</strong> › <strong>Eventos corporativos</strong>.</p>
+<div class="callout fiscal">
+<p class="ct"><span aria-hidden="true">🧾</span> Conteúdo fiscal verificado</p>
+<p><strong>Conteúdo fiscal verificado em 28/07/2026</strong> nas fontes oficiais — lei, instrução normativa e as Perguntas e Respostas do IRPF. Valores marcados com ⏳ mudam de ano em ano; revisão prevista até <strong>31/01/2027</strong>.</p>
+</div>
+<h2 id="o-que-sao-esses-eventos">O que são esses eventos<a class="anc" href="#o-que-sao-esses-eventos" aria-label="Link para esta seção">#</a></h2>
+<ul><li><strong>Desdobramento (split):</strong> cada ação vira várias. Você fica com mais ações, cada uma valendo proporcionalmente menos. O valor total não muda.</li><li><strong>Grupamento (inplit):</strong> o contrário — várias ações viram uma.</li><li><strong>Bonificação:</strong> a empresa distribui ações novas, sem você pagar.</li></ul>
+<p>Sem registrar, sua quantidade fica errada, e o preço médio também — o que contamina o cálculo de lucro na venda.</p>
+<h2 id="o-que-da-para-fazer-aqui">O que dá para fazer aqui<a class="anc" href="#o-que-da-para-fazer-aqui" aria-label="Link para esta seção">#</a></h2>
+<ol><li><strong>Rodar o Caça-eventos</strong>, que procura os eventos que faltam.</li><li><strong>Cadastrar um evento</strong> manualmente.</li><li><strong>Ver, editar e excluir</strong> os eventos já cadastrados.</li></ol>
+<h2 id="o-caca-eventos-caminho-recomendado">O Caça-eventos (caminho recomendado)<a class="anc" href="#o-caca-eventos-caminho-recomendado" aria-label="Link para esta seção">#</a></h2>
+<ol><li>No cartão <strong>Caça-eventos</strong> (etiqueta AUTOMÁTICO), toque em <strong>Caça-eventos</strong>.</li><li>O app procura splits, grupamentos e bonificações faltantes nos seus papéis.</li><li>Aparece a lista do que ele detectou, com o tipo e a proporção.</li><li>Para cada item, escolha:<ul><li><strong>Cadastrar split</strong> — aceita como o app propôs;</li><li><strong>Reverter e cadastrar</strong> — inverte a proporção;</li><li><strong>Classificar evento</strong> — quando o app não tem certeza se é desdobramento/grupamento ou bonificação;</li><li><strong>Manual</strong> — cadastra você mesmo;</li><li><strong>Abrir operações de &lt;papel&gt;</strong> — vai à lista de operações daquele papel.</li></ul></li><li>Ao classificar, o app explica a diferença: desdobramento/grupamento é <strong>custo-neutro</strong> (só muda a quantidade); bonificação envolve um custo informado pela empresa.</li></ol>
+<p><strong>Antes de qualquer mudança o app faz um backup automático cifrado.</strong> Isso está escrito na própria tela.</p>
+<h3 id="o-caca-eventos-nao-achou-um-evento-que-eu-sei-que-existiu">O Caça-eventos não achou um evento que eu sei que existiu<a class="anc" href="#o-caca-eventos-nao-achou-um-evento-que-eu-sei-que-existiu" aria-label="Link para esta seção">#</a></h3>
+<p>Cadastre manualmente pelo botão <strong>Cadastrar evento</strong>.</p>
+<h3 id="o-app-achou-um-fator-pequeno-o-que-e-isso">O app achou um "fator pequeno". O que é isso?<a class="anc" href="#o-app-achou-um-fator-pequeno-o-que-e-isso" aria-label="Link para esta seção">#</a></h3>
+<p>Um ajuste de proporção pequeno, que costuma ser bonificação e não split. O app avisa e pede que você classifique — ele não decide sozinho.</p>
+<h2 id="como-cadastrar-um-evento-manualmente">Como cadastrar um evento manualmente<a class="anc" href="#como-cadastrar-um-evento-manualmente" aria-label="Link para esta seção">#</a></h2>
+<ol><li>Toque em <strong>Cadastrar evento</strong>.</li><li><strong>Papel</strong> (ex.: PETR4).</li><li>Escolha o tipo.</li><li><strong>Desdobramento / grupamento:</strong> informe <strong>De</strong> e <strong>Para</strong> (ex.: de 1 para 2) e a <strong>Data</strong>.</li><li><strong>Bonificação:</strong> informe a <strong>% de bonificação</strong>, o <strong>custo atribuído por ação bonificada (R$)</strong> e a <strong>Data-ex</strong>.</li><li>Observação, se quiser.</li><li>Salve.</li></ol>
+<p>A tela mostra dois blocos de apoio:</p>
+<ul><li><strong>ONDE ENCONTRAR ESSE VALOR</strong> — onde achar o custo atribuído.</li><li><strong>COMO SUA POSIÇÃO FICA</strong> — a simulação de quantidade e preço médio antes e depois.</li></ul>
+<p>O custo atribuído não é uma estimativa sua — veja abaixo de onde ele vem, e em que caso o valor correto é R$ 0.</p>
+<h3 id="por-que-a-bonificacao-pede-um-valor-e-o-desdobramento-nao">Por que a bonificação pede um valor e o desdobramento não<a class="anc" href="#por-que-a-bonificacao-pede-um-valor-e-o-desdobramento-nao" aria-label="Link para esta seção">#</a></h3>
+<p>Os dois eventos aumentam a sua quantidade de ações sem você comprar nada. Fiscalmente, são coisas diferentes.</p>
+<p><strong>Desdobramento (e grupamento): custo zero, e isso é a regra.</strong> As ações novas entram com custo <strong>igual a zero</strong>. Só a quantidade muda; o valor total investido <strong>permanece inalterado</strong>, e o preço médio cai na mesma proporção. Não há nada a informar além da proporção e da data.</p>
+<p><strong>Bonificação: existe um custo, e ele vem da empresa.</strong> Quando a companhia incorpora lucros ou reservas ao capital social e distribui ações novas, o custo de aquisição dessas ações é <strong>o valor do lucro ou da reserva capitalizado que corresponder a você</strong> — independentemente de como a empresa é tributada.</p>
+<p>Esse número <strong>não é sua estimativa</strong>: ele vem do comunicado da empresa sobre o evento (o bloco <strong>ONDE ENCONTRAR ESSE VALOR</strong> na tela indica onde). É por isso que o formulário pede o <strong>custo atribuído por ação bonificada</strong>.</p>
+<h4 id="por-que-isso-muda-o-seu-imposto">Por que isso muda o seu imposto<a class="anc" href="#por-que-isso-muda-o-seu-imposto" aria-label="Link para esta seção">#</a></h4>
+<p>Custo atribuído maior significa preço médio maior, e portanto lucro menor quando você vender. Informar R$ 0 numa bonificação que <strong>teve</strong> valor atribuído infla o lucro e faz você <strong>pagar imposto a mais</strong>. É erro na direção que ninguém reclama — mas é erro.</p>
+<h4 id="quando-o-zero-e-correto">Quando o zero é correto<a class="anc" href="#quando-o-zero-e-correto" aria-label="Link para esta seção">#</a></h4>
+<ul><li><strong>Quando a empresa não atribuiu valor</strong> à bonificação. Aí as ações entram sem custo, e é isso que o app registra com R$ 0.</li><li>⏳ <strong>Bonificações de lucros apurados em 1994 e 1995</strong> têm custo zero por determinação expressa. Caso raro hoje, mas existe.</li></ul>
+<p>⚠️ <strong>Bonificação em ações não é o mesmo que dividendo.</strong> Bonificação altera quantidade e custo; provento em dinheiro se lança em <a href="/manual/dividendos/">Dividendos</a>. Registrar um no lugar do outro erra as duas coisas.</p>
+<h2 id="a-lista-de-eventos-cadastrados">A lista de eventos cadastrados<a class="anc" href="#a-lista-de-eventos-cadastrados" aria-label="Link para esta seção">#</a></h2>
+<p>Cada linha mostra a data e a descrição do evento. Bonificações mostram também o custo atribuído por ação.</p>
+<p>Quando não há nada, o app orienta: use o Caça-eventos, ou cadastre à mão.</p>
+<h2 id="o-que-costuma-confundir">O que costuma confundir<a class="anc" href="#o-que-costuma-confundir" aria-label="Link para esta seção">#</a></h2>
+<p><strong>A data que importa é a data-ex</strong>, o dia a partir do qual a ação já negocia ajustada — não o dia do anúncio.</p>
+<p><strong>Desdobramento não é lucro.</strong> Sua quantidade sobe e o preço médio cai na mesma proporção. Nada muda no valor investido.</p>
+<p><strong>Cadastrar um evento muda o preço médio de tudo que veio depois</strong> — inclusive o imposto já apurado em meses passados. Confira o mês afetado na aba <a href="/manual/imposto-de-renda/">IR</a>.</p>
+<h2 id="o-que-esta-tela-nao-faz">O que esta tela NÃO faz<a class="anc" href="#o-que-esta-tela-nao-faz" aria-label="Link para esta seção">#</a></h2>
+<ul><li>Não busca eventos na internet a partir de um calendário oficial: o Caça-eventos trabalha em cima dos seus próprios dados.</li><li>Não registra dividendo, JCP nem rendimento — isso é <a href="/manual/dividendos/">Dividendos</a>.</li><li>Não desfaz sozinho um evento cadastrado errado — você precisa editar ou excluir.</li></ul>
+      </div>
+      <p class="legalnote">Manual do usuário do Fólio Invest — descreve o comportamento do app na versão indicada no topo. Conteúdo informativo e educativo: não é consultoria tributária, contábil ou de investimentos, não é recomendação de compra, venda ou manutenção de qualquer ativo, e não substitui a orientação de um profissional para o seu caso concreto. Quando o capítulo traz regra tributária, ela foi verificada nas fontes oficiais na data indicada no próprio capítulo. A responsabilidade pela declaração é do contribuinte.</p>
+      <nav class="pager" aria-label="Navegação entre capítulos">
+<a href="/manual/posicoes-de-patrimonio/"><span class="k">← Capítulo anterior</span><span class="t">9. Posições de patrimônio</span></a>
+<a class="nx" href="/manual/importacoes/"><span class="k">Próximo capítulo →</span><span class="t">11. Importações</span></a>
+      </nav>
+    </article>
+<aside class="rail"><div class="stick"><p class="rt">Neste capítulo</p><ol><li><a href="#o-que-sao-esses-eventos">O que são esses eventos</a></li><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#o-caca-eventos-caminho-recomendado">O Caça-eventos (caminho recomendado)</a></li><li><a href="#como-cadastrar-um-evento-manualmente">Como cadastrar um evento manualmente</a></li><li><a href="#a-lista-de-eventos-cadastrados">A lista de eventos cadastrados</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></div></aside>
+  </div>
+</main>
+<footer id="contato">
+  <div class="wrap">
+    <div class="ftgrid">
+      <div>
+        <a class="brand" href="/" aria-label="Fólio Invest — início">
+          <span class="mk" aria-hidden="true"><svg viewBox="19 20 70 70" fill="none"><path d="M32,76 V37 a3,3 0 0 1 3,-3 H58 M32,55 H52" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5,68.5 V71.5 M65.5,58.5 V71.5 M77.5,46.5 V71.5" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg></span>
+          Fólio Invest
+        </a>
+        <p class="fdesc">App Android para organizar carteira, dividendos e Imposto de Renda do investidor pessoa física. Offline, sem cadastro, sem servidores.</p>
+      </div>
+      <div>
+        <h5>Conteúdo</h5>
+        <a class="fl" href="/guias/">Guias de imposto de renda</a>
+        <a class="fl" href="/manual/">Manual do usuário</a>
+        <a class="fl" href="/#func">Funcionalidades</a>
+      </div>
+      <div>
+        <h5>Contato</h5>
+        <a class="fl" href="/suporte/">Suporte</a>
+        <a class="fl" href="mailto:suporte@folioinvest.com.br">suporte@folioinvest.com.br</a>
+        <a class="fl" href="/privacidade/">Política de Privacidade</a>
+        <a class="fl" href="/assinatura/">Termo de Assinatura</a>
+      </div>
+    </div>
+    <div class="legal">
+      <p><strong>Aviso legal:</strong> o Fólio é uma ferramenta informativa e de organização. Não é recomendação de investimento, não é orientação tributária e não substitui consultoria profissional.</p>
+      <p>Cotações podem ter atrasos. O preenchimento correto dos dados e a conferência dos resultados são de responsabilidade exclusiva do usuário. Sempre confira com sua corretora, a B3 e a Receita Federal.</p>
+      <p style="opacity:.8">© 2026 Fólio Invest · LS Mundim Tecnologia LTDA · CNPJ 67.504.827/0001-03.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!--
+  ARQUIVO GERADO — NAO EDITE A MAO.
+  Fonte: app-investimentos/docs/ (conteudo-site/ e manual/).
+  Regerar: powershell -File docs\site-build\build-site.ps1
+  Editar aqui e perder na proxima geracao; pior, o site passa a divergir do
+  manual que integra o contrato (J-11 / CDC art. 30).
+-->
+
+<title>Operações — Manual do Fólio Invest</title>
+<meta name="description" content="é o caderno de compras e vendas. Tudo o que você comprou ou vendeu de bolsa está listado aqui, e é daqui que sai quase todo o resto do app.">
+<meta name="theme-color" content="#1E3A8A">
+<link rel="canonical" href="https://folioinvest.com.br/manual/operacoes/">
+
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/img/icon-512.png">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fólio Invest">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://folioinvest.com.br/manual/operacoes/">
+<meta property="og:title" content="Operações — Manual do Fólio Invest">
+<meta property="og:description" content="é o caderno de compras e vendas. Tudo o que você comprou ou vendeu de bolsa está listado aqui, e é daqui que sai quase todo o resto do app.">
+<meta property="og:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Operações — Manual do Fólio Invest">
+<meta name="twitter:description" content="é o caderno de compras e vendas. Tudo o que você comprou ou vendeu de bolsa está listado aqui, e é daqui que sai quase todo o resto do app.">
+<meta name="twitter:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
+
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"TechArticle",
+"headline":"Operações",
+"description":"é o caderno de compras e vendas. Tudo o que você comprou ou vendeu de bolsa está listado aqui, e é daqui que sai quase todo o resto do app.",
+"inLanguage":"pt-BR",
+"dateModified":"2026-07-29",
+"mainEntityOfPage":{"@type":"WebPage","@id":"https://folioinvest.com.br/manual/operacoes/"},
+"author":{"@type":"Organization","name":"Fólio Invest"},
+"publisher":{"@type":"Organization","name":"Fólio Invest","url":"https://folioinvest.com.br/"},
+"about":{"@type":"SoftwareApplication","name":"Fólio Invest",
+"applicationCategory":"FinanceApplication","operatingSystem":"Android",
+"softwareVersion":"0.62.1"},
+"isAccessibleForFree":true},
+{"@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Início","item":"https://folioinvest.com.br/"},
+    {"@type":"ListItem","position":2,"name":"Manual","item":"https://folioinvest.com.br/manual/"},
+    {"@type":"ListItem","position":3,"name":"7. Operações","item":"https://folioinvest.com.br/manual/operacoes/"}
+]}
+]}
+</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Fólio Invest — início">
+      <span class="mk" aria-hidden="true"><svg viewBox="19 20 70 70" fill="none"><path d="M32,76 V37 a3,3 0 0 1 3,-3 H58 M32,55 H52" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5,68.5 V71.5 M65.5,58.5 V71.5 M77.5,46.5 V71.5" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg></span>
+      Fólio Invest
+    </a>
+    <div class="navlinks">
+      <a href="/#func">Funcionalidades</a>
+      <a href="/guias/">Guias de IR</a>
+      <a href="/manual/" aria-current="page">Manual</a>
+      <a href="/#priv">Privacidade</a>
+      <a href="/#faq">FAQ</a>
+    </div>
+  </div>
+</nav>
+<main id="conteudo">
+  <div class="wrap">
+<nav class="crumb" aria-label="Trilha"><ol><li><a href="/">Início</a></li><li><a href="/manual/">Manual</a></li><li aria-current="page">7. Operações</li></ol></nav>
+  </div>
+  <div class="wrap page">
+    <article>
+      <p class="eyebrow">Manual do usuário · Capítulo 7</p>
+      <h1>Operações</h1>
+      <p class="verhdr"><em>Este capítulo descreve o Fólio Invest na versão <strong>0.62.1</strong>. Se o seu app estiver em outra versão, um detalhe de tela ou de comportamento pode ser diferente.</em></p>
+      <div class="docmeta">
+        <span class="tag">No app: Mais opções</span>
+      </div>
+<details class="toc"><summary>Neste capítulo</summary><ol><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#como-cadastrar-uma-compra">Como cadastrar uma compra</a></li><li><a href="#como-cadastrar-uma-venda">Como cadastrar uma venda</a></li><li><a href="#como-achar-uma-operacao-antiga">Como achar uma operação antiga</a></li><li><a href="#o-cartao-resumo-do-periodo">O cartão RESUMO DO PERÍODO</a></li><li><a href="#a-lista">A lista</a></li><li><a href="#como-editar-ou-excluir">Como editar ou excluir</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></details>
+      <div class="body">
+<div class="callout serve">
+<p class="ct"><span aria-hidden="true">🎯</span> Para que serve</p>
+<p>é o caderno de compras e vendas. Tudo o que você comprou ou vendeu de bolsa está listado aqui, e é daqui que sai quase todo o resto do app.</p>
+</div>
+<p>Como chegar: <strong>⋮</strong> › <strong>Operações</strong>. (Ela não fica na barra de baixo.)</p>
+<div class="callout fiscal">
+<p class="ct"><span aria-hidden="true">🧾</span> Conteúdo fiscal verificado</p>
+<p><strong>Conteúdo fiscal verificado em 28/07/2026</strong> nas fontes oficiais — lei, instrução normativa e as Perguntas e Respostas do IRPF. Valores marcados com ⏳ mudam de ano em ano; revisão prevista até <strong>31/01/2027</strong>.</p>
+</div>
+<h2 id="o-que-da-para-fazer-aqui">O que dá para fazer aqui<a class="anc" href="#o-que-da-para-fazer-aqui" aria-label="Link para esta seção">#</a></h2>
+<ol><li><strong>Cadastrar uma compra</strong> ou <strong>uma venda</strong> (botões fixos no rodapé).</li><li><strong>Buscar</strong> um papel.</li><li><strong>Filtrar</strong> por compras/vendas, tipo de ativo, período e ordem.</li><li><strong>Editar</strong> uma operação — toque nela.</li><li><strong>Excluir</strong> — arraste o cartão da direita para a esquerda.</li></ol>
+<h2 id="como-cadastrar-uma-compra">Como cadastrar uma compra<a class="anc" href="#como-cadastrar-uma-compra" aria-label="Link para esta seção">#</a></h2>
+<ol><li>Toque em <strong>Nova compra</strong> (botão azul, rodapé).</li><li><strong>Tipo de ativo</strong> — Ações, FII, ETF, ETF Renda Fixa, BDR, Ações e ETFs EUA, Opções, Cripto, Cripto (exterior).</li><li><strong>Papel</strong> — o ticker. O campo sugere papéis que você já usou.</li><li><strong>Quantidade</strong> e <strong>Preço unitário</strong>.</li><li><strong>Data da compra</strong>.</li><li><strong>Custos</strong> (corretagem e taxas) — opcional.</li><li><strong>Setor</strong> — opcional, com sugestões.</li><li>Toque em <strong>Salvar compra</strong>.</li></ol>
+<p><strong>Se o ativo for em dólar</strong>, aparece o campo <strong>Cotação USD/BRL na compra</strong>. O app tenta preencher com a PTAX (cotação oficial do Banco Central) da data e avisa "PTAX BCB de dd/mm — você pode editar".</p>
+<p><strong>Se for cripto</strong>, aparece um seletor de moeda (Real ou Dólar), a quantidade aceita 8 casas decimais e o app tenta sugerir o preço.</p>
+<h2 id="como-cadastrar-uma-venda">Como cadastrar uma venda<a class="anc" href="#como-cadastrar-uma-venda" aria-label="Link para esta seção">#</a></h2>
+<ol><li>Toque em <strong>Nova venda</strong>.</li><li>Preencha tipo, papel, <strong>quantidade vendida</strong>, preço, data e custos.</li><li>Na seção <strong>Fiscal</strong>, avalie os dois interruptores:<ul><li><strong>Day-trade</strong> — compra e venda do mesmo ativo no mesmo dia, <strong>na mesma corretora</strong>. Ver <a href="#day-trade">Day-trade</a>, abaixo.</li><li><strong>Isenta de IR</strong> — só quando a operação tem isenção por lei específica.</li></ul></li><li>Toque em <strong>Salvar venda</strong>.</li></ol>
+<p>O app calcula o resultado sozinho, a partir do preço médio das suas compras anteriores daquele papel. <strong>Você não escolhe qual lote está vendendo.</strong></p>
+<h3 id="vendi-so-uma-parte-da-minha-posicao-como-faco">Vendi só uma parte da minha posição. Como faço?<a class="anc" href="#vendi-so-uma-parte-da-minha-posicao-como-faco" aria-label="Link para esta seção">#</a></h3>
+<p>Cadastre uma venda com a quantidade menor. O resto continua na carteira. Não existe um botão de "venda parcial" — é o comportamento normal.</p>
+<h3 id="o-app-disse-que-existe-uma-compra-na-mesma-data-o-que-e-isso">O app disse que existe uma compra na mesma data. O que é isso?<a class="anc" href="#o-app-disse-que-existe-uma-compra-na-mesma-data-o-que-e-isso" aria-label="Link para esta seção">#</a></h3>
+<p>É um aviso âmbar: houve compra do mesmo papel no mesmo dia. <strong>Se foi day-trade, ligue o interruptor</strong> — isso muda a apuração de IR. O app nunca liga sozinho.</p>
+<h3 id="digitei-um-ticker-de-bdr-e-apareceu-um-aviso-ambar">Digitei um ticker de BDR e apareceu um aviso âmbar<a class="anc" href="#digitei-um-ticker-de-bdr-e-apareceu-um-aviso-ambar" aria-label="Link para esta seção">#</a></h3>
+<p>O app percebeu que o ticker parece BDR mas o tipo está em "Ações". Toque no botão do aviso para trocar. Ele <strong>nunca troca sozinho</strong> — a decisão é sua.</p>
+<h3 id="vendi-etf-de-renda-fixa-e-apareceu-um-seletor-de-faixas">Vendi ETF de renda fixa e apareceu um seletor de faixas<a class="anc" href="#vendi-etf-de-renda-fixa-e-apareceu-um-seletor-de-faixas" aria-label="Link para esta seção">#</a></h3>
+<p>O tipo <strong>ETF Renda Fixa</strong> pede a faixa de prazo, que define a alíquota retida. Se não souber, o próprio app orienta: confira o valor retido no informe de rendimentos da corretora, ou a duração média na lâmina do ETF.</p>
+<h3 id="as-faixas-de-prazo-do-etf-de-renda-fixa">As faixas de prazo do ETF de renda fixa<a class="anc" href="#as-faixas-de-prazo-do-etf-de-renda-fixa" aria-label="Link para esta seção">#</a></h3>
+<p>ETF de renda fixa tem regime próprio, diferente do ETF de ações. O imposto é <strong>retido na fonte</strong> e é <strong>definitivo</strong>: você não emite DARF e <strong>não compensa prejuízo</strong> — nem com outro ETF de renda fixa, nem com ações.</p>
+<p>A alíquota depende do <strong>prazo médio de repactuação da carteira do fundo</strong> — uma característica do ETF, <strong>não</strong> do seu tempo de investimento:</p>
+<div class="tablewrap"><table><thead><tr><th>Prazo médio da carteira</th><th>Alíquota</th></tr></thead><tbody><tr><td>até 180 dias</td><td>⏳ 25%</td></tr><tr><td>de 181 a 720 dias</td><td>⏳ 20%</td></tr><tr><td>acima de 720 dias</td><td>⏳ 15%</td></tr></tbody></table></div>
+<p><strong>Como descobrir a sua:</strong> o valor retido no informe de rendimentos da corretora, ou a duração média na lâmina do ETF. O app não embute uma lista de tickers de propósito — a característica é do fundo e pode mudar.</p>
+<p><strong>E ele tem come-cotas.</strong> No último dia útil de <strong>maio</strong> e de <strong>novembro</strong> ⏳ — ou antes disso, se houver distribuição, amortização ou resgate — o imposto é antecipado na fonte, e você vê a quantidade de cotas diminuir sem ter vendido nada. É o desconto do imposto, não perda. O ETF de <strong>ações</strong> não tem isso; o de renda fixa tem. Veja a explicação em <a href="/manual/posicoes-de-patrimonio/">Posições de patrimônio</a>.</p>
+<p>No Relatório anual, o ETF de renda fixa aparece dentro do código ⏳ <strong>06</strong> (Tributação Exclusiva), pelo <strong>líquido</strong>, com o bruto e o imposto retido logo abaixo, para conferência.</p>
+<h3 id="cripto">Cripto<a class="anc" href="#cripto" aria-label="Link para esta seção">#</a></h3>
+<p>Cripto não é renda variável e <strong>não entra</strong> no cálculo mensal de bolsa. Ela tem regime próprio — ganho de capital, DARF ⏳ 4600, isenção de ⏳ R$ 35 mil por mês. Detalhes no capítulo <a href="/manual/imposto-de-renda/">IR / DARF</a>.</p>
+<p>Escolha <strong>Cripto (exterior)</strong> quando a custódia for fora do Brasil: aí o regime é outro (⏳ 15% anuais, na declaração). Autocustódia de residente no Brasil é <strong>nacional</strong>.</p>
+<h3 id="day-trade">Day-trade<a class="anc" href="#day-trade" aria-label="Link para esta seção">#</a></h3>
+<p>Day-trade é a operação — ou o conjunto de operações — <strong>iniciada e encerrada no mesmo dia, com o mesmo ativo, na mesma corretora</strong>, com a quantidade liquidada total ou parcialmente. Os três requisitos contam: comprar num app e vender noutro, no mesmo dia, <strong>não</strong> é day-trade.</p>
+<p>Por que o interruptor importa: day-trade tributa a ⏳ <strong>20%</strong> (contra ⏳ 15% do swing), <strong>não tem</strong> a isenção dos R$ 20 mil, e o prejuízo dele <strong>só compensa</strong> lucro de day-trade. Perdas de day-trades do <strong>mesmo dia</strong> podem ser somadas entre si.</p>
+<p>O app nunca liga o interruptor sozinho — quando percebe compra e venda do mesmo papel na mesma data, ele <strong>avisa</strong> e deixa a decisão com você.</p>
+<h3 id="isenta-de-ir">"Isenta de IR"<a class="anc" href="#isenta-de-ir" aria-label="Link para esta seção">#</a></h3>
+<p>Ligue <strong>só</strong> quando a operação tem isenção criada por <strong>lei específica</strong> — e não é o caso da isenção por volume de vendas, que o app aplica sozinho.</p>
+<p>A hipótese prevista aqui é a das ações de <strong>pequenas e médias empresas</strong> que cumprem requisitos legais. Duas consequências, e as duas na direção que o Fisco não reclama:</p>
+<ul><li>a operação sai <strong>inteira</strong> da apuração e o lucro vai para o código ⏳ <strong>26</strong> dos Rendimentos Isentos;</li><li>nessas ações a corretora <strong>não</strong> retém o dedo-duro, então o app também não conta essa retenção como crédito. Contá-la faria o DARF sair a menor.</li></ul>
+<p><strong>Na dúvida, deixe desligado e confirme com um contador.</strong> Marcar por engano produz imposto a menor — o erro que a Receita cobra.</p>
+<h2 id="como-achar-uma-operacao-antiga">Como achar uma operação antiga<a class="anc" href="#como-achar-uma-operacao-antiga" aria-label="Link para esta seção">#</a></h2>
+<ul><li><strong>Busca</strong>: digite o ticker no campo do topo.</li><li><strong>Todos / Compras / Vendas</strong>: filtra por tipo de evento.</li><li><strong>Tipo de ativo</strong>: filtra por classe.</li><li><strong>Período</strong>: abre um calendário de intervalo. Escolha início e fim e toque em <strong>Aplicar</strong>. Para desfazer, <strong>Limpar</strong>.</li><li><strong>Ordenar</strong>: muda a ordem da lista.</li></ul>
+<p>Com filtro ativo aparece "<strong>X de Y entradas</strong>" e o atalho <strong>Limpar filtros</strong>.</p>
+<h2 id="o-cartao-resumo-do-periodo">O cartão RESUMO DO PERÍODO<a class="anc" href="#o-cartao-resumo-do-periodo" aria-label="Link para esta seção">#</a></h2>
+<p>Fica acima dos filtros e acompanha o que está filtrado:</p>
+<ul><li><strong>Comprado</strong> (verde) e <strong>Vendido</strong> (vermelho), com a contagem de operações.</li><li>Se houver ativos no exterior, uma linha extra em dólar, com a nota "(não somados ao R$)".</li></ul>
+<h2 id="a-lista">A lista<a class="anc" href="#a-lista" aria-label="Link para esta seção">#</a></h2>
+<p>Cartões agrupados por mês (MAIO 2026, ABRIL 2026…). Cada cartão traz:</p>
+<ul><li>ícone verde ▲ para compra, vermelho ▼ para venda;</li><li>ticker e etiqueta do tipo;</li><li><strong>DT</strong> quando é day-trade, <strong>ISENTA</strong> quando marcada como isenta;</li><li>quantidade × preço, e a data;</li><li>o valor total à direita.</li></ul>
+<p>Ao ordenar por maior valor, o agrupamento por mês some.</p>
+<h2 id="como-editar-ou-excluir">Como editar ou excluir<a class="anc" href="#como-editar-ou-excluir" aria-label="Link para esta seção">#</a></h2>
+<ul><li><strong>Editar:</strong> toque no cartão, altere e salve.</li><li><strong>Excluir:</strong> arraste o cartão da direita para a esquerda. Aparece a faixa vermelha "Excluir" e depois a mensagem <strong>"Operação excluída"</strong> com <strong>Desfazer</strong>, por 5 segundos.</li></ul>
+<h3 id="exclui-sem-querer-da-para-voltar">Excluí sem querer. Dá para voltar?<a class="anc" href="#exclui-sem-querer-da-para-voltar" aria-label="Link para esta seção">#</a></h3>
+<p>Toque em <strong>Desfazer</strong> na barra que aparece embaixo, dentro de 5 segundos. Depois disso a exclusão é definitiva — e sair da tela também confirma. Se já foi, restaure um <a href="/manual/backup/">backup</a>.</p>
+<h2 id="o-que-costuma-confundir">O que costuma confundir<a class="anc" href="#o-que-costuma-confundir" aria-label="Link para esta seção">#</a></h2>
+<p><strong>Excluir uma compra muda o preço médio de todas as vendas seguintes daquele papel</strong> — e portanto muda o imposto apurado. Não exclua uma compra só para "limpar" a tela.</p>
+<p><strong>Renda fixa, fundos e previdência não entram aqui.</strong> Eles não têm compra e venda no app; vão em <a href="/manual/posicoes-de-patrimonio/">Posições de patrimônio</a>.</p>
+<p><strong>Não existe botão de "Novo provento" nesta tela.</strong> Provento se lança na aba <a href="/manual/dividendos/">Dividendos</a> ou pelo atalho na aba Início.</p>
+<h2 id="o-que-esta-tela-nao-faz">O que esta tela NÃO faz<a class="anc" href="#o-que-esta-tela-nao-faz" aria-label="Link para esta seção">#</a></h2>
+<ul><li>Não busca operações na corretora.</li><li>Não deixa escolher lote na venda (o custo é sempre por preço médio).</li><li>Não registra desdobramento nem grupamento — isso é em <a href="/manual/eventos-corporativos/">Eventos corporativos</a>.</li><li>Não mostra a posição consolidada — isso é em <a href="/manual/carteira/">Carteira</a>.</li></ul>
+      </div>
+      <p class="legalnote">Manual do usuário do Fólio Invest — descreve o comportamento do app na versão indicada no topo. Conteúdo informativo e educativo: não é consultoria tributária, contábil ou de investimentos, não é recomendação de compra, venda ou manutenção de qualquer ativo, e não substitui a orientação de um profissional para o seu caso concreto. Quando o capítulo traz regra tributária, ela foi verificada nas fontes oficiais na data indicada no próprio capítulo. A responsabilidade pela declaração é do contribuinte.</p>
+      <nav class="pager" aria-label="Navegação entre capítulos">
+<a href="/manual/relatorio-irpf/"><span class="k">← Capítulo anterior</span><span class="t">6. Relatório anual de IRPF</span></a>
+<a class="nx" href="/manual/aportes/"><span class="k">Próximo capítulo →</span><span class="t">8. Gerenciar aportes</span></a>
+      </nav>
+    </article>
+<aside class="rail"><div class="stick"><p class="rt">Neste capítulo</p><ol><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#como-cadastrar-uma-compra">Como cadastrar uma compra</a></li><li><a href="#como-cadastrar-uma-venda">Como cadastrar uma venda</a></li><li><a href="#como-achar-uma-operacao-antiga">Como achar uma operação antiga</a></li><li><a href="#o-cartao-resumo-do-periodo">O cartão RESUMO DO PERÍODO</a></li><li><a href="#a-lista">A lista</a></li><li><a href="#como-editar-ou-excluir">Como editar ou excluir</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></div></aside>
+  </div>
+</main>
+<footer id="contato">
+  <div class="wrap">
+    <div class="ftgrid">
+      <div>
+        <a class="brand" href="/" aria-label="Fólio Invest — início">
+          <span class="mk" aria-hidden="true"><svg viewBox="19 20 70 70" fill="none"><path d="M32,76 V37 a3,3 0 0 1 3,-3 H58 M32,55 H52" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5,68.5 V71.5 M65.5,58.5 V71.5 M77.5,46.5 V71.5" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg></span>
+          Fólio Invest
+        </a>
+        <p class="fdesc">App Android para organizar carteira, dividendos e Imposto de Renda do investidor pessoa física. Offline, sem cadastro, sem servidores.</p>
+      </div>
+      <div>
+        <h5>Conteúdo</h5>
+        <a class="fl" href="/guias/">Guias de imposto de renda</a>
+        <a class="fl" href="/manual/">Manual do usuário</a>
+        <a class="fl" href="/#func">Funcionalidades</a>
+      </div>
+      <div>
+        <h5>Contato</h5>
+        <a class="fl" href="/suporte/">Suporte</a>
+        <a class="fl" href="mailto:suporte@folioinvest.com.br">suporte@folioinvest.com.br</a>
+        <a class="fl" href="/privacidade/">Política de Privacidade</a>
+        <a class="fl" href="/assinatura/">Termo de Assinatura</a>
+      </div>
+    </div>
+    <div class="legal">
+      <p><strong>Aviso legal:</strong> o Fólio é uma ferramenta informativa e de organização. Não é recomendação de investimento, não é orientação tributária e não substitui consultoria profissional.</p>
+      <p>Cotações podem ter atrasos. O preenchimento correto dos dados e a conferência dos resultados são de responsabilidade exclusiva do usuário. Sempre confira com sua corretora, a B3 e a Receita Federal.</p>
+      <p style="opacity:.8">© 2026 Fólio Invest · LS Mundim Tecnologia LTDA · CNPJ 67.504.827/0001-03.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
