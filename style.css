@@ -165,6 +165,13 @@ footer a.fl:hover{color:#fff}
 .navlinks a[aria-current]{color:var(--primary);font-weight:600;
   background:color-mix(in srgb,var(--primary) 12%,transparent)}
 
+/* A barra do topo é estilizada por ELEMENTO (`nav{position:sticky;...}` lá em
+   cima). A trilha e o anterior/próximo também são <nav> por semântica, e
+   herdavam a barra inteira — fundo claro, blur e borda por cima do conteúdo.
+   Só a navegação principal do site fica sticky. */
+nav.crumb,nav.pager{position:static;background:none;backdrop-filter:none;
+  border-bottom:0;z-index:auto}
+
 /* ---------------- TRILHA (breadcrumb) ---------------- */
 .crumb{font-size:13px;color:var(--muted);padding:18px 0 0}
 .crumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0}
@@ -178,7 +185,8 @@ footer a.fl:hover{color:#fff}
 /* ---------------- LAYOUT DE LEITURA ---------------- */
 .page{display:grid;gap:38px;grid-template-columns:1fr;padding:8px 0 70px}
 .page article{min-width:0}
-article h1{font-size:29px;line-height:1.2;letter-spacing:-.4px;font-weight:800;margin:0 0 14px}
+article h1{font-size:29px;line-height:1.2;letter-spacing:-.4px;font-weight:800;margin:0 0 14px;
+  text-wrap:balance}
 .verhdr{font-size:14.5px;color:var(--muted);margin:0 0 16px;max-width:70ch}
 .docmeta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 26px}
 .docmeta:not(:empty){padding-bottom:22px;border-bottom:1px solid var(--line)}
@@ -288,8 +296,11 @@ aside.rail{display:none}
 
 /* ---------------- ÍNDICES /guias/ e /manual/ ---------------- */
 .idxhero{background:linear-gradient(165deg,var(--hero1),var(--hero2));color:#fff;padding:22px 0 56px}
+/* 46rem cabe "O que a norma diz — e onde ela se cala" numa linha a 40px
+   (720px medidos). balance divide em linhas parelhas quando precisar quebrar,
+   em vez de deixar uma sobra curta na segunda. */
 .idxhero h1{font-size:31px;line-height:1.16;font-weight:800;margin:16px 0 14px;
-  letter-spacing:-.4px;max-width:20ch}
+  letter-spacing:-.4px;max-width:46rem;text-wrap:balance}
 .idxhero p{font-size:17px;color:#DCE2FF;margin:0;max-width:60ch}
 .idxhero .eyebrow{color:#B4C5FF;margin:22px 0 0}
 .idxhero .vs{font-size:14.5px;color:#C7D0F5;margin-top:12px}
