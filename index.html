@@ -30,6 +30,46 @@
 <meta name="twitter:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
 
 <link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://folioinvest.com.br/#org",
+      "name": "LS Mundim Tecnologia LTDA",
+      "alternateName": "Fólio Invest",
+      "url": "https://folioinvest.com.br/",
+      "logo": "https://folioinvest.com.br/assets/img/icon-512.png",
+      "email": "contato@folioinvest.com.br",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Pais Leme, 215, Conj. 1713 — Pinheiros",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "05424-150",
+        "addressCountry": "BR"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Fólio Invest",
+      "operatingSystem": "Android",
+      "applicationCategory": "FinanceApplication",
+      "url": "https://play.google.com/store/apps/details?id=br.com.folioinvest.app",
+      "description": "App Android para organizar a carteira de investimentos e o Imposto de Renda do investidor pessoa física: ações, FIIs, ETFs, BDRs, exterior e cripto, com DARF mensal e informe anual de IRPF. Offline, sem cadastro.",
+      "inLanguage": "pt-BR",
+      "publisher": { "@id": "https://folioinvest.com.br/#org" },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BRL"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <a class="skip" href="#func">Pular para o conteúdo</a>
@@ -64,12 +104,12 @@
       <h1>Sua carteira de investimentos<br>e o IR num só app</h1>
       <p class="lead">Ações, FIIs, ETFs, BDRs, ativos do exterior e cripto com cotação automática.
         Dividendos, DARF mensal e o informe anual de IRPF — tudo no seu celular, offline e sem cadastro.</p>
-      <span class="badge" role="button" aria-disabled="true">
+      <a class="badge" href="https://play.google.com/store/apps/details?id=br.com.folioinvest.app">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M3.6 2.3 13 12 3.6 21.7c-.4-.2-.6-.6-.6-1.1V3.4c0-.5.2-.9.6-1.1Zm10.9 9 2.6-2.6 3.1 1.8c.8.5.8 1.5 0 2L17 14.3 14.5 11.3Zm-1.1 1.1 2.6 2.6-9.3 5.4 6.7-8Zm0-2.1L7 4.3 16.3 9.7l-2.9 0Z"/></svg>
-        Em breve na Google Play
-      </span>
-      <p class="cta-note">App em revisão para publicação. Quer ser avisado no lançamento? Escreva para
-        <a href="mailto:contato@folioinvest.com.br">contato@folioinvest.com.br</a>.</p>
+        Baixar na Google Play
+      </a>
+      <p class="cta-note">Grátis para organizar sua carteira. O Fólio PRO (assinatura opcional) desbloqueia a
+        <a href="/assinatura/">suíte fiscal</a>.</p>
       <div class="pills">
         <span class="pill">Ações &amp; FII</span>
         <span class="pill">Exterior · Lei 14.754</span>
@@ -149,7 +189,7 @@
       <details><summary>Os cálculos de IR são confiáveis?</summary><p>Seguem a legislação vigente (Lei 14.754/2023 para exterior, regras de cripto, IN RFB 1.585/2015 para preço médio, isenção de ações). Ainda assim o app é informativo: confira sempre com sua corretora, a B3 e a Receita Federal antes de declarar.</p></details>
       <details><summary>Preciso de internet para usar?</summary><p>Só para buscar cotações ao vivo e câmbio. Todo o resto — cadastro, cálculos e relatórios — funciona offline.</p></details>
       <details><summary>E se eu trocar de celular?</summary><p>O app exporta um <strong>backup em JSON</strong> que você guarda onde quiser (Drive, e-mail…). No aparelho novo, é só restaurar e tudo volta como estava.</p></details>
-      <details><summary>Quanto custa?</summary><p>O Fólio terá um modelo gratuito e o plano pago Fólio PRO, opcional. Os valores serão divulgados no lançamento.</p></details>
+      <details><summary>Quanto custa?</summary><p>Organizar sua carteira é gratuito. O <strong>Fólio PRO</strong> é uma assinatura opcional que desbloqueia a suíte fiscal (DARF mensal e informe anual de IRPF), a comparação com índices e o Caça-eventos assistido, por <strong>R$ 14,90/mês</strong> ou <strong>R$ 129,90/ano</strong>. Condições no <a href="/assinatura/">Termo de Assinatura</a>.</p></details>
     </div>
   </div>
 </section>
@@ -184,7 +224,7 @@
     <div class="legal">
       <p><strong>Aviso legal:</strong> o Fólio é uma ferramenta informativa e de organização. Não é recomendação de investimento, não é orientação tributária e não substitui consultoria profissional.</p>
       <p>Cotações podem ter atrasos. O preenchimento correto dos dados e a conferência dos resultados são de responsabilidade exclusiva do usuário. Sempre confira com sua corretora, a B3 e a Receita Federal.</p>
-      <p style="opacity:.8">© 2026 Fólio Invest · LS Mundim Tecnologia LTDA · CNPJ 67.504.827/0001-03.</p>
+      <p style="opacity:.8">© 2026 Fólio Invest · LS Mundim Tecnologia LTDA · CNPJ 67.504.827/0001-03 · R. Pais Leme, 215, Conj. 1713 — Pinheiros, São Paulo/SP, CEP 05424-150.</p>
     </div>
   </div>
 </footer>
