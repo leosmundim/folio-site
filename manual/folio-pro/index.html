@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!--
+  ARQUIVO GERADO — NAO EDITE A MAO.
+  Fonte: app-investimentos/docs/ (conteudo-site/ e manual/).
+  Regerar: powershell -File docs\site-build\build-site.ps1
+  Editar aqui e perder na proxima geracao; pior, o site passa a divergir do
+  manual que integra o contrato (J-11 / CDC art. 30).
+-->
+
+<title>Fólio PRO — Manual do Fólio Invest</title>
+<meta name="description" content="o Fólio PRO é a assinatura que liga a parte fiscal e de análise do app. O resto do Fólio continua gratuito.">
+<meta name="theme-color" content="#1E3A8A">
+<link rel="canonical" href="https://folioinvest.com.br/manual/folio-pro/">
+
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/img/icon-512.png">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fólio Invest">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://folioinvest.com.br/manual/folio-pro/">
+<meta property="og:title" content="Fólio PRO — Manual do Fólio Invest">
+<meta property="og:description" content="o Fólio PRO é a assinatura que liga a parte fiscal e de análise do app. O resto do Fólio continua gratuito.">
+<meta property="og:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fólio PRO — Manual do Fólio Invest">
+<meta name="twitter:description" content="o Fólio PRO é a assinatura que liga a parte fiscal e de análise do app. O resto do Fólio continua gratuito.">
+<meta name="twitter:image" content="https://folioinvest.com.br/assets/img/og-image.jpg">
+
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"TechArticle",
+"headline":"Fólio PRO",
+"description":"o Fólio PRO é a assinatura que liga a parte fiscal e de análise do app. O resto do Fólio continua gratuito.",
+"inLanguage":"pt-BR",
+"dateModified":"2026-08-07",
+"mainEntityOfPage":{"@type":"WebPage","@id":"https://folioinvest.com.br/manual/folio-pro/"},
+"author":{"@type":"Organization","name":"Fólio Invest"},
+"publisher":{"@type":"Organization","name":"Fólio Invest","url":"https://folioinvest.com.br/"},
+"about":{"@type":"SoftwareApplication","name":"Fólio Invest",
+"applicationCategory":"FinanceApplication","operatingSystem":"Android",
+"softwareVersion":"1.0.0"},
+"isAccessibleForFree":true},
+{"@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Início","item":"https://folioinvest.com.br/"},
+    {"@type":"ListItem","position":2,"name":"Manual","item":"https://folioinvest.com.br/manual/"},
+    {"@type":"ListItem","position":3,"name":"14. Fólio PRO","item":"https://folioinvest.com.br/manual/folio-pro/"}
+]}
+]}
+</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Fólio Invest — início">
+      <span class="mk" aria-hidden="true"><svg viewBox="19 20 70 70" fill="none"><path d="M32,76 V37 a3,3 0 0 1 3,-3 H58 M32,55 H52" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5,68.5 V71.5 M65.5,58.5 V71.5 M77.5,46.5 V71.5" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg></span>
+      Fólio Invest
+    </a>
+    <div class="navlinks">
+      <a href="/#func">Funcionalidades</a>
+      <a href="/guias/">Guias de IR</a>
+      <a href="/manual/" aria-current="page">Manual</a>
+      <a href="/#priv">Privacidade</a>
+      <a href="/#faq">FAQ</a>
+    </div>
+  </div>
+</nav>
+<main id="conteudo">
+  <div class="wrap">
+<nav class="crumb" aria-label="Trilha"><ol><li><a href="/">Início</a></li><li><a href="/manual/">Manual</a></li><li aria-current="page">14. Fólio PRO</li></ol></nav>
+  </div>
+  <div class="wrap page">
+    <article>
+      <p class="eyebrow">Manual do usuário · Capítulo 14</p>
+      <h1>Fólio PRO</h1>
+      <p class="verhdr"><em>Este capítulo descreve o Fólio Invest na versão <strong>1.0.0</strong>. Se o seu app estiver em outra versão, um detalhe de tela ou de comportamento pode ser diferente.</em></p>
+      <div class="docmeta">
+        <span class="tag">No app: assinatura (⋮ → Seja Fólio PRO)</span>
+      </div>
+<details class="toc"><summary>Neste capítulo</summary><ol><li><a href="#o-que-o-pro-desbloqueia">O que o PRO desbloqueia</a></li><li><a href="#o-que-continua-gratis">O que continua grátis</a></li><li><a href="#quanto-custa">Quanto custa</a></li><li><a href="#como-assinar">Como assinar</a></li><li><a href="#como-cancelar-ou-trocar-de-plano">Como cancelar ou trocar de plano</a></li><li><a href="#troquei-de-celular-perco-o-pro">Troquei de celular. Perco o PRO?</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-o-folio-pro-nao-faz">O que o Fólio PRO NÃO faz</a></li></ol></details>
+      <div class="body">
+<div class="callout serve">
+<p class="ct"><span aria-hidden="true">🎯</span> Para que serve</p>
+<p>o <strong>Fólio PRO</strong> é a assinatura que liga a parte fiscal e de análise do app. O resto do Fólio continua gratuito.</p>
+</div>
+<p>O Fólio funciona sem assinatura: cadastrar carteira, patrimônio, dividendos, aportes e posições, importar arquivos e fazer backup <strong>não custam nada</strong>. O Fólio PRO acrescenta os recursos que apuram imposto e comparam desempenho.</p>
+<h2 id="o-que-o-pro-desbloqueia">O que o PRO desbloqueia<a class="anc" href="#o-que-o-pro-desbloqueia" aria-label="Link para esta seção">#</a></h2>
+<p>São cinco recursos:</p>
+<div class="tablewrap"><table><thead><tr><th>Recurso</th><th>O que é</th><th>Capítulo</th></tr></thead><tbody><tr><td><strong>Apuração mensal de DARF</strong></td><td>a guia do imposto sobre o lucro das vendas do mês</td><td><a href="/manual/imposto-de-renda/">5</a></td></tr><tr><td><strong>Relatório anual do IRPF</strong></td><td>seus investimentos prontos para a declaração</td><td><a href="/manual/relatorio-irpf/">6</a></td></tr><tr><td><strong>Exportação em PDF e Excel</strong></td><td>para conferir e guardar</td><td><a href="/manual/relatorio-irpf/">6</a></td></tr><tr><td><strong>Comparar com índices</strong></td><td>IBOV, S&amp;P 500, CDI, IPCA e Poupança no gráfico</td><td><a href="/manual/carteira/">2</a></td></tr><tr><td><strong>Caça-eventos assistido</strong></td><td>splits e bonificações detectados para você confirmar</td><td><a href="/manual/eventos-corporativos/">10</a></td></tr></tbody></table></div>
+<h2 id="o-que-continua-gratis">O que continua grátis<a class="anc" href="#o-que-continua-gratis" aria-label="Link para esta seção">#</a></h2>
+<p>Tudo o mais. Registrar e importar operações, dividendos, aportes e posições; ver a carteira e o patrimônio; cadastrar eventos corporativos <strong>à mão</strong>; e o backup. A frase que o próprio app usa é: <em>"as demais funcionalidades continuam gratuitas"</em>.</p>
+<p>Sem assinatura, os recursos do PRO aparecem, mas em vez de abrir mostram uma tela apresentando o que o Fólio PRO faz.</p>
+<h2 id="quanto-custa">Quanto custa<a class="anc" href="#quanto-custa" aria-label="Link para esta seção">#</a></h2>
+<p>Dois planos: <strong>mensal</strong> ou <strong>anual</strong> (o anual sai mais barato por mês). Quem ainda não usou o teste tem <strong>14 dias grátis</strong> para experimentar antes da primeira cobrança.</p>
+<div class="callout nota"><p><strong>O preço e as condições em vigor aparecem sempre no próprio app</strong>, na tela do Fólio PRO, porque vêm do Google Play — confira o valor ali antes de assinar. As regras de cobrança, renovação, cancelamento e reembolso estão no <strong>Termo de Assinatura</strong> (<code>folioinvest.com.br/assinatura</code>), que é o documento que vale.</p></div>
+<p>Três coisas que o app deixa explícitas na tela: <strong>cancele quando quiser</strong>, <strong>dados só no aparelho</strong> e <strong>sem cadastro</strong>.</p>
+<h2 id="como-assinar">Como assinar<a class="anc" href="#como-assinar" aria-label="Link para esta seção">#</a></h2>
+<ol><li><strong>⋮</strong> › card <strong>Seja Fólio PRO</strong> (o primeiro do menu) — ou o botão <strong>Conhecer o Fólio PRO</strong> que aparece na aba <a href="/manual/imposto-de-renda/">IR</a> sem assinatura.</li><li>Na tela do Fólio PRO, escolha <strong>Anual</strong> ou <strong>Mensal</strong>.</li><li>Toque no botão de assinar. Sobe uma folha de <strong>confirmação</strong> com o plano, o preço e a data da primeira cobrança.</li><li>Confirme para seguir ao fluxo do <strong>Google Play</strong>, que finaliza o pagamento.</li></ol>
+<p>A cobrança e o pagamento são feitos <strong>pelo Google Play</strong>, não pelo app.</p>
+<h2 id="como-cancelar-ou-trocar-de-plano">Como cancelar ou trocar de plano<a class="anc" href="#como-cancelar-ou-trocar-de-plano" aria-label="Link para esta seção">#</a></h2>
+<p>Pela assinatura no <strong>Google Play</strong>, não pelo app:</p>
+<ul><li>Atalho: <strong>⋮</strong> › <strong>Fólio PRO ativo · Gerenciar assinatura</strong> — abre direto a gestão da assinatura no Google Play.</li><li>Ou pelo próprio app Google Play › foto do perfil › <strong>Pagamentos e assinaturas</strong> › <strong>Assinaturas</strong> › Fólio PRO.</li></ul>
+<p>Cancelar encerra a renovação; você continua com o PRO até o fim do período já pago. As regras de reembolso estão no <strong>Termo de Assinatura</strong>.</p>
+<h2 id="troquei-de-celular-perco-o-pro">Troquei de celular. Perco o PRO?<a class="anc" href="#troquei-de-celular-perco-o-pro" aria-label="Link para esta seção">#</a></h2>
+<p>Não. A assinatura é ligada à <strong>sua conta do Google Play</strong>, não ao aparelho. Ao instalar o Fólio num celular novo com a <strong>mesma conta</strong>, o app reconhece a assinatura sozinho. Não há login nem senha dentro do Fólio.</p>
+<h2 id="o-que-costuma-confundir">O que costuma confundir<a class="anc" href="#o-que-costuma-confundir" aria-label="Link para esta seção">#</a></h2>
+<p><strong>Assinar não envia seus dados para lugar nenhum.</strong> O Fólio PRO libera recursos; ele não cria conta nem servidor. Seus lançamentos continuam só no aparelho — por isso o <strong>backup</strong> (<a href="/manual/backup/">capítulo 12</a>) continua sendo sua responsabilidade, com ou sem PRO.</p>
+<p><strong>O PRO não muda o cálculo, ele o liga.</strong> A apuração de imposto usa exatamente os lançamentos que você já faz de graça. Assinar não recalcula nada de forma diferente — só passa a mostrar o resultado.</p>
+<h2 id="o-que-o-folio-pro-nao-faz">O que o Fólio PRO NÃO faz<a class="anc" href="#o-que-o-folio-pro-nao-faz" aria-label="Link para esta seção">#</a></h2>
+<ul><li>Não transmite declaração nem paga DARF — ele calcula; a guia e a entrega são suas (ver <a href="/manual/imposto-de-renda/">IR</a> e <a href="/manual/relatorio-irpf/">Relatório</a>).</li><li>Não cria conta, login nem backup na nuvem.</li><li>Não cobra pelo app: a cobrança é do Google Play.</li></ul>
+      </div>
+      <p class="legalnote">Manual do usuário do Fólio Invest — descreve o comportamento do app na versão indicada no topo. Conteúdo informativo e educativo: não é consultoria tributária, contábil ou de investimentos, não é recomendação de compra, venda ou manutenção de qualquer ativo, e não substitui a orientação de um profissional para o seu caso concreto. Quando o capítulo traz regra tributária, ela foi verificada nas fontes oficiais na data indicada no próprio capítulo. A responsabilidade pela declaração é do contribuinte.</p>
+      <nav class="pager" aria-label="Navegação entre capítulos">
+<a href="/manual/mais-opcoes/"><span class="k">← Capítulo anterior</span><span class="t">13. Mais opções e configurações</span></a>
+      </nav>
+    </article>
+<aside class="rail"><div class="stick"><p class="rt">Neste capítulo</p><ol><li><a href="#o-que-o-pro-desbloqueia">O que o PRO desbloqueia</a></li><li><a href="#o-que-continua-gratis">O que continua grátis</a></li><li><a href="#quanto-custa">Quanto custa</a></li><li><a href="#como-assinar">Como assinar</a></li><li><a href="#como-cancelar-ou-trocar-de-plano">Como cancelar ou trocar de plano</a></li><li><a href="#troquei-de-celular-perco-o-pro">Troquei de celular. Perco o PRO?</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-o-folio-pro-nao-faz">O que o Fólio PRO NÃO faz</a></li></ol></div></aside>
+  </div>
+</main>
+<footer id="contato">
+  <div class="wrap">
+    <div class="ftgrid">
+      <div>
+        <a class="brand" href="/" aria-label="Fólio Invest — início">
+          <span class="mk" aria-hidden="true"><svg viewBox="19 20 70 70" fill="none"><path d="M32,76 V37 a3,3 0 0 1 3,-3 H58 M32,55 H52" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5,68.5 V71.5 M65.5,58.5 V71.5 M77.5,46.5 V71.5" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg></span>
+          Fólio Invest
+        </a>
+        <p class="fdesc">App Android para organizar carteira, dividendos e Imposto de Renda do investidor pessoa física. Offline, sem cadastro, sem servidores.</p>
+      </div>
+      <div>
+        <h5>Conteúdo</h5>
+        <a class="fl" href="/guias/">Guias de imposto de renda</a>
+        <a class="fl" href="/manual/">Manual do usuário</a>
+        <a class="fl" href="/#func">Funcionalidades</a>
+      </div>
+      <div>
+        <h5>Contato</h5>
+        <a class="fl" href="/suporte/">Suporte</a>
+        <a class="fl" href="mailto:suporte@folioinvest.com.br">suporte@folioinvest.com.br</a>
+        <a class="fl" href="/privacidade/">Política de Privacidade</a>
+        <a class="fl" href="/assinatura/">Termo de Assinatura</a>
+      </div>
+    </div>
+    <div class="legal">
+      <p><strong>Aviso legal:</strong> o Fólio é uma ferramenta informativa e de organização. Não é recomendação de investimento, não é orientação tributária e não substitui consultoria profissional.</p>
+      <p>Cotações podem ter atrasos. O preenchimento correto dos dados e a conferência dos resultados são de responsabilidade exclusiva do usuário. Sempre confira com sua corretora, a B3 e a Receita Federal.</p>
+      <p style="opacity:.8">© 2026 Fólio Invest · LS Mundim Tecnologia LTDA · CNPJ 67.504.827/0001-03.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
