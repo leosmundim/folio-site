@@ -41,13 +41,13 @@
 "headline":"Dividendos",
 "description":"guarda tudo o que os seus investimentos te pagaram em dinheiro — dividendo, JCP, rendimento de FII, juros — e mostra quanto entra por mês.",
 "inLanguage":"pt-BR",
-"dateModified":"2026-08-11",
+"dateModified":"2026-08-24",
 "mainEntityOfPage":{"@type":"WebPage","@id":"https://folioinvest.com.br/manual/dividendos/"},
 "author":{"@type":"Organization","name":"Fólio Invest"},
 "publisher":{"@type":"Organization","name":"Fólio Invest","url":"https://folioinvest.com.br/"},
 "about":{"@type":"SoftwareApplication","name":"Fólio Invest",
 "applicationCategory":"FinanceApplication","operatingSystem":"Android",
-"softwareVersion":"1.1.5"},
+"softwareVersion":"1.7.0"},
 "isAccessibleForFree":true},
 {"@type":"BreadcrumbList","itemListElement":[
     {"@type":"ListItem","position":1,"name":"Início","item":"https://folioinvest.com.br/"},
@@ -82,11 +82,11 @@
     <article>
       <p class="eyebrow">Manual do usuário · Capítulo 4</p>
       <h1>Dividendos</h1>
-      <p class="verhdr"><em>Este capítulo descreve o Fólio Invest na versão <strong>1.1.5</strong>. Se o seu app estiver em outra versão, um detalhe de tela ou de comportamento pode ser diferente.</em></p>
+      <p class="verhdr"><em>Este capítulo descreve o Fólio Invest na versão <strong>1.7.0</strong>. Se o seu app estiver em outra versão, um detalhe de tela ou de comportamento pode ser diferente.</em></p>
       <div class="docmeta">
         <span class="tag">No app: 4ª aba</span>
       </div>
-<details class="toc"><summary>Neste capítulo</summary><ol><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#o-cartao-do-topo">O cartão do topo</a></li><li><a href="#como-lancar-um-dividendo-que-caiu-na-conta">Como lançar um dividendo que caiu na conta</a></li><li><a href="#a-lista-de-baixo">A lista de baixo</a></li><li><a href="#como-importar-proventos">Como importar proventos</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></details>
+<details class="toc"><summary>Neste capítulo</summary><ol><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#o-cartao-do-topo">O cartão do topo</a></li><li><a href="#como-lancar-um-dividendo-que-caiu-na-conta">Como lançar um dividendo que caiu na conta</a></li><li><a href="#exemplos-o-que-escolher-em-cada-caso">Exemplos: o que escolher em cada caso</a></li><li><a href="#a-lista-de-baixo">A lista de baixo</a></li><li><a href="#como-importar-proventos">Como importar proventos</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></details>
       <div class="body">
 <div class="callout serve">
 <p class="ct"><span aria-hidden="true">🎯</span> Para que serve</p>
@@ -130,6 +130,14 @@
 <p><strong>A Receita não publicou norma específica sobre o dividendo de BDR.</strong> Nenhuma lei, nenhuma instrução normativa, nenhuma solução de consulta. A palavra "BDR" não aparece uma única vez no Perguntas e Respostas do IRPF. As soluções de consulta que existem sobre BDR tratam só do ganho na venda, nunca do dividendo. <em>(Reverificado em 28/07/2026.)</em></p>
 <p><strong>Por isso o Fólio não calcula esse imposto.</strong> Não é limitação de engenharia: a alíquota do carnê-leão depende da sua renda inteira daquele mês — aluguéis, pensões, dependentes —, dados que o app não tem. Calcular só sobre os dividendos erraria a faixa <strong>para baixo</strong>. O que o app faz é o que é honesto fazer: tira o valor dos Rendimentos Isentos, mostra a quebra <strong>mês a mês</strong> (o carnê-leão é apurado por competência, então um total anual não preencheria nada), e diz onde declarar.</p>
 <p>Se o informe da corretora trouxer imposto retido no exterior, preencha o campo do formulário: ele pode ser abatido. <strong>Em valores altos, confirme com um contador</strong> — este é um ponto em que a norma se cala, e a decisão é sua.</p>
+<h2 id="exemplos-o-que-escolher-em-cada-caso">Exemplos: o que escolher em cada caso<a class="anc" href="#exemplos-o-que-escolher-em-cada-caso" aria-label="Link para esta seção">#</a></h2>
+<p>Todo provento é a mesma coisa — {papel, tipo de ativo, tipo de provento, data, valor}. O que muda de um caso para o outro é só a dupla <strong>Tipo de ativo + Tipo de provento</strong>. Guia rápido:</p>
+<div class="tablewrap"><table><thead><tr><th>O que você recebeu</th><th>Tipo de ativo</th><th>Tipo de provento</th></tr></thead><tbody><tr><td>Dividendo de ação (ex.: ITSA4)</td><td>Ações</td><td>Dividendo</td></tr><tr><td>JCP de ação (ex.: ITSA4)</td><td>Ações</td><td>JCP (líquido)</td></tr><tr><td>Rendimento de FII (ex.: MXRF11)</td><td>FII</td><td>Rendimento FII</td></tr><tr><td>Distribuição de ETF de ações (ex.: BOVA11)</td><td>ETF</td><td>Rendimento ETF (líquido)</td></tr><tr><td>Distribuição de ETF de renda fixa (ex.: IMAB11)</td><td>ETF Renda Fixa</td><td>Rendimento ETF (líquido)</td></tr><tr><td>Juros do <strong>Tesouro Direto</strong> / CDB</td><td>Renda Fixa</td><td>Rendimento RF (líquido)</td></tr><tr><td>Rendimento de LCI / LCA</td><td>Renda Fixa</td><td>Rendimento LCI / LCA (isento)</td></tr><tr><td>Juros de CRA / CRI isentos</td><td>Renda Fixa</td><td>Rendimento isento RF (CRA/CRI)</td></tr><tr><td>Juros de debênture incentivada</td><td>Renda Fixa</td><td>Juros de debênture incentivada (isento)</td></tr><tr><td>Rendimento de fundo de RF / FIDC / FIP</td><td>Renda Fixa</td><td>Rendimento Fundos RF (líquido)</td></tr><tr><td>Aluguel de ações (você emprestou)</td><td>Ações</td><td>Aluguel de ações (líquido)</td></tr><tr><td>Dividendo de ação dos EUA (ex.: AAPL)</td><td>Exterior (EUA)</td><td>Dividendo exterior (15% anual)</td></tr><tr><td>Juros / cupom no exterior (bond)</td><td>Exterior (EUA)</td><td>Juros exterior (15% anual)</td></tr><tr><td>Dividendo de BDR (ex.: AAPL34)</td><td>BDR</td><td>Dividendo</td></tr></tbody></table></div>
+<p>O próprio rótulo do tipo de provento já avisa o que digitar: <strong>"(líquido)"</strong> = o valor <strong>já com o imposto retido</strong> (o que caiu na conta); <strong>"(isento)"</strong> = não teve imposto; <strong>"(15% anual)"</strong> = exterior, informado em US$ + PTAX. A tributação de cada um está no <a href="/manual/relatorio-irpf/">Relatório anual de IRPF</a>.</p>
+<h3 id="como-lancar-o-rendimento-do-tesouro-e-da-renda-fixa-em-geral">Como lançar o rendimento do Tesouro (e da renda fixa em geral)<a class="anc" href="#como-lancar-o-rendimento-do-tesouro-e-da-renda-fixa-em-geral" aria-label="Link para esta seção">#</a></h3>
+<p>Tesouro Direto, CDB, LCI, LCA, CRA, CRI, debêntures e fundos de renda fixa <strong>não</strong> entram em <a href="/manual/operacoes/">Operações</a> — eles vivem em <a href="/manual/posicoes-de-patrimonio/">Posições de patrimônio</a>, onde você acompanha o <strong>saldo</strong>. Mas quando um deles <strong>paga juros em dinheiro na sua conta</strong> (o cupom semestral do Tesouro IPCA+ com juros, por exemplo), esse pagamento é um <strong>provento</strong>:</p>
+<ol><li>Aba <strong>Dividendos</strong> › <strong>Adicionar provento</strong>.</li><li><strong>Papel:</strong> o nome do título (ex.: <code>Tesouro IPCA+ 2029</code>).</li><li><strong>Tipo de ativo:</strong> <strong>Renda Fixa</strong>.</li><li><strong>Tipo de provento:</strong> <strong>Rendimento RF (líquido)</strong> — para LCI/LCA use <em>Rendimento LCI / LCA (isento)</em>; para CRA/CRI isento, <em>Rendimento isento RF</em>.</li><li><strong>Data do pagamento</strong> e o <strong>valor que caiu na conta</strong> (já líquido de IR, no caso do "líquido").</li><li><strong>Salvar provento</strong>.</li></ol>
+<div class="callout nota"><p><strong>Só lance como provento o que foi pago em dinheiro.</strong> O rendimento que fica "dentro" do título e só aparece no saldo (o Tesouro Selic rendendo, um CDB que capitaliza) <strong>não</strong> é provento — ele já entra quando você atualiza o saldo em <a href="/manual/posicoes-de-patrimonio/">Posições de patrimônio</a>. Lançar os dois contaria o mesmo rendimento duas vezes.</p></div>
 <h2 id="a-lista-de-baixo">A lista de baixo<a class="anc" href="#a-lista-de-baixo" aria-label="Link para esta seção">#</a></h2>
 <p>Ela tem quatro níveis. Toque para abrir cada um:</p>
 <p><strong>Ano</strong> → <strong>Mês</strong> → <strong>Categoria</strong> (Dividendos, JCP, Rendimentos FII…) → <strong>lançamento</strong>.</p>
@@ -153,7 +161,7 @@
 <a class="nx" href="/manual/imposto-de-renda/"><span class="k">Próximo capítulo →</span><span class="t">5. IR / DARF</span></a>
       </nav>
     </article>
-<aside class="rail"><div class="stick"><p class="rt">Neste capítulo</p><ol><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#o-cartao-do-topo">O cartão do topo</a></li><li><a href="#como-lancar-um-dividendo-que-caiu-na-conta">Como lançar um dividendo que caiu na conta</a></li><li><a href="#a-lista-de-baixo">A lista de baixo</a></li><li><a href="#como-importar-proventos">Como importar proventos</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></div></aside>
+<aside class="rail"><div class="stick"><p class="rt">Neste capítulo</p><ol><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#o-cartao-do-topo">O cartão do topo</a></li><li><a href="#como-lancar-um-dividendo-que-caiu-na-conta">Como lançar um dividendo que caiu na conta</a></li><li><a href="#exemplos-o-que-escolher-em-cada-caso">Exemplos: o que escolher em cada caso</a></li><li><a href="#a-lista-de-baixo">A lista de baixo</a></li><li><a href="#como-importar-proventos">Como importar proventos</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></div></aside>
   </div>
 </main>
 <footer id="contato">

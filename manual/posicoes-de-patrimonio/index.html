@@ -41,13 +41,13 @@
 "headline":"Posições de patrimônio",
 "description":"guarda os investimentos que não têm preço de tela — fundos, CDB, Tesouro, LCI, LCA, CRA, CRI, previdência e saldo em conta — e acompanha o saldo deles mês a…",
 "inLanguage":"pt-BR",
-"dateModified":"2026-08-11",
+"dateModified":"2026-08-24",
 "mainEntityOfPage":{"@type":"WebPage","@id":"https://folioinvest.com.br/manual/posicoes-de-patrimonio/"},
 "author":{"@type":"Organization","name":"Fólio Invest"},
 "publisher":{"@type":"Organization","name":"Fólio Invest","url":"https://folioinvest.com.br/"},
 "about":{"@type":"SoftwareApplication","name":"Fólio Invest",
 "applicationCategory":"FinanceApplication","operatingSystem":"Android",
-"softwareVersion":"1.1.5"},
+"softwareVersion":"1.7.0"},
 "isAccessibleForFree":true},
 {"@type":"BreadcrumbList","itemListElement":[
     {"@type":"ListItem","position":1,"name":"Início","item":"https://folioinvest.com.br/"},
@@ -82,7 +82,7 @@
     <article>
       <p class="eyebrow">Manual do usuário · Capítulo 9</p>
       <h1>Posições de patrimônio</h1>
-      <p class="verhdr"><em>Este capítulo descreve o Fólio Invest na versão <strong>1.1.5</strong>. Se o seu app estiver em outra versão, um detalhe de tela ou de comportamento pode ser diferente.</em></p>
+      <p class="verhdr"><em>Este capítulo descreve o Fólio Invest na versão <strong>1.7.0</strong>. Se o seu app estiver em outra versão, um detalhe de tela ou de comportamento pode ser diferente.</em></p>
       <div class="docmeta">
         <span class="tag">No app: Patrimônio → Gerenciar posições</span>
       </div>
@@ -129,6 +129,9 @@
 <p>Não exatamente. O app avisa na própria tela: <strong>"Δ bruto: pode misturar rendimento com aporte/resgate."</strong> Se você aportou naquele mês, parte do Δ é dinheiro novo, não rendimento.</p>
 <h3 id="em-fundos-qual-valor-eu-informo">Em fundos, qual valor eu informo?<a class="anc" href="#em-fundos-qual-valor-eu-informo" aria-label="Link para esta seção">#</a></h3>
 <p>O <strong>valor líquido que caiu na conta / o saldo líquido</strong>. A tela avisa que fundos têm come-cotas (a antecipação semestral de imposto que reduz a quantidade de cotas), então o saldo bruto não é o número certo.</p>
+<h3 id="a-caixa-conta-tem-saldo-automatico">A Caixa (conta) tem saldo automático<a class="anc" href="#a-caixa-conta-tem-saldo-automatico" aria-label="Link para esta seção">#</a></h3>
+<p>A classe <strong>Caixa</strong> é diferente das outras: você não precisa lançar o saldo mês a mês. A partir do primeiro saldo informado, o app <strong>calcula sozinho</strong> os meses seguintes, somando os aportes e resgates vinculados à conta. Cada mês aparece com um selo — <strong>↻ AUTOMÁTICO</strong> (derivado pelos fluxos) ou <strong>INFORMADO</strong> (o valor que você digitou) — e o automático mostra a memória de cálculo (ex.: <em>"último saldo confirmado − resgate de US$ 5,00 em 12/09"</em>).</p>
+<p>Para fixar um valor num mês automático, <strong>toque nele</strong>: o app abre o lançamento já preenchido com o valor derivado; ao salvar, aquele mês vira <strong>INFORMADO</strong> e passa a ser a nova âncora dos meses seguintes.</p>
 <h3 id="por-que-o-app-pede-o-valor-liquido-nos-fundos">Por que o app pede o valor líquido nos fundos<a class="anc" href="#por-que-o-app-pede-o-valor-liquido-nos-fundos" aria-label="Link para esta seção">#</a></h3>
 <p>Fundos abertos de renda fixa e multimercado têm <strong>come-cotas</strong>: o Fisco cobra o imposto <strong>por antecipação</strong>, duas vezes por ano — nos últimos dias úteis de ⏳ <strong>maio</strong> e ⏳ <strong>novembro</strong> —, sem esperar você resgatar. É por isso que se chama assim: a cobrança <strong>come cotas</strong> do seu saldo. A quantidade de cotas diminui; o valor de cada cota, não.</p>
 <p>Consequências práticas:</p>
@@ -153,11 +156,11 @@
 <h4 id="encerrar-excluir">Encerrar ≠ excluir<a class="anc" href="#encerrar-excluir" aria-label="Link para esta seção">#</a></h4>
 <p>Encerrar tira a posição do patrimônio e <strong>mantém o histórico</strong> — que é o que sustenta as declarações de anos anteriores e o custo dos anos seguintes. Excluir apaga tudo. Para o Fisco, <strong>encerrar é o registro; excluir é perder a prova.</strong> Guarde os informes de qualquer forma: o ônus de comprovar aquisição e alienação é seu.</p>
 <h2 id="a-tela-principal-bloco-a-bloco">A tela principal, bloco a bloco<a class="anc" href="#a-tela-principal-bloco-a-bloco" aria-label="Link para esta seção">#</a></h2>
-<ul><li><strong>Botão de mês</strong> no topo: rege a tela inteira. Só aparece quando há saldo lançado.</li><li><strong>PATRIMÔNIO MANUAL · &lt;mês&gt;</strong> — o total, com a nota "É o que entra no seu Patrimônio" e a linha <strong>Aportado (líquido)</strong>.</li><li><strong>Barra de alocação</strong> por classe, quando há mais de uma.</li><li><strong>Blocos por região</strong> (Brasil e internacional), com a bandeira da moeda.</li><li>Dentro de cada bloco, as classes; dentro delas, as posições.</li></ul>
+<ul><li><strong>Botão de mês</strong> no topo: rege a tela inteira. Só aparece quando há saldo lançado.</li><li><strong>PATRIMÔNIO MANUAL · &lt;mês&gt;</strong> — o total, com a nota "É o que entra no seu Patrimônio" e a linha <strong>Aportado (líquido)</strong>.</li><li><strong>Barra de alocação</strong> por classe, quando há mais de uma.</li><li><strong>Blocos por região</strong> (Brasil e internacional), com a bandeira da moeda.</li><li>Dentro de cada bloco, as classes; dentro delas, as posições.</li><li><strong>PTAX do dólar</strong>, quando você tem posição em US$: no mês corrente aparece no título do card (<strong>"· PTAX R$…"</strong>, provisória); num mês fechado, como linha própria (<strong>"PTAX de fechamento · R$…"</strong>). É a cotação que converte as posições em dólar para reais no patrimônio.</li></ul>
 <p>Cada posição mostra a instituição e o mês do último saldo. Quando não há saldo, aparece <strong>"Sem saldo lançado — toque para adicionar"</strong>. Posições encerradas levam a etiqueta <strong>ENCERRADA</strong>.</p>
 <h2 id="o-que-costuma-confundir">O que costuma confundir<a class="anc" href="#o-que-costuma-confundir" aria-label="Link para esta seção">#</a></h2>
 <p><strong>"Saldo" e "Aportado" são coisas diferentes.</strong> Saldo é quanto vale hoje. Aportado é quanto você colocou. A diferença é o rendimento.</p>
-<p><strong>O saldo não se atualiza sozinho.</strong> Se você não lançar, o app repete o último saldo conhecido — e a rentabilidade do Patrimônio aparece menor do que a real. É essa a causa do aviso "Saldo desatualizado" em <a href="/manual/patrimonio/">Patrimônio</a>.</p>
+<p><strong>O saldo não se atualiza sozinho — exceto a Caixa.</strong> Nas demais classes, se você não lançar, o app repete o último saldo conhecido, e a rentabilidade do Patrimônio aparece menor do que a real (é a causa do aviso "Saldo desatualizado" em <a href="/manual/patrimonio/">Patrimônio</a>). A <strong>Caixa</strong> é a exceção: o saldo dela é derivado automaticamente dos aportes e resgates.</p>
 <p><strong>Previdência sem PGBL/VGBL não entra na declaração.</strong> O <a href="/manual/relatorio-irpf/">Relatório de IRPF</a> avisa em âmbar quando isso acontece.</p>
 <h2 id="o-que-esta-tela-nao-faz">O que esta tela NÃO faz<a class="anc" href="#o-que-esta-tela-nao-faz" aria-label="Link para esta seção">#</a></h2>
 <ul><li>Não busca saldo em banco nem corretora.</li><li>Não calcula rendimento de renda fixa a partir do indexador — o campo "Indexador" é só uma anotação.</li><li>Não aceita ações, FIIs nem ETFs: isso é <a href="/manual/operacoes/">Operações</a>.</li></ul>
