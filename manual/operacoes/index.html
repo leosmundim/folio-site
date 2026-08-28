@@ -42,7 +42,7 @@
 "description":"é o caderno de compras e vendas. Tudo o que você comprou ou vendeu de bolsa está listado aqui, e é daqui que sai quase todo o resto do app.",
 "inLanguage":"pt-BR",
 "datePublished":"2026-07-29",
-"dateModified":"2026-08-24",
+"dateModified":"2026-08-28",
 "mainEntityOfPage":{"@type":"WebPage","@id":"https://folioinvest.com.br/manual/operacoes/"},
 "author":{"@type":"Organization","name":"Fólio Invest"},
 "publisher":{"@type":"Organization","name":"Fólio Invest","url":"https://folioinvest.com.br/"},
@@ -129,8 +129,9 @@
 <h3 id="opcoes">Opções<a class="anc" href="#opcoes" aria-label="Link para esta seção">#</a></h3>
 <p>Ao escolher o tipo <strong>Opções</strong>, a ficha pede o campo <strong>Vencimento da opção</strong> ("Toque para informar"). Ele é <strong>obrigatório</strong> — sem a data o app não salva.</p>
 <p>Na data do vencimento, se a posição ainda está em aberto, o app avisa na <strong>Início</strong> (e na <strong>Carteira</strong>) com um card de <strong>opção vencida em aberto</strong> e o botão <strong>Resolver agora</strong>. Ele abre o diálogo <strong>"Opção vencida"</strong>, com duas escolhas:</p>
-<ul><li><strong>Não foi exercida (virou pó)</strong> → toque em <strong>Registrar fechamento</strong>: o app lança o fechamento <strong>a R$ 0,00 na data do vencimento</strong>.</li><li><strong>Foi exercida</strong> → <strong>Entendi</strong>: o app <strong>não cria nada</strong>; o efeito fica no ativo-objeto (a ação negociada pelo strike), que você lança em Operações.</li></ul>
+<ul><li><strong>Não foi exercida (virou pó)</strong> → toque em <strong>Registrar fechamento</strong>: o app lança o fechamento <strong>a R$ 0,00 na data do vencimento</strong>.</li><li><strong>Foi exercida</strong> → <strong>Entendi</strong>: o app <strong>não cria nada</strong>; o efeito fica no ativo-objeto — o prêmio entra no custo ou no valor de venda da ação, no lançamento que você faz da própria ação.</li></ul>
 <p>Há também <strong>Adiar</strong>, para decidir depois. O app <strong>nunca</strong> resolve sozinho.</p>
+<div class="callout nota"><p>🧾 <strong>O que isso significa no seu IR.</strong> No mercado de opções, quando a opção vence sem ser exercida, o prêmio vira ganho para quem lançou e perda para quem é titular, na data do vencimento (Instrução Normativa RFB 1.585/2015, art. 60, §3º). É por isso que o app registra o fechamento a R$ 0,00 nessa data: o resultado entra na apuração de renda variável do mês do vencimento (operações comuns, alíquota de ⏳ <strong>15%</strong>), que o app já calcula pra você.</p></div>
 <p>Opções antigas, cadastradas antes deste campo (sem data de vencimento), <strong>não</strong> disparam o aviso automático — nesse caso, resolva pela tela de <strong>Carteira</strong>.</p>
 <h3 id="day-trade">Day-trade<a class="anc" href="#day-trade" aria-label="Link para esta seção">#</a></h3>
 <p>Day-trade é a operação — ou o conjunto de operações — <strong>iniciada e encerrada no mesmo dia, com o mesmo ativo, na mesma corretora</strong>, com a quantidade liquidada total ou parcialmente. Os três requisitos contam: comprar num app e vender noutro, no mesmo dia, <strong>não</strong> é day-trade.</p>
