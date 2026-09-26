@@ -42,13 +42,13 @@
 "description":"registra o dinheiro que entra e sai da sua carteira — e é isso que permite ao app separar &quot;rendi&quot; de &quot;depositei mais&quot;.",
 "inLanguage":"pt-BR",
 "datePublished":"2026-07-29",
-"dateModified":"2026-09-14",
+"dateModified":"2026-09-26",
 "mainEntityOfPage":{"@type":"WebPage","@id":"https://folioinvest.com.br/manual/aportes/"},
 "author":{"@type":"Organization","name":"Fólio Invest"},
 "publisher":{"@type":"Organization","name":"Fólio Invest","url":"https://folioinvest.com.br/"},
 "about":{"@type":"SoftwareApplication","name":"Fólio Invest",
 "applicationCategory":"FinanceApplication","operatingSystem":"Android",
-"softwareVersion":"1.8.1"},
+"softwareVersion":"1.9.0"},
 "isAccessibleForFree":true},
 {"@type":"BreadcrumbList","itemListElement":[
     {"@type":"ListItem","position":1,"name":"Início","item":"https://folioinvest.com.br/"},
@@ -83,11 +83,11 @@
     <article>
       <p class="eyebrow">Manual do usuário · Capítulo 8</p>
       <h1>Gerenciar aportes</h1>
-      <p class="verhdr"><em>Este capítulo descreve o Fólio Invest na versão <strong>1.8.1</strong>. Se o seu app estiver em outra versão, um detalhe de tela ou de comportamento pode ser diferente.</em></p>
+      <p class="verhdr"><em>Este capítulo descreve o Fólio Invest na versão <strong>1.9.0</strong>. Se o seu app estiver em outra versão, um detalhe de tela ou de comportamento pode ser diferente.</em></p>
       <div class="docmeta">
         <span class="tag">No app: Patrimônio → Gerenciar aportes</span>
       </div>
-<details class="toc"><summary>Neste capítulo</summary><ol><li><a href="#os-quatro-tipos-de-movimento">Os quatro tipos de movimento</a></li><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#como-registrar-um-aporte-em-reais">Como registrar um aporte em reais</a></li><li><a href="#como-registrar-uma-compra-de-dolar">Como registrar uma compra de dólar</a></li><li><a href="#vincular-um-movimento-a-uma-posicao">Vincular um movimento a uma posição</a></li><li><a href="#a-tela-e-seus-blocos">A tela e seus blocos</a></li><li><a href="#o-grafico-de-aportes-liquidos-por-mes">O gráfico de aportes líquidos por mês</a></li><li><a href="#o-cartao-resgates-podem-ter-sido-realocacoes">O cartão "resgates podem ter sido realocações"</a></li><li><a href="#o-filtro-sem-vinculo">O filtro "Sem vínculo"</a></li><li><a href="#como-excluir-um-lancamento">Como excluir um lançamento</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></details>
+<details class="toc"><summary>Neste capítulo</summary><ol><li><a href="#os-quatro-tipos-de-movimento">Os quatro tipos de movimento</a></li><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#como-registrar-um-aporte-em-reais">Como registrar um aporte em reais</a></li><li><a href="#como-registrar-uma-compra-de-dolar">Como registrar uma compra de dólar</a></li><li><a href="#vincular-um-movimento-a-uma-posicao">Vincular um movimento a uma posição</a></li><li><a href="#realocacao-e-conversao-escolha-a-conta-destino">Realocação e conversão: escolha a conta-destino</a></li><li><a href="#a-tela-e-seus-blocos">A tela e seus blocos</a></li><li><a href="#o-grafico-de-aportes-liquidos-por-mes">O gráfico de aportes líquidos por mês</a></li><li><a href="#o-cartao-resgates-podem-ter-sido-realocacoes">O cartão "resgates podem ter sido realocações"</a></li><li><a href="#o-filtro-sem-vinculo">O filtro "Sem vínculo"</a></li><li><a href="#como-excluir-um-lancamento">Como excluir um lançamento</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></details>
       <div class="body">
 <div class="callout serve">
 <p class="ct"><span aria-hidden="true">🎯</span> Para que serve</p>
@@ -135,6 +135,14 @@
 <p>Duas fronteiras que importam:</p>
 <ul><li><strong>"Não remunerada" é a condição.</strong> Conta-corrente que <strong>rende</strong> juros é aplicação financeira, e volta para a regra dos 15%.</li><li><strong>Se o dinheiro foi para outro ativo, lance a compra.</strong> Sem isso, o app mostra o patrimônio menor do que a realidade.</li></ul>
 <p>A parte isenta ainda assim <strong>aparece na declaração</strong>: o acréscimo de variação cambial entra nos Rendimentos Isentos, no código ⏳ <strong>99</strong>. Isento não é invisível.</p>
+<h2 id="realocacao-e-conversao-escolha-a-conta-destino">Realocação e conversão: escolha a conta-destino<a class="anc" href="#realocacao-e-conversao-escolha-a-conta-destino" aria-label="Link para esta seção">#</a></h2>
+<p>Quando você marca <strong>Realocação</strong> (mesma moeda) ou escolhe <strong>Conversão R$ ↔ US$</strong>, o formulário passa a perguntar <strong>para onde o dinheiro foi</strong>, no campo <strong>Conta-destino (para onde foi)</strong>. Antes, você só registrava a saída e tinha de lançar a entrada por fora; agora o app <strong>cria a entrada no destino junto com a saída da origem</strong>, num movimento só.</p>
+<p>O seletor de conta-destino tem três tipos de escolha:</p>
+<ul><li><strong>Uma posição da mesma moeda</strong> (as suas posições de patrimônio, em R$ ou em US$, menos a de origem). O app <strong>registra a entrada nessa conta</strong> na data do movimento. Aparece a confirmação <em>"Entrada registrada em &lt;conta&gt;"</em>.</li><li><strong>Renda variável (ações, FII, ETF, BDR).</strong> O app <strong>não cria entrada</strong> — em renda variável o imposto vem da operação (o papel, o preço e a quantidade), não deste valor. A nota lembra: <strong>lance a compra</strong> em <em>Operações › Nova compra</em> para o cálculo ficar completo.</li><li><strong>Ainda não sei / caixa geral.</strong> O dinheiro fica no caixa geral e o app avisa, em âmbar, para você registrar depois onde ele foi parar.</li></ul>
+<p><strong>A entrada não vira aporte novo.</strong> O total aportado da carteira não muda — foi só uma realocação. O que a entrada faz é alimentar a ficha do IRPF da conta de destino, exatamente como um aporte feito direto naquela conta: contribuição no PGBL, prêmio no VGBL, custo de aquisição no exterior (em US$, pela PTAX da data), ou, na renda fixa e nos fundos, o saldo de fechamento do ano.</p>
+<h3 id="conversao-com-origem-e-destino">Conversão com origem e destino<a class="anc" href="#conversao-com-origem-e-destino" aria-label="Link para esta seção">#</a></h3>
+<p>Na conversão, o formulário mostra dois blocos: <strong>DE ONDE SAI</strong> (a conta de origem, na moeda que sai) e <strong>PARA ONDE VAI</strong> (a conta-destino, na outra moeda). Você informa os dólares e o <strong>câmbio (PTAX)</strong> da data, e o app mostra quanto entra no destino já convertido.</p>
+<p>⚠️ <strong>Converter dólar de uma aplicação de volta para reais pode gerar imposto.</strong> Sair do investimento é fato gerador mesmo sem sacar — a conversão de uma <strong>aplicação</strong> em US$ para R$ apura o ganho, como qualquer resgate no exterior. A exceção é a <strong>conta em dólar não remunerada</strong> (caixa): a variação cambial dela é isenta, então converter dela não apura nada.</p>
 <h2 id="a-tela-e-seus-blocos">A tela e seus blocos<a class="anc" href="#a-tela-e-seus-blocos" aria-label="Link para esta seção">#</a></h2>
 <p>No topo, o cartão azul <strong>Total Líquido de Aportes (Capital Total Investido)</strong> — aportes menos resgates, sem contar conversões e realocações.</p>
 <p>Abaixo dele, o gráfico <strong>Aportes líquidos por mês</strong> — descrito logo adiante.</p>
@@ -142,6 +150,7 @@
 <p>Na aba <strong>Em US$</strong> há ainda:</p>
 <ul><li><strong>Aportado via dólar (custo líquido)</strong>;</li><li><strong>DÓLAR MÉDIO DA CARTEIRA</strong> — quantos dólares você adquiriu, o custo em reais com IOF, e a cotação média.</li></ul>
 <p>Os lançamentos ficam em grupos que você abre tocando: <strong>Aportes</strong> e <strong>Resgates</strong> (com a moeda no rótulo — <em>em R$</em> na aba R$, <em>em US$</em> na aba US$), <strong>Conversões R$ ↔ US$</strong> e <strong>Realocações</strong>. Eles vêm fechados.</p>
+<p>No grupo <strong>Realocações</strong> convivem, em ordem de data, a <strong>saída</strong> (<em>"Realocação"</em>) e a <strong>entrada</strong> que o app criou no destino (<em>"Realocação recebida"</em>). Quando o destino foi renda variável, a saída aparece marcada como <em>"Realocação → Renda variável"</em>, lembrando de lançar a compra. As entradas recebidas <strong>não contam no total aportado</strong> — realocação é neutra.</p>
 <h2 id="o-grafico-de-aportes-liquidos-por-mes">O gráfico de aportes líquidos por mês<a class="anc" href="#o-grafico-de-aportes-liquidos-por-mes" aria-label="Link para esta seção">#</a></h2>
 <p>Entre o cartão de total e as abas Em R$/Em US$ há um gráfico de barras, <strong>Aportes líquidos por mês</strong>. Cada barra é o <strong>aporte líquido do mês</strong> — o que entrou menos o que saiu de verdade (aportes menos resgates), somado em reais.</p>
 <ul><li><strong>Barra para cima, em azul:</strong> no mês você aportou mais do que resgatou.</li><li><strong>Barra para baixo, em vermelho:</strong> saiu mais do que entrou (resgate líquido). A linha do <strong>R$ 0</strong> marca a virada.</li><li><strong>Realocações e conversões não entram</strong> — não mudam quanto você tem investido, então valem zero.</li></ul>
@@ -157,7 +166,7 @@
 <p>Arraste o cartão da direita para a esquerda. Aparece <strong>"Lançamento excluído"</strong> com <strong>Desfazer</strong>, por 5 segundos.</p>
 <h2 id="o-que-costuma-confundir">O que costuma confundir<a class="anc" href="#o-que-costuma-confundir" aria-label="Link para esta seção">#</a></h2>
 <p><strong>Realocação não reduz o total aportado, mas reduz o "Aportado (líquido)" da posição de onde o dinheiro saiu.</strong> Os dois números são diferentes de propósito.</p>
-<p><strong>Depois de uma realocação, registre para onde o dinheiro foi.</strong> O próprio formulário avisa: se você comprou outro ativo, lance a compra; se ficou parado na corretora, atualize o saldo daquela conta. Sem isso, o app mostra um prejuízo que não existe.</p>
+<p><strong>Diga no formulário para onde o dinheiro foi.</strong> O campo <strong>Conta-destino</strong> resolve isso na hora: escolha a posição que recebeu e o app registra a entrada sozinho. Só quando o destino é <strong>renda variável</strong> resta um passo manual — <strong>lance a compra</strong> em Operações. Se você deixar em "ainda não sei", o app mostra um prejuízo que não existe até você registrar o destino.</p>
 <p><strong>Aporte não é reinvestimento de dividendo.</strong> O dinheiro já estava na carteira.</p>
 <h2 id="o-que-esta-tela-nao-faz">O que esta tela NÃO faz<a class="anc" href="#o-que-esta-tela-nao-faz" aria-label="Link para esta seção">#</a></h2>
 <ul><li>Não cria compras de ativos. Aporte é só o dinheiro.</li><li>Não busca extrato bancário.</li><li>Não converte moeda automaticamente — você informa os valores das duas pontas.</li></ul>
@@ -168,7 +177,7 @@
 <a class="nx" href="/manual/posicoes-de-patrimonio/"><span class="k">Próximo capítulo →</span><span class="t">9. Posições de patrimônio</span></a>
       </nav>
     </article>
-<aside class="rail"><div class="stick"><p class="rt">Neste capítulo</p><ol><li><a href="#os-quatro-tipos-de-movimento">Os quatro tipos de movimento</a></li><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#como-registrar-um-aporte-em-reais">Como registrar um aporte em reais</a></li><li><a href="#como-registrar-uma-compra-de-dolar">Como registrar uma compra de dólar</a></li><li><a href="#vincular-um-movimento-a-uma-posicao">Vincular um movimento a uma posição</a></li><li><a href="#a-tela-e-seus-blocos">A tela e seus blocos</a></li><li><a href="#o-grafico-de-aportes-liquidos-por-mes">O gráfico de aportes líquidos por mês</a></li><li><a href="#o-cartao-resgates-podem-ter-sido-realocacoes">O cartão "resgates podem ter sido realocações"</a></li><li><a href="#o-filtro-sem-vinculo">O filtro "Sem vínculo"</a></li><li><a href="#como-excluir-um-lancamento">Como excluir um lançamento</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></div></aside>
+<aside class="rail"><div class="stick"><p class="rt">Neste capítulo</p><ol><li><a href="#os-quatro-tipos-de-movimento">Os quatro tipos de movimento</a></li><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#como-registrar-um-aporte-em-reais">Como registrar um aporte em reais</a></li><li><a href="#como-registrar-uma-compra-de-dolar">Como registrar uma compra de dólar</a></li><li><a href="#vincular-um-movimento-a-uma-posicao">Vincular um movimento a uma posição</a></li><li><a href="#realocacao-e-conversao-escolha-a-conta-destino">Realocação e conversão: escolha a conta-destino</a></li><li><a href="#a-tela-e-seus-blocos">A tela e seus blocos</a></li><li><a href="#o-grafico-de-aportes-liquidos-por-mes">O gráfico de aportes líquidos por mês</a></li><li><a href="#o-cartao-resgates-podem-ter-sido-realocacoes">O cartão "resgates podem ter sido realocações"</a></li><li><a href="#o-filtro-sem-vinculo">O filtro "Sem vínculo"</a></li><li><a href="#como-excluir-um-lancamento">Como excluir um lançamento</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></div></aside>
   </div>
 </main>
 <footer id="contato">
