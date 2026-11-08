@@ -42,13 +42,13 @@
 "description":"registra desdobramentos, grupamentos e bonificações — os eventos em que a quantidade das suas ações muda sem você ter comprado nada.",
 "inLanguage":"pt-BR",
 "datePublished":"2026-07-29",
-"dateModified":"2026-09-26",
+"dateModified":"2026-11-07",
 "mainEntityOfPage":{"@type":"WebPage","@id":"https://folioinvest.com.br/manual/eventos-corporativos/"},
 "author":{"@type":"Organization","name":"Fólio Invest"},
 "publisher":{"@type":"Organization","name":"Fólio Invest","url":"https://folioinvest.com.br/"},
 "about":{"@type":"SoftwareApplication","name":"Fólio Invest",
 "applicationCategory":"FinanceApplication","operatingSystem":"Android",
-"softwareVersion":"1.9.0"},
+"softwareVersion":"1.12.0"},
 "isAccessibleForFree":true},
 {"@type":"BreadcrumbList","itemListElement":[
     {"@type":"ListItem","position":1,"name":"Início","item":"https://folioinvest.com.br/"},
@@ -83,11 +83,11 @@
     <article>
       <p class="eyebrow">Manual do usuário · Capítulo 10</p>
       <h1>Eventos corporativos</h1>
-      <p class="verhdr"><em>Este capítulo descreve o Fólio Invest na versão <strong>1.9.0</strong>. Se o seu app estiver em outra versão, um detalhe de tela ou de comportamento pode ser diferente.</em></p>
+      <p class="verhdr"><em>Este capítulo descreve o Fólio Invest na versão <strong>1.12.0</strong>. Se o seu app estiver em outra versão, um detalhe de tela ou de comportamento pode ser diferente.</em></p>
       <div class="docmeta">
         <span class="tag">No app: Mais opções</span>
       </div>
-<details class="toc"><summary>Neste capítulo</summary><ol><li><a href="#o-que-sao-esses-eventos">O que são esses eventos</a></li><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#o-caca-eventos-caminho-recomendado">O Caça-eventos (caminho recomendado)</a></li><li><a href="#como-cadastrar-um-evento-manualmente">Como cadastrar um evento manualmente</a></li><li><a href="#a-lista-de-eventos-cadastrados">A lista de eventos cadastrados</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></details>
+<details class="toc"><summary>Neste capítulo</summary><ol><li><a href="#o-que-sao-esses-eventos">O que são esses eventos</a></li><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#o-caca-eventos-caminho-recomendado">O Caça-eventos (caminho recomendado)</a></li><li><a href="#mudanca-de-codigo-quando-um-papel-troca-de-ticker">Mudança de código (quando um papel troca de ticker)</a></li><li><a href="#como-cadastrar-um-evento-manualmente">Como cadastrar um evento manualmente</a></li><li><a href="#a-lista-de-eventos-cadastrados">A lista de eventos cadastrados</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></details>
       <div class="body">
 <div class="callout serve">
 <p class="ct"><span aria-hidden="true">🎯</span> Para que serve</p>
@@ -102,7 +102,7 @@
 <ul><li><strong>Desdobramento (split):</strong> cada ação vira várias. Você fica com mais ações, cada uma valendo proporcionalmente menos. O valor total não muda.</li><li><strong>Grupamento (inplit):</strong> o contrário — várias ações viram uma.</li><li><strong>Bonificação:</strong> a empresa distribui ações novas, sem você pagar.</li></ul>
 <p>Sem registrar, sua quantidade fica errada, e o preço médio também — o que contamina o cálculo de lucro na venda.</p>
 <h2 id="o-que-da-para-fazer-aqui">O que dá para fazer aqui<a class="anc" href="#o-que-da-para-fazer-aqui" aria-label="Link para esta seção">#</a></h2>
-<ol><li><strong>Rodar o Caça-eventos</strong>, que procura os eventos que faltam.</li><li><strong>Cadastrar um evento</strong> manualmente.</li><li><strong>Ver, editar e excluir</strong> os eventos já cadastrados.</li></ol>
+<ol><li><strong>Rodar o Caça-eventos</strong>, que procura os eventos que faltam — e também papéis que <strong>trocaram de código</strong> (ticker).</li><li><strong>Renomear</strong> um papel que mudou de código, sem perder o histórico.</li><li><strong>Cadastrar um evento</strong> manualmente.</li><li><strong>Ver, editar e excluir</strong> os eventos já cadastrados.</li></ol>
 <h2 id="o-caca-eventos-caminho-recomendado">O Caça-eventos (caminho recomendado)<a class="anc" href="#o-caca-eventos-caminho-recomendado" aria-label="Link para esta seção">#</a></h2>
 <div class="callout nota"><p>⭐ <strong>O Caça-eventos assistido é um recurso do Fólio PRO.</strong> O <strong>cadastro manual</strong> de eventos (mais abaixo) continua gratuito — dá para registrar tudo à mão sem a assinatura. O que o PRO faz é <strong>detectar</strong> os eventos que faltam para você confirmar. Ver <a href="/manual/folio-pro/">capítulo 14</a>.</p></div>
 <ol><li>No cartão <strong>Caça-eventos</strong> (etiqueta AUTOMÁTICO), toque em <strong>Caça-eventos</strong>.</li><li>O app procura splits, grupamentos e bonificações faltantes nos seus papéis.</li><li>Aparece a lista do que ele detectou, com o tipo e a proporção.</li><li>Para cada item, escolha:<ul><li><strong>Cadastrar split</strong> — aceita como o app propôs;</li><li><strong>Reverter e cadastrar</strong> — inverte a proporção;</li><li><strong>Classificar evento</strong> — quando o app não tem certeza se é desdobramento/grupamento ou bonificação;</li><li><strong>Manual</strong> — cadastra você mesmo;</li><li><strong>Abrir operações de &lt;papel&gt;</strong> — vai à lista de operações daquele papel.</li></ul></li><li>Ao classificar, o app explica a diferença: desdobramento/grupamento é <strong>custo-neutro</strong> (só muda a quantidade); bonificação envolve um custo informado pela empresa.</li></ol>
@@ -111,6 +111,15 @@
 <p>Cadastre manualmente pelo botão <strong>Cadastrar evento</strong>.</p>
 <h3 id="o-app-achou-um-fator-pequeno-o-que-e-isso">O app achou um "fator pequeno". O que é isso?<a class="anc" href="#o-app-achou-um-fator-pequeno-o-que-e-isso" aria-label="Link para esta seção">#</a></h3>
 <p>Um ajuste de proporção pequeno, que costuma ser bonificação e não split. O app avisa e pede que você classifique — ele não decide sozinho.</p>
+<h2 id="mudanca-de-codigo-quando-um-papel-troca-de-ticker">Mudança de código (quando um papel troca de ticker)<a class="anc" href="#mudanca-de-codigo-quando-um-papel-troca-de-ticker" aria-label="Link para esta seção">#</a></h2>
+<p>No topo do Caça-eventos, acima dos splits, pode aparecer o bloco <strong>Mudança de código</strong>. Ele sinaliza um papel de <strong>renda variável com posição em aberto</strong> cuja <strong>cotação parou de atualizar</strong> — o que costuma acontecer quando o ativo troca de ticker, sai de negociação ou é incorporado. O card traz a etiqueta <strong>"Parou de cotar"</strong> e desde quando a cotação não anda.</p>
+<div class="callout nota"><p>⭐ <strong>Detectar é gratuito; o botão Renomear é do Fólio PRO.</strong> Mesmo sem assinatura você vê o alerta e o atalho <strong>Abrir operações de &lt;papel&gt;</strong> para ajustar à mão. Ver <a href="/manual/folio-pro/">capítulo 14</a>.</p></div>
+<ul><li><strong>Se o app tem um palpite do novo código</strong> (hoje, só para <strong>BDR</strong>), ele mostra <em>"Possível novo código: XXXX"</em> e o botão <strong>Renomear para XXXX</strong>. É só um palpite — a própria tela pede: <strong>confirme na sua corretora antes de renomear</strong>.</li><li><strong>Se não há palpite</strong>, você digita o <strong>Novo código</strong> e toca em <strong>Renomear</strong>.</li></ul>
+<h3 id="o-que-o-renomear-faz-e-o-que-nao-faz">O que o Renomear faz (e o que não faz)<a class="anc" href="#o-que-o-renomear-faz-e-o-que-nao-faz" aria-label="Link para esta seção">#</a></h3>
+<p>Ao tocar em Renomear, abre uma confirmação <strong>"Renomear PAPEL → NOVO?"</strong> que mostra, antes de qualquer mudança:</p>
+<ul><li>que o app <strong>faz um backup cifrado de segurança e confere a integridade</strong> antes de prosseguir — só segue se o backup passar;</li><li><strong>quantos registros</strong> vão trocar de código (compras, vendas, proventos e eventos);</li><li>o bloco verde <strong>"✓ Nada no seu imposto muda"</strong> — quantidade, preço médio, custo e tipo do ativo ficam iguais.</li></ul>
+<p>🧾 <strong>Renomear não é fato gerador.</strong> Trocar o código do papel não é compra nem venda; só muda o nome sob o qual o histórico fica guardado. Por isso nada no cálculo de imposto se altera. (Para o Relatório de IRPF, essa troca vira uma nota de discriminação — ver <a href="/manual/relatorio-irpf/">capítulo 6</a>.)</p>
+<p><strong>O app troca o código em todas as operações daquele papel</strong>, não a partir de uma data — é o mesmo ativo, com posição contínua. E ele <strong>não funde históricos</strong>: se já existirem operações com o código de destino, a renomeação é recusada com o aviso <em>"Esse código já existe"</em>, para você revisar à mão antes.</p>
 <h2 id="como-cadastrar-um-evento-manualmente">Como cadastrar um evento manualmente<a class="anc" href="#como-cadastrar-um-evento-manualmente" aria-label="Link para esta seção">#</a></h2>
 <ol><li>Toque em <strong>Cadastrar evento</strong>.</li><li><strong>Papel</strong> (ex.: PETR4).</li><li>Escolha o tipo.</li><li><strong>Desdobramento / grupamento:</strong> informe <strong>De</strong> e <strong>Para</strong> (ex.: de 1 para 2) e a <strong>Data</strong>.</li><li><strong>Bonificação:</strong> informe a <strong>% de bonificação</strong>, o <strong>custo atribuído por ação bonificada (R$)</strong> e a <strong>Data-ex</strong>.</li><li>Observação, se quiser.</li><li>Salve.</li></ol>
 <p>A tela mostra dois blocos de apoio:</p>
@@ -142,7 +151,7 @@
 <a class="nx" href="/manual/importacoes/"><span class="k">Próximo capítulo →</span><span class="t">11. Importações</span></a>
       </nav>
     </article>
-<aside class="rail"><div class="stick"><p class="rt">Neste capítulo</p><ol><li><a href="#o-que-sao-esses-eventos">O que são esses eventos</a></li><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#o-caca-eventos-caminho-recomendado">O Caça-eventos (caminho recomendado)</a></li><li><a href="#como-cadastrar-um-evento-manualmente">Como cadastrar um evento manualmente</a></li><li><a href="#a-lista-de-eventos-cadastrados">A lista de eventos cadastrados</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></div></aside>
+<aside class="rail"><div class="stick"><p class="rt">Neste capítulo</p><ol><li><a href="#o-que-sao-esses-eventos">O que são esses eventos</a></li><li><a href="#o-que-da-para-fazer-aqui">O que dá para fazer aqui</a></li><li><a href="#o-caca-eventos-caminho-recomendado">O Caça-eventos (caminho recomendado)</a></li><li><a href="#mudanca-de-codigo-quando-um-papel-troca-de-ticker">Mudança de código (quando um papel troca de ticker)</a></li><li><a href="#como-cadastrar-um-evento-manualmente">Como cadastrar um evento manualmente</a></li><li><a href="#a-lista-de-eventos-cadastrados">A lista de eventos cadastrados</a></li><li><a href="#o-que-costuma-confundir">O que costuma confundir</a></li><li><a href="#o-que-esta-tela-nao-faz">O que esta tela NÃO faz</a></li></ol></div></aside>
   </div>
 </main>
 <footer id="contato">
